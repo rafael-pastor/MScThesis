@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+The style file: abbrvunsrtnat.bst
+Database file #1: Thesis.bib
+Warning--string name "jmp" is undefined
+--line 899 of file Thesis.bib
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2465 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2465 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2465 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2629 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2629 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2629 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2629 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2629 of file abbrvunsrtnat.bst
+Too many commas in name 1 of "Bondi, H., Burg, M. G. J. v. d., Metzner, A. W. K." for entry BonBurMet62
+while executing---line 2629 of file abbrvunsrtnat.bst
+Warning--empty journal in FriKan00
+Warning--empty journal in DuaFenGasHil22
+Warning--empty journal in Keh21_a
+You've used 37 entries,
+            2481 wiz_defined-function locations,
+            829 strings with 10153 characters,
+and the built_in function-call counts, 12942 in all, are:
+= -- 1161
+> -- 483
+< -- 31
++ -- 210
+- -- 136
+* -- 956
+:= -- 2074
+add.period$ -- 143
+call.type$ -- 37
+change.case$ -- 69
+chr.to.int$ -- 37
+cite$ -- 40
+duplicate$ -- 682
+empty$ -- 1265
+format.name$ -- 197
+if$ -- 2764
+int.to.chr$ -- 1
+int.to.str$ -- 38
+missing$ -- 39
+newline$ -- 225
+num.names$ -- 111
+pop$ -- 272
+preamble$ -- 1
+purify$ -- 37
+quote$ -- 0
+skip$ -- 405
+stack$ -- 0
+substring$ -- 549
+swap$ -- 84
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 244
+warning$ -- 3
+while$ -- 104
+width$ -- 0
+write$ -- 543
+(There were 9 error messages)
