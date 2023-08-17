@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  17 AUG 2023 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  17 AUG 2023 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1430,93 +1430,89 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [33] [34]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 1060.
+(amsmath)                 on input line 1089.
 
 
-Overfull \hbox (3.35745pt too wide) detected at line 1082
+Overfull \hbox (3.35745pt too wide) detected at line 1111
+[]
+ []
+
+
+Overfull \hbox (29.76935pt too wide) detected at line 1123
+[]
+ []
+
+[35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36] [37]
+Overfull \hbox (5.20215pt too wide) detected at line 1223
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
-Overfull \hbox (29.76935pt too wide) detected at line 1094
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Overfull \hbox (5.20215pt too wide) detected at line 1194
-[]
- []
-
-[37] [38] [39]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1286.
+ [38] [39]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1315.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 1299--1300
+Underfull \hbox (badness 10000) in paragraph at lines 1328--1329
 
  []
 
 [40] [41]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 1374.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 1403.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
-<friedrich cylinder.pdf, id=945, 361.35pt x 355.3275pt>
+) [42]
+<friedrich cylinder.pdf, id=962, 361.35pt x 355.3275pt>
 File: friedrich cylinder.pdf Graphic file (type pdf)
 <use friedrich cylinder.pdf>
-Package pdftex.def Info: friedrich cylinder.pdf  used on input line 1381.
+Package pdftex.def Info: friedrich cylinder.pdf  used on input line 1410.
 (pdftex.def)             Requested size: 159.33821pt x 156.68073pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1419--1420
 
  []
 
-[42
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1391 
-        <./friedrich cylinder.pdf>]
-Overfull \hbox (8.53731pt too wide) in paragraph at lines 1392--1393
+
+Overfull \hbox (8.53731pt too wide) in paragraph at lines 1421--1422
 \T1/futs/m/n/10 spa-tial and null in-fin-ity. The anal-y-sis was car-ried out us-ing pre-scribed an-a-lytic ini-tial data close to $\FML/futmi/m/it/10 i[]$ \T1/futs/m/n/10 in Minkowski
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1392--1393
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1395
+Underfull \hbox (badness 10000) in paragraph at lines 1423--1424
+
+ []
+
+[43
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1425 H
+        owever, in cases where the regularity condition is satisfied, we fou... <./friedrich cylinder.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1425--1426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1396--1397
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1428
 
  []
 
+) [44] (Output/Thesis.bbl [45
 
-Underfull \hbox (badness 10000) in paragraph at lines 1398--1399
-
- []
-
-) [43] [44
-
-] (Output/Thesis.bbl [45
 
 ] [46]) [47] [48
 
@@ -1532,18 +1528,18 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: CE231673C37F0A170D93E8BCEC913EE0;5083.
  ) 
 Here is how much of TeX's memory you used:
- 16992 strings out of 478268
- 271559 string characters out of 5846347
- 637562 words of memory out of 5000000
+ 16998 strings out of 478268
+ 271655 string characters out of 5846347
+ 637564 words of memory out of 5000000
  34423 multiletter control sequences out of 15000+600000
  654923 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,109p,1388b,538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlitb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Output/Thesis.pdf (64 pages, 951248 bytes).
+Output written on Output/Thesis.pdf (64 pages, 955023 bytes).
 PDF statistics:
- 1173 PDF objects out of 1200 (max. 8388607)
- 1030 compressed objects within 11 object streams
- 361 named destinations out of 1000 (max. 500000)
+ 1184 PDF objects out of 1200 (max. 8388607)
+ 1041 compressed objects within 11 object streams
+ 367 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1355,13 +1355,13 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/futr8c.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/fourier/futr8c.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT ./friedrich cylinder.pdf
 INPUT ./friedrich cylinder.pdf
 INPUT friedrich cylinder.pdf
 INPUT ./friedrich cylinder.pdf
 INPUT ./friedrich cylinder.pdf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/fourier/futr8c.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT Output/Thesis.bbl
 INPUT Output/Thesis.bbl
 INPUT Output/Thesis.bbl
