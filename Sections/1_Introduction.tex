@@ -57,17 +57,7 @@ The application of conformal field equations presents a robust strategy for anal
 \end{mydefinition}
 
 \begin{mydefinition}\label{def:weaklyasymptoticallysimple}
-  A spacetime $(\tilde{\mathcal{M}}, \boldsymbol{\tilde{g}})$ is termed \textit{weakly asymptotically simple} if there exists a smooth, oriented, time-oriented, and causal spacetime $(\mathcal{M}, \boldsymbol{g})$ along with a smooth function $\Xi$ defined on $M$ satisfying the following conditions:
-  \begin{enumerate}
-    \item[(i)] $\tilde{\mathcal{M}}$ possesses a smooth conformal boundary $\tilde{\mathcal{I}} \equiv \partial \tilde{\mathcal{M}}$;
-    \item[(ii)] $ \boldsymbol{\tilde{g}}$ is defined on $\tilde{\mathcal{M}}$;
-    \item[(iii)] $\Xi > 0$ on $\mathcal{M} \setminus \mathcal{I}$, and $\Xi = 0$, $\boldsymbol{d}\Xi \neq 0$ on $\mathcal{I}$;
-    \item[(iv)] The following conditions are satisfied by $\Xi^{2}\boldsymbol{g}$:
-     \subitem(a) $\Xi^{2}\boldsymbol{g}$ is a solution of the (CEFE) on $\mathcal{M}$;
-     \subitem (b) $\Xi^{2}\boldsymbol{g}$ is asymptotically flat on $\mathcal{M}$;
-     \subitem (c)  $\Xi^{2}\boldsymbol{g}$ is globally hyperbolic on $\mathcal{M}$;
-     \subitem (d)  $\Xi^{2}\boldsymbol{g}$ is maximal on $\mathcal{M}$.
-  \end{enumerate}
+  A spacetime $(\tilde{\mathcal{M}}, \boldsymbol{\tilde{g}})$ is termed \textit{weakly asymptotically simple} if there exists an asymptotically simple spacetime $(\mathcal{M}, \boldsymbol{g})$ and a neighborhood $U$ of $\mathcal{I} \equiv \partial \mathcal{M}: \phi^{-1}(U) \cap \mathcal{M}$ is isometric to an open subspace $\tilde{U}$ of $\tilde{\mathcal{M}}$ \cite{Val16}. 
 \end{mydefinition}
 In essence, a weakly asymptotically simple spacetime represents a spacetime that asymptotically approaches a simpler form in such a way that these specified conditions are satisfied.\\
 
@@ -450,35 +440,16 @@ plugging \eqref{eq:Unphysicalspacetimemetric1} into \eqref{eq:Unphysicalspacetim
 \end{align}
 By comparing the result with the expression \eqref{eq:metricRelation}, we see that they are equal:
 \begin{equation}\label{eq:UnphysicalMetricFinal}
-  \boldsymbol{\eta} = -\frac{1}{\tilde{\rho}^2-\tilde{t}^2} (\mathbf{d} \tilde{t} \otimes \mathbf{d} \tilde{t}-\mathbf{d} \tilde{\rho} \otimes \mathbf{d} \tilde{\rho}+\tilde{\rho}^2 \boldsymbol{\sigma}) = \boldsymbol{\tilde{\eta}}.
+  \boldsymbol{\eta} = -\frac{1}{\tilde{\rho}^2-\tilde{t}^2} (\mathbf{d} \tilde{t} \otimes \mathbf{d} \tilde{t}-\mathbf{d} \tilde{\rho} \otimes \mathbf{d} \tilde{\rho}+\tilde{\rho}^2 \boldsymbol{\sigma}).
 \end{equation}
 Hence, the equation \eqref{eq:metricRelation} is equivalent to the given expression for \(\boldsymbol{\eta}\) with the provided expressions for \(t\) and \(\rho\).
 In this conformal representation, where $t \in (-\infty, \infty)$, $\rho \in [0, \infty)$, the spatial infinity and the origin undergo an interchange. This implies that $i^0$ is represented by the point $(t = 0, \rho = 0)$ in $(\mathbb{R}^4, \eta)$. Introducing the coordinates $(\tau, \rho, \vartheta^A)$, where $t = \rho \tau$, and considering the conformal metric $\boldsymbol{g} = \rho^{-2} \boldsymbol{\eta}$, we obtain:
 \begin{align}\label{eq:unphysicalmetricMink}
-  & \boldsymbol{g} = \rho^{-2} \boldsymbol{\eta} = \rho^{-2}(-\rho^{2}\mathbf{d} \tau \otimes \mathbf{d} \tau + \mathbf{d} \rho \otimes \mathbf{d} \rho + \rho^2 \boldsymbol{\sigma}) \equiv \nonumber \\
-  & \boldsymbol{g} = -\mathbf{d} \tau \otimes \mathbf{d} \tau + \frac{1}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho + \boldsymbol{\sigma}.
-\end{align}
-Expressing $\frac{1}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho$ in terms of $\tau$ and $\rho$:
-\begin{equation}\label{eq:drhotimesdrho}
-  \frac{1}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho = \frac{\left(1-\tau^2\right)}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho .
-\end{equation}
-Combining terms with $\frac{1}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho$ and $\frac{\tau}{\rho} \mathbf{d} \rho \otimes \mathbf{d} \tau$:
-\begin{equation}\label{eq:drhotimesdtau}
-  \frac{1}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho + \frac{\tau}{\rho} \mathbf{d} \rho \otimes \mathbf{d} \tau = \frac{1}{\rho^2} \left(1 - \tau^2 - \tau\right) \mathbf{d} \rho \otimes \mathbf{d} \rho .
-\end{equation}
-Expressing $\frac{\tau}{\rho} \mathbf{d} \tau \otimes \mathbf{d} \rho$ in terms of $\rho$ and $\tau$:
-\begin{equation}\label{eq:dtautimesdrho}
-  \frac{\tau}{\rho} \mathbf{d} \tau \otimes \mathbf{d} \rho = -\frac{\tau}{\rho} \mathbf{d} \rho \otimes \mathbf{d} \tau .
-\end{equation}
-Combine the expressions obtained in \eqref{eq:drhotimesdtau} and \eqref{eq:dtautimesdrho} yelds:
-\begin{equation}\label{eq:drhotimesdrho1}
-  \frac{1}{\rho^2} \left(1 - \tau^2 - \tau\right) \mathbf{d} \rho \otimes \mathbf{d} \rho -\frac{\tau}{\rho} \mathbf{d} \rho \otimes \mathbf{d} \tau = -\frac{\tau}{\rho} \left(\mathbf{d} \rho \otimes \mathbf{d} \tau + \mathbf{d} \tau \otimes \mathbf{d} \rho\right).
-\end{equation}
-Substitute the expressions obtained in \eqref{eq:drhotimesdrho} and \eqref{eq:drhotimesdrho1} into \eqref{eq:unphysicalmetricMink} gives,
-\begin{align}\label{eq:unphysicalmetricMinkFinal}
-  & \boldsymbol{g} = -\mathbf{d} \tau \otimes \mathbf{d} \tau + \frac{1}{\rho^2} \left(1 - \tau^2 - \tau\right) \mathbf{d} \rho \otimes \mathbf{d} \rho -\frac{\tau}{\rho} \left(\mathbf{d} \rho \otimes \mathbf{d} \tau + \mathbf{d} \tau \otimes \mathbf{d} \rho\right) + \boldsymbol{\sigma} \nonumber \\
-  & = -\mathbf{d} \tau \otimes \mathbf{d} \tau + \frac{1 - \tau^2}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho -\frac{\tau}{\rho} \left(\mathbf{d} \rho \otimes \mathbf{d} \tau + \mathbf{d} \rho \otimes \mathbf{d} \tau\right) + \boldsymbol{\sigma} \equiv \nonumber \\
-  & \boldsymbol{g}=-\mathbf{d} \tau \otimes \mathbf{d} \tau+\frac{\left(1-\tau^2\right)}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho-\frac{\tau}{\rho} \mathbf{d} \rho \otimes \mathbf{d} \tau-\frac{\tau}{\rho} \mathbf{d} \tau \otimes \mathbf{d} \rho+\boldsymbol{\sigma}.
+  & \boldsymbol{g} = \rho^{-2} \boldsymbol{\eta} = \rho^{-2}(-\mathbf{d} t \otimes \mathbf{d} t + \mathbf{d} \rho \otimes \mathbf{d} \rho + \rho^2 \boldsymbol{\sigma}) = \rho^{-2}(-\mathbf{d}(\rho \tau)  \otimes \mathbf{d}(\rho \tau)  + \mathbf{d} \rho \otimes \mathbf{d} \rho + \rho^2 \boldsymbol{\sigma}) = \nonumber \\
+  & = \rho^{-2}(-(\rho \mathbf{d}\tau + \tau \mathbf{d}\rho)\otimes(\rho \mathbf{d}\tau + \tau \mathbf{d}\rho) + \mathbf{d} \rho \otimes \mathbf{d} \rho + \rho^2 \boldsymbol{\sigma}) = \nonumber \\
+  & = \rho^{-2}(-\rho^{2}\mathbf{d} \tau \otimes \mathbf{d} \tau - \tau^{2}\mathbf{d} \rho \otimes \mathbf{d} \rho - \rho\tau \mathbf{d} \rho \otimes \mathbf{d} \tau - \tau\rho \mathbf{d} \tau \otimes \mathbf{d} \rho + \rho^2 \boldsymbol{\sigma}) = \nonumber \\
+  & = -\mathbf{d} \tau \otimes \mathbf{d} \tau+\frac{\left(1-\tau^2\right)}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho-\frac{\tau}{\rho} \mathbf{d} \rho \otimes \mathbf{d} \tau-\frac{\tau}{\rho} \mathbf{d} \tau \otimes \mathbf{d} \rho+\boldsymbol{\sigma} \equiv \nonumber \\
+  & \boldsymbol{g} = -\mathbf{d} \tau \otimes \mathbf{d} \tau + \frac{1 - \tau^2}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho -\frac{\tau}{\rho} \left(\mathbf{d} \rho \otimes \mathbf{d} \tau + \mathbf{d} \rho \otimes \mathbf{d} \tau\right) + \boldsymbol{\sigma}.
 \end{align}
 In this context the \textit{unphyical metric $\boldsymbol{g}$} is related to the physical metric through the following relationship:
 \begin{equation}\label{eq:gandtheta}
@@ -954,7 +925,7 @@ gives
 Thus, based on the insights provided by Remark \ref{rem:lu0} and assuming the regularity condition is fulfilled, we can conclude that:
 \begin{align}
   &\mathcal{N}^{-}_{0,0}= \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p;0,0}|_{\mathscr{I}^{-}} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \sum_{p=0}^{\infty} \frac{1}{p !}(1-\tau)^{-2} \rho_{\star}^{p-1} \underline{Q}_{p; 0,0}^{0}(\tau) = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\sum_{p=0}^{\infty} \frac{1}{p !} 2^{-2} \rho_{\star}^{p-1} \underline{Q}_{p; 0,0}^{0}(\tau) = \nonumber \\
-  & = \lim_{\substack{\rho \to 0 \\ \tau \to -1}}\left[\frac{2^{-2}}{0 !} \rho^{-1} B_{0;0,0} +\frac{2^{-2}}{\rho !} \rho^{0} B_{1;0,0} +\sum_{p=2}^{\infty} \frac{2^{-2}}{p !} \rho^{p-1} B_{p;0,0}(1-\tau)^{p-1}\right] = B_{100}.
+  & = \lim_{\substack{\rho \to 0 \\ \tau \to -1}}\left[\frac{2^{-2}}{\rho !} \rho^{0} B_{1;0,0} +\sum_{p=2}^{\infty} \frac{2^{-2}}{p !} \rho^{p-1} B_{p;0,0}(1-\tau)^{p-1}\right] = B_{100}.
 \end{align}
 
 It is expected that the regularity condition must be imposed to ensure well-defined classical NP constants, as a similar observation holds for the spin-1 and spin-2 cases in \cite{GasVal20} (see also \cite{Val98, Val99a}). Additionally, Remark \ref{rem:lu0} demonstrates that only the term with $p=1$ contributes to the calculation. This aligns with the "constancy" of the NP constants, indicating that their value does not depend on the chosen cut \cite{NewPen68}. In other words, if we assume that the NP constants are well-defined, the specific form of the expressions in Remark \ref{rem:lu0} is not necessary to determine the contribution of the initial data parameters from Lemma \ref{Lemma:Sol_Jacobi_and_Logs} to $\mathcal{N}^{-}_{0,0}$. As long as only the parameter $B_{p;\ell,m}$ (and not $A_{p;\ell,m}$) appears in Equation \ref{rem:lu0:eq2}, the value of $\mathcal{N}^{-}_{0,0}$ can be determined.
