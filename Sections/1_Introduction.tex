@@ -649,6 +649,46 @@ These logarithmic terms have implications for the linear version of the associat
   to impose the regularity condition to only have polynomic
   solutions. \cite{MinMacKro22}.
 \end{remark}
+\noindent
+We can see how peeling is violated for the spin-0 field by expanding $\tilde{\phi}$ in terms of the $F$-frame. Making use of eqs (2.34), (2.35) and \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}}, we truncate \eqref{eq:ansatz} up tp $p = 1$ and get the following expression:
+\begin{align}\label{eq:phi_expansion}
+  \phi = a_{0;0,0}(\tau) Y_{00}+\frac{1}{1!} a_{1;0,0}(\tau) \rho Y_{00}+\frac{1}{1!} a_{1;1,1}(\tau) \rho Y_{11}+\frac{1}{1!} a_{1;1,0}(\tau) \rho Y_{10} + \frac{1}{1!} a_{1;1,-1}(\tau) \rho Y_{1-1},
+\end{align}
+where $Y_{00}, Y_{11}, Y_{10}$ and $Y_{1-1}$ are the spherical harmonics. Taking \eqref{eq:Sol_jac_poly} we can compute $a_{1;0,0}(\tau)$ as follows:
+\begin{align}\label{eq:a100}
+  & a_{1 ; 0,0}(\tau) = A_{100}\left(\frac{1-\tau}{2}\right) P_{1}^{(1,-1)}(\tau)+B_{100}\left(\frac{1+\tau}{2}\right) P_{1}^{(-1,1)}(\tau) = \nonumber \\
+  & = A_{100}\left(\frac{1-\tau}{2}\right)(1+\tau)+B_{100}\left(\frac{1+\tau}{2}\right)(\tau-1),
+\end{align}
+where $P_{1}^{(1,-1)}$ and $P_{1}^{(-1,1)}$ are the Jacobi Polynomials.\\
+Substituting in \eqref{eq:phi_expansion} we get:
+\begin{align}\label{eq:phi_expansion_2}
+  & \phi=\left(C_{100}+\frac{1}{2} D_{100}(\log (1+\tau)-\log (1-\tau))\right) Y_{00}+\left[\left(\frac{1-\tau}{2}\right)(1+\tau) A_{100} + B_{100}\left(\frac{1+\tau}{2}\right)(\tau-1)\right] \rho Y_{00} + \nonumber \\
+  & + \frac{1}{4}(1-\tau)(1+\tau)\left(C_{110}+\frac{1}{4} D_{110}\left(\log (1+\tau)- \log (1-\tau)+2 \tau\left(1-\tau^{2}\right)\right)\right)\rho Y_{10} + \nonumber \\
+  & + \frac{1}{4}(1-\tau)(1+\tau)\left(C_{111}+\frac{1}{4} D_{111}\left(\log (1+\tau) - \log (1-\tau)+2 \tau\left(1-\tau^{2}\right)\right)\right) \rho Y_{11} + \nonumber \\
+  & + \frac{1}{4}(1-\tau)(1+\tau)\left(C_{11-1}+\frac{1}{4} D_{11-1}\left(\log (1+\tau) - \log (1-\tau)+2 \tau\left(1-\tau^{2}\right)\right)\right)\rho Y_{1-1} \Leftrightarrow \nonumber \\\
+  & \Leftrightarrow \phi=C_{000}+\frac{1}{2} D_{000} \log \left(\frac{1+\tau}{1-\tau}\right)+\frac{\rho}{2}\biggl[A_{100}(1+\tau)(1-\tau) Y_{00}+B_{100}(\tau-1)(1+\tau) Y_{00}\biggr] + \nonumber \\
+  & + \frac{1}{4}\left(1-\tau^{2}\right) \left(C_{110} Y_{10}+C_{111} Y_{11}+C_{11-1}Y_{1-1}\right) + \frac{1}{16}\left(1-\tau^{2}\right)D_{110} + \log \left(\frac{1+\tau}{1-\tau}\right)Y_{10} + \nonumber \\
+  & + \frac{1}{16}\left(1-\tau^{2}\right) D_{111}\log\left(\frac{1+\tau}{1-\tau}\right) Y_{11}+\frac{1}{16}\left(1-\tau^{2}\right)D_{11-1}\log\left(\frac{1+\tau}{1-\tau}\right) Y_{1-1} \Leftrightarrow \nonumber \\
+  & \Leftrightarrow \phi=C_{000}+\frac{1}{2} D_{000} \log \left(\frac{1+\tau}{1-\tau}\right)+\frac{\rho}{2}\biggl[A_{100}+B_{100}\biggr](1+\tau)(1-\tau) Y_{00} + \frac{\rho}{4}\left(1-\tau^{2}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right) + \nonumber \\
+  & + \frac{\rho}{16}\left(1-\tau^{2}\right)\left(D_{11-1} \log \left(\frac{11 \tau}{1-\tau}\right)Y_{1-1}+D_{110} \log \left(\frac{1+\tau}{1-\tau}\right) Y_{10}+D_{111}\log \left(\frac{1+\tau}{1-\tau}\right) Y_{11}\right).
+\end{align}
+Using the transformation \eqref{Ftophys} one gets,
+\begin{align}\label{eq:phi_expansion_3}
+  & \phi=\left[C_{000}+\frac{1}{2} D_{000}\log\left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right)+\frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{2}\left(A_{100}+B_{100}\right)\left(1+\frac{\tilde{t}}{\tilde{\rho}}\right)\left(1-\frac{\tilde{t}}{\tilde{\rho}}\right)\right]Y_{00} + \nonumber \\
+  & + \frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{4}\left[1-\left(\frac{\tilde{t}}{\tilde{\rho}}\right)^{2}\right]\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right) + \frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{16}\left[1-\left(\frac{\tilde{t}}{\tilde{\rho}}\right)^{2}\right] \nonumber \\
+  & \left(D_{11-1} \log \left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right) Y_{1-1}+D_{110} \log \left(\frac{1+\tilde{t} / \tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right) Y_{10} D_{111} \log \left(\frac{1+\tilde{t} / \tilde{\rho}}{1-\tilde{t} / \tilde{\rho}}\right) Y_{11}\right) \Leftrightarrow \nonumber \\
+\end{align}
+\begin{align}\label{eq:phi_expansion_4}
+  & \Leftrightarrow \phi=\left[C_{000}+\frac{1}{2} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)+\frac{1}{2}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right)\right]Y_{00} + \nonumber \\
+  & + \frac{1}{4}\left(1-\frac{\tilde{t}^{2}}{\tilde{p}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110}Y_{10}+C_{111} Y_{11}\right)+\frac{1}{8}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
+  & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{1-1}+D_{110} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111}\log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{11}\right].
+\end{align}
+Therefore the physical field $\tilde{\phi}$ is given by,
+\begin{align}\label{eq:phi_tilde}
+  & \tilde{\phi}=\Theta \phi \Leftrightarrow \tilde{\phi}=\frac{1}{\tilde{\rho}} \phi \Leftrightarrow \tilde{\phi}=\frac{C_{000}}{\tilde{\rho}}+\frac{1}{2 \tilde{\rho}} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{00} + \frac{1}{8{\tilde{\rho}}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
+  & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{1-1}+D_{110} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{11}\right] + \nonumber \\
+  & + \frac{1}{2 \tilde{\rho}}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right) Y_{00}+\frac{1}{4 \tilde{\rho}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right).
+\end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr{I}$}
 \label{chapter:NPConstants}
