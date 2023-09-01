@@ -619,23 +619,23 @@ After expanding, $\partial_{\rho}^{n}$ is going to act on each term thus giving 
 The term $\partial_{\rho}^{n} \phi$ can be written as,
 \begin{align}\label{eq:operator_phi}
   & \partial_{\rho}^{n} \phi=\partial_{p}^{n}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p;\ell, m}(\tau) Y_{\ell m} \rho^{p}\right]= \sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p; \ell, m}(\tau) \partial_{p}^{n}\left(\rho^{p} Y_{\ell m}\right)= \nonumber \\
-  & =\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p;\ell,m}(\tau) \frac{p !}{(p-n) !} p^{p-n} Y_{\ell m} = \sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) p^{p-n} Y_{\ell m}.
+  & =\sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p;\ell,m}(\tau) \frac{p !}{(p-n) !} p^{p-n} Y_{\ell m} = \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) p^{p-n} Y_{\ell m}.
 \end{align}
 Therefore, the terms $\partial_{p}^{n+1} \phi$ and $\partial_{p}^{n+2} \phi$ have the following expressions, respectively:
 \begin{equation}\label{eq:operator_phi_1_2}
-  \partial_{\rho}^{n+1} \phi=\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell l}^{m=\ell} \frac{1}{(p+n+1) !} a_{p;\ell,m}(\tau) \rho^{p+n+1} Y_{\ell m}, \quad \partial_{\rho}^{n+2} \phi=\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell l}^{m=\ell} \frac{1}{(p+n+2) !} a_{p;\ell,m}(\tau) \rho^{p+n+2} Y_{\ell m}.
+  \partial_{\rho}^{n+1} \phi=\sum_{p=n+1}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell l}^{m=\ell} \frac{1}{(p+n+1) !} a_{p;\ell,m}(\tau) \rho^{p+n+1} Y_{\ell m}, \quad \partial_{\rho}^{n+2} \phi=\sum_{p=n+2}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell l}^{m=\ell} \frac{1}{(p+n+2) !} a_{p;\ell,m}(\tau) \rho^{p+n+2} Y_{\ell m}.
 \end{equation}
 Taking eqs \eqref{eq:operatorexpressions} to \eqref{eq:operator_phi_1_2} and substituting into \eqref{eq:UnphysicalWaveExplicit} one gets,
 \begin{align}\label{eq:ODE_wave_JacobiPolytransformed2}
-  & \left(\tau^{2}-1\right) \partial_{\tau}^{2}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right]-2 \rho \tau \partial_{\tau}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+1) !}a_{p;\ell,m}(\tau)\rho^{p+n+1} Y_{\ell m}\right] - \nonumber \\
-  & - 2n\tau\partial_{\tau}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] + \rho^{2}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+2) !} a_{p;\ell,m}(\tau) \rho^{p+n+2} Y_{\ell m}\right] + \nonumber \\
-  & + 2n\rho\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+1) !} a_{p;\ell,m}(\tau) \rho^{p+n+1} Y_{\ell m}\right] + n(n-1)\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] + \nonumber \\
-  & + 2\tau\partial_{\tau}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] - \ell(\ell + 1)\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] = 0.
+  & \left(\tau^{2}-1\right) \partial_{\tau}^{2}\left[\sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right]-2 \rho \tau \partial_{\tau}\left[\sum_{p=n+1}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+1) !}a_{p;\ell,m}(\tau)\rho^{p+n+1} Y_{\ell m}\right] - \nonumber \\
+  & - 2n\tau\partial_{\tau}\left[\sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] + \rho^{2}\left[\sum_{p=n+2}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+2) !} a_{p;\ell,m}(\tau) \rho^{p+n+2} Y_{\ell m}\right] + \nonumber \\
+  & + 2n\rho\left[\sum_{p=n+1}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+1) !} a_{p;\ell,m}(\tau) \rho^{p+n+1} Y_{\ell m}\right] + n(n-1)\left[\sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] + \nonumber \\
+  & + 2\tau\partial_{\tau}\left[\sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] - \ell(\ell + 1)\left[\sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] = 0.
 \end{align}
-Taking $p=n$ gives,
+Taking $p=n$ in \eqref{eq:UnphysicalWaveExplicit} gives,
 \begin{align}\label{eq:ODE_wave_JacobiPolytransformed3}
   & \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \rho^{0} Y_{\ell m}\left[\left(\tau^{2}-1\right) \ddot{a}_{p;\ell,m}(\tau)-2 p \tau \dot{a}_{p;\ell, m}(\tau)+p(p-1) a_{p;\ell, m}(\tau)+ 2\tau \dot{a}_{p;\ell,m}(\tau)-\ell(\ell+1)a_{p;\ell,m}(\tau)\right] + \nonumber \\
-  & + \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(2p+1)!}\rho^{2p+1} Y_{\ell m}\left[-2\rho\tau \dot{a}_{p;\ell, m}(\tau) + 2p\rho a_{p;\ell, m}(\tau)\right] + \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{\rho^{2}a_{p;\ell,m}(\tau)}{(2p+2)!}\rho^{2p+2} Y_{\ell m} = 0.
+  & + \sum_{p=n+1}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(2p+1)!}\rho^{2p+1} Y_{\ell m}\left[-2\rho\tau \dot{a}_{p;\ell, m}(\tau) + 2p\rho a_{p;\ell, m}(\tau)\right] + \sum_{p=n+2}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{\rho^{2}a_{p;\ell,m}(\tau)}{(2p+2)!}\rho^{2p+2} Y_{\ell m} = 0.
 \end{align}
 Taking $\rho=0$ gets,
 \begin{align}\label{eq:ODE_wave_JacobiPolytransformed4}
@@ -645,6 +645,21 @@ Taking $\rho=0$ gets,
 \end{align}
 \end{proof}
 
+\begin{proof}
+  To prove eqs. (2.34) and (2.35), we proceed inductively as follows. We first verify that equation (2.34) when substituting $n = 1$ and $n = 2$, taking $A = \tau\partial_{\tau}\partial_{\rho}\phi$, gives the following:
+  \begin{equation}\label{eq:n=1}
+    \partial_{\rho}^{1}(\rho A) = \rho\partial_{\rho}A + A.
+  \end{equation}
+  \begin{equation}\label{eq:n=2}
+    \partial_{\rho}^{2}(\rho A) = \rho\partial_{\rho}^{2}A + \partial_{\rho}A + \partial_{\rho}A = \rho\partial_{\rho}^{2}A + 2\partial_{\rho}A.
+  \end{equation}
+  This is the basis of induction.
+  Assuming equation (2.34) is valid for $n = N$ (induction hypothesis), we will show that it is also valid for $n = N + 1$. We have:
+  \begin{align}\label{eq:induction}
+    \partial_{\rho}^{N+1}(\rho A) & = \partial_{\rho}(\partial_{\rho}^{N}(\rho A)) = \partial_{\rho}(\rho\partial_{\rho}^{N}A + N\partial_{\rho}^{N-1}A) = \partial_{\rho}^{2}(\rho\partial_{\rho}^{N-1}A) + N\partial_{\rho}^{N-1}A + \partial_{\rho}(\rho\partial_{\rho}^{N-1}A) = \nonumber \\
+    & = \rho\partial_{\rho}^{N+1}A + 2\partial_{\rho}^{N}A + N\partial_{\rho}^{N-1}A.
+  \end{align}
+\end{proof}
 \noindent The solution to this ODE can be expressed as follows
 
 \begin{lemma} (wave equation in the $i^0$-cylinder
