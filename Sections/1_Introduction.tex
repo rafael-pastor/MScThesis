@@ -599,11 +599,51 @@ In terms of initial data, this entails examining analytic initial data in the vi
     m}\rho^p,
 \end{equation}
 here, the over-dot represents a derivative with respect to $\partial_\tau$. A calculation, as detailed in \cite{MinMacKro22}, reveals that solving the wave equation \eqref{eq:UnphysicalWaveExplicit} simplifies to solving the following ordinary differential equation (ODE) for every $p$, $\ell$, and $m$:
-
 \begin{equation}\label{eq:ODE_wave_JacobiPoly}
-  (1-\tau^2)\ddot{a}_{p;\ell,m} +
-    2\tau(p-1)\dot{a}_{p,\ell,m}+(\ell+p)(\ell-p+1){a}_{p;\ell,m}=0.
+  (1-\tau^2)\ddot{a}_{p;\ell,m} + 2\tau(p-1)\dot{a}_{p,\ell,m}+(\ell+p)(\ell-p+1){a}_{p;\ell,m}=0.
 \end{equation}
+\begin{proof}
+
+In order to obtain \eqref{eq:ODE_wave_JacobiPoly}, one needs to apply the operator $\partial_{\rho}^{n}$ to \eqref{eq:UnphysicalWaveExplicit}:
+\begin{align}\label{eq:ODE_wave_JacobiPolytransformed}
+  \partial_{\rho}^{n}\left(\left(\tau^2-1\right) \partial_\tau^2 \phi-2 \rho \tau \partial_\tau \partial_\rho \phi+\rho^2 \partial_\rho^2 \phi+2 \tau \partial_\tau \phi+\Delta_{\mathbb{S}^2} \phi\right)=0.
+\end{align}
+After expanding, $\partial_{\rho}^{n}$ is going to act on each term thus giving the following expressions:
+\begin{align}\label{eq:operatorexpressions}
+  & \partial_{\rho}^{n}\left[\left(\tau^{2}-1\right) \partial_{\tau}^{2} \phi\right]=\left(\tau^{2}-1\right) \partial_{\tau}^{2}\left(\partial_{\rho}^{n} \phi\right), \\
+  & \partial_{\rho}^{n}\left(2 \rho \tau \partial_{\tau} \partial_{\rho} \phi\right)=2 \rho \tau \partial_{\tau} \partial_{\rho}^{n+1} \phi+2 n \tau \partial_{\tau} \partial_{\rho}^{n} \phi, \\
+  & \partial_{\rho}^{n}\left(\rho^{2} \partial_{\rho}^{2} \phi\right)=\rho^{2} \partial_{\rho}^{n+2} \phi+2 n \rho \partial_{\rho}^{n+1} \phi+n(n-1) \partial_{\rho}^{n} \phi, \\
+  & \partial_{\rho}^{n}\left(2 \tau \partial_{\tau} \phi\right)=2 \tau \partial_{\tau}\left(\partial_{\rho}^{n} \phi\right), \\
+  & \partial_{\rho}^{n}(\Delta \phi)=-\ell(\ell+1) \partial_{\rho}^{n} \phi.
+\end{align}
+The term $\partial_{\rho}^{n} \phi$ can be written as,
+\begin{align}\label{eq:operator_phi}
+  & \partial_{\rho}^{n} \phi=\partial_{p}^{n}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p;\ell, m}(\tau) Y_{\ell m} \rho^{p}\right]= \sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p; \ell, m}(\tau) \partial_{p}^{n}\left(\rho^{p} Y_{\ell m}\right)= \nonumber \\
+  & =\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p;\ell,m}(\tau) \frac{p !}{(p-n) !} p^{p-n} Y_{\ell m} = \sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) p^{p-n} Y_{\ell m}.
+\end{align}
+Therefore, the terms $\partial_{p}^{n+1} \phi$ and $\partial_{p}^{n+2} \phi$ have the following expressions, respectively:
+\begin{equation}\label{eq:operator_phi_1_2}
+  \partial_{\rho}^{n+1} \phi=\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell l}^{m=\ell} \frac{1}{(p+n+1) !} a_{p;\ell,m}(\tau) \rho^{p+n+1} Y_{\ell m}, \quad \partial_{\rho}^{n+2} \phi=\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell l}^{m=\ell} \frac{1}{(p+n+2) !} a_{p;\ell,m}(\tau) \rho^{p+n+2} Y_{\ell m}.
+\end{equation}
+Taking eqs \eqref{eq:operatorexpressions} to \eqref{eq:operator_phi_1_2} and substituting into \eqref{eq:UnphysicalWaveExplicit} one gets,
+\begin{align}\label{eq:ODE_wave_JacobiPolytransformed2}
+  & \left(\tau^{2}-1\right) \partial_{\tau}^{2}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right]-2 \rho \tau \partial_{\tau}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+1) !}a_{p;\ell,m}(\tau)\rho^{p+n+1} Y_{\ell m}\right] - \nonumber \\
+  & - 2n\tau\partial_{\tau}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] + \rho^{2}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+2) !} a_{p;\ell,m}(\tau) \rho^{p+n+2} Y_{\ell m}\right] + \nonumber \\
+  & + 2n\rho\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p+n+1) !} a_{p;\ell,m}(\tau) \rho^{p+n+1} Y_{\ell m}\right] + n(n-1)\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] + \nonumber \\
+  & + 2\tau\partial_{\tau}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] - \ell(\ell + 1)\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(p-n) !} a_{p;\ell,m}(\tau) \rho^{p-n} Y_{\ell m}\right] = 0.
+\end{align}
+Taking $p=n$ gives,
+\begin{align}\label{eq:ODE_wave_JacobiPolytransformed3}
+  & \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \rho^{0} Y_{\ell m}\left[\left(\tau^{2}-1\right) \ddot{a}_{p;\ell,m}(\tau)-2 p \tau \dot{a}_{p;\ell, m}(\tau)+p(p-1) a_{p;\ell, m}(\tau)+ 2\tau \dot{a}_{p;\ell,m}(\tau)-\ell(\ell+1)a_{p;\ell,m}(\tau)\right] + \nonumber \\
+  & + \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{(2p+1)!}\rho^{2p+1} Y_{\ell m}\left[-2\rho\tau \dot{a}_{p;\ell, m}(\tau) + 2p\rho a_{p;\ell, m}(\tau)\right] + \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{\rho^{2}a_{p;\ell,m}(\tau)}{(2p+2)!}\rho^{2p+2} Y_{\ell m} = 0.
+\end{align}
+Taking $\rho=0$ gets,
+\begin{align}\label{eq:ODE_wave_JacobiPolytransformed4}
+  & \sum_{p=n}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} Y_{\ell m}\left[\left(\tau^{2}-1\right) \ddot{a}_{p;\ell,m}(\tau)-2 p \tau \dot{a}_{p;\ell, m}(\tau)+p(p-1) a_{p;\ell, m}(\tau)+ 2\tau \dot{a}_{p;\ell,m}(\tau)-\ell(\ell+1)a_{p;\ell,m}(\tau)\right]=0 \Leftrightarrow \nonumber \\
+  & \Leftrightarrow\left(\tau^{2}-1\right) \ddot{a}_{p;\ell,m}(\tau)-2 p \tau \dot{a}_{p;\ell, m}(\tau)+p(p-1) a_{p;\ell, m}(\tau)+ 2\tau \dot{a}_{p;\ell,m}(\tau)-\ell(\ell+1)a_{p;\ell,m}(\tau)=0 \nonumber \\
+  & \Leftrightarrow\left(1-\tau^{2}\right) \ddot{a}_{p;\ell,m}(\tau)+2 \tau(p-1) \dot{a}_{p;\ell, m}(\tau)+(l+p)(l-p+1) a_{p;\ell, m}(\tau)=0.
+\end{align}
+\end{proof}
 
 \noindent The solution to this ODE can be expressed as follows
 
@@ -639,9 +679,7 @@ One fascinating aspect of exploring evolution equations within the $i^0$ cylinde
   (1 + \tau ) (C_{11m} + \tfrac{1}{4} D_{11m} ( \log(1 + \tau ) -
   \log(1 - \tau ) + 2\tau(1-\tau^2)))
 \end{align}
-
 These logarithmic terms have implications for the linear version of the associated peeling property, as discussed in \cite{Val07,MinMacKro22}. In the full non-linear case, additional obstacles to the smoothness of null infinity arise, as explored in \cite{Val04}. In the gravitational scenario, conditions can be imposed on the initial data to prevent the emergence of these logarithmic terms in the evolution, as described in \cite{Fri98a}. For the spin-0 case, the corresponding condition can be expressed as follows:
-
 \begin{remark}\label{Remark:logfreeRemark}(Regularity condition~\cite{MinMacKro22}).
   \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}} implies that expanding the integral in \eqref{eq:Sol_highestharmonic} results in logarithmic terms, hence
   $D_{p,p,m} = 0$ is called the regularity condition. The solutions for
@@ -649,7 +687,6 @@ These logarithmic terms have implications for the linear version of the associat
   to impose the regularity condition to only have polynomic
   solutions. \cite{MinMacKro22}.
 \end{remark}
-\noindent
 We can see how peeling is violated for the spin-0 field by expanding $\tilde{\phi}$ in terms of the $F$-frame. Making use of eqs (2.34), (2.35) and \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}}, we truncate \eqref{eq:ansatz} up tp $p = 1$ and get the following expression:
 \begin{align}\label{eq:phi_expansion}
   \phi = a_{0;0,0}(\tau) Y_{00}+\frac{1}{1!} a_{1;0,0}(\tau) \rho Y_{00}+\frac{1}{1!} a_{1;1,1}(\tau) \rho Y_{11}+\frac{1}{1!} a_{1;1,0}(\tau) \rho Y_{10} + \frac{1}{1!} a_{1;1,-1}(\tau) \rho Y_{1-1},
@@ -659,7 +696,7 @@ where $Y_{00}, Y_{11}, Y_{10}$ and $Y_{1-1}$ are the spherical harmonics. Taking
   & a_{1 ; 0,0}(\tau) = A_{100}\left(\frac{1-\tau}{2}\right) P_{1}^{(1,-1)}(\tau)+B_{100}\left(\frac{1+\tau}{2}\right) P_{1}^{(-1,1)}(\tau) = \nonumber \\
   & = A_{100}\left(\frac{1-\tau}{2}\right)(1+\tau)+B_{100}\left(\frac{1+\tau}{2}\right)(\tau-1),
 \end{align}
-where $P_{1}^{(1,-1)}$ and $P_{1}^{(-1,1)}$ are the Jacobi Polynomials.\\
+where $P_{1}^{(1,-1)}$ and $P_{1}^{(-1,1)}$ are the Jacobi Polynomials.
 Substituting in \eqref{eq:phi_expansion} we get:
 \begin{align}\label{eq:phi_expansion_2}
   & \phi=\left(C_{100}+\frac{1}{2} D_{100}(\log (1+\tau)-\log (1-\tau))\right) Y_{00}+\left[\left(\frac{1-\tau}{2}\right)(1+\tau) A_{100} + B_{100}\left(\frac{1+\tau}{2}\right)(\tau-1)\right] \rho Y_{00} + \nonumber \\
@@ -677,8 +714,6 @@ Using the transformation \eqref{Ftophys} one gets,
   & \phi=\left[C_{000}+\frac{1}{2} D_{000}\log\left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right)+\frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{2}\left(A_{100}+B_{100}\right)\left(1+\frac{\tilde{t}}{\tilde{\rho}}\right)\left(1-\frac{\tilde{t}}{\tilde{\rho}}\right)\right]Y_{00} + \nonumber \\
   & + \frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{4}\left[1-\left(\frac{\tilde{t}}{\tilde{\rho}}\right)^{2}\right]\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right) + \frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{16}\left[1-\left(\frac{\tilde{t}}{\tilde{\rho}}\right)^{2}\right] \nonumber \\
   & \left(D_{11-1} \log \left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right) Y_{1-1}+D_{110} \log \left(\frac{1+\tilde{t} / \tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right) Y_{10} D_{111} \log \left(\frac{1+\tilde{t} / \tilde{\rho}}{1-\tilde{t} / \tilde{\rho}}\right) Y_{11}\right) \Leftrightarrow \nonumber \\
-\end{align}
-\begin{align}\label{eq:phi_expansion_4}
   & \Leftrightarrow \phi=\left[C_{000}+\frac{1}{2} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)+\frac{1}{2}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right)\right]Y_{00} + \nonumber \\
   & + \frac{1}{4}\left(1-\frac{\tilde{t}^{2}}{\tilde{p}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110}Y_{10}+C_{111} Y_{11}\right)+\frac{1}{8}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
   & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{1-1}+D_{110} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111}\log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{11}\right].
