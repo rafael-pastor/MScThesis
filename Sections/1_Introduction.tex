@@ -699,23 +699,18 @@ One fascinating aspect of exploring evolution equations within the $i^0$ cylinde
 \end{align}
 These logarithmic terms have implications for the linear version of the associated peeling property, as discussed in \cite{Val07,MinMacKro22}. In the full non-linear case, additional obstacles to the smoothness of null infinity arise, as explored in \cite{Val04}. In the gravitational scenario, conditions can be imposed on the initial data to prevent the emergence of these logarithmic terms in the evolution, as described in \cite{Fri98a}. For the spin-0 case, the corresponding condition can be expressed as follows:
 \begin{remark}\label{Remark:logfreeRemark}(Regularity condition~\cite{MinMacKro22}).
-  \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}} implies that expanding the integral in \eqref{eq:Sol_highestharmonic} results in logarithmic terms, hence
-  $D_{p,p,m} = 0$ is called the regularity condition. The solutions for
-  $a(\tau)$ are polynomic in $\tau$, except for $\ell = p$ where one needs
-  to impose the regularity condition to only have polynomic
-  solutions. \cite{MinMacKro22}.
+  \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}} implies that expanding the integral in \eqref{eq:Sol_highestharmonic} results in logarithmic terms, hence $D_{p,p,m} = 0$ is called the regularity condition. The solutions for
+  $a(\tau)$ are polynomic in $\tau$, except for $\ell = p$ where one needs to impose the regularity condition to only have polynomic solutions \cite{MinMacKro22}.
 \end{remark}
 We can see how peeling is violated for the spin-0 field by expanding $\tilde{\phi}$ in terms of the $F$-frame. Making use of eqs (2.34), (2.35) and \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}}, we truncate \eqref{eq:ansatz} up tp $p = 1$ and get the following expression:
 \begin{align}\label{eq:phi_expansion}
   \phi = a_{0;0,0}(\tau) Y_{00}+\frac{1}{1!} a_{1;0,0}(\tau) \rho Y_{00}+\frac{1}{1!} a_{1;1,1}(\tau) \rho Y_{11}+\frac{1}{1!} a_{1;1,0}(\tau) \rho Y_{10} + \frac{1}{1!} a_{1;1,-1}(\tau) \rho Y_{1-1},
 \end{align}
-
 where $Y_{00}, Y_{11}, Y_{10}$ and $Y_{1-1}$ are the spherical harmonics. Taking \eqref{eq:Sol_jac_poly} we can compute $a_{1;0,0}(\tau)$ as follows:
 \begin{align}\label{eq:a100}
   & a_{1 ; 0,0}(\tau) = A_{100}\left(\frac{1-\tau}{2}\right) P_{1}^{(1,-1)}(\tau)+B_{100}\left(\frac{1+\tau}{2}\right) P_{1}^{(-1,1)}(\tau) = \nonumber \\
   & = A_{100}\left(\frac{1-\tau}{2}\right)(1+\tau)+B_{100}\left(\frac{1+\tau}{2}\right)(\tau-1),
 \end{align}
-
 where $P_{1}^{(1,-1)}$ and $P_{1}^{(-1,1)}$ are the Jacobi Polynomials.
 Substituting in \eqref{eq:phi_expansion} we get:
 \begin{align}\label{eq:phi_expansion_2}
@@ -729,7 +724,6 @@ Substituting in \eqref{eq:phi_expansion} we get:
   & \Leftrightarrow \phi=C_{000}+\frac{1}{2} D_{000} \log \left(\frac{1+\tau}{1-\tau}\right)+\frac{\rho}{2}\biggl[A_{100}+B_{100}\biggr](1+\tau)(1-\tau) Y_{00} + \frac{\rho}{4}\left(1-\tau^{2}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right) + \nonumber \\
   & + \frac{\rho}{16}\left(1-\tau^{2}\right)\left(D_{11-1} \log \left(\frac{11 \tau}{1-\tau}\right)Y_{1-1}+D_{110} \log \left(\frac{1+\tau}{1-\tau}\right) Y_{10}+D_{111}\log \left(\frac{1+\tau}{1-\tau}\right) Y_{11}\right).
 \end{align}
-
 Using the transformation \eqref{Ftophys} one gets,
 \begin{align}\label{eq:phi_expansion_3}
   & \phi=\left[C_{000}+\frac{1}{2} D_{000}\log\left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right)+\frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{2}\left(A_{100}+B_{100}\right)\left(1+\frac{\tilde{t}}{\tilde{\rho}}\right)\left(1-\frac{\tilde{t}}{\tilde{\rho}}\right)\right]Y_{00} + \nonumber \\
@@ -739,14 +733,12 @@ Using the transformation \eqref{Ftophys} one gets,
   & + \frac{1}{4}\left(1-\frac{\tilde{t}^{2}}{\tilde{p}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110}Y_{10}+C_{111} Y_{11}\right)+\frac{1}{8}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
   & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{1-1}+D_{110} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111}\log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{11}\right].
 \end{align}
-
 Therefore the physical field $\tilde{\phi}$ is given by,
 \begin{align}\label{eq:phi_tilde}
   & \tilde{\phi}=\Theta \phi \Leftrightarrow \tilde{\phi}=\frac{1}{\tilde{\rho}} \phi \Leftrightarrow \tilde{\phi}=\frac{C_{000}}{\tilde{\rho}}+\frac{1}{2 \tilde{\rho}} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{00} + \frac{1}{8{\tilde{\rho}}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
   & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{1-1}+D_{110} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{11}\right] + \nonumber \\
   & + \frac{1}{2 \tilde{\rho}}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right) Y_{00}+\frac{1}{4 \tilde{\rho}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right).
 \end{align}
-
 The expantion of the physical field $\tilde{\phi}$ helps to understand the concept of peeling in the spin-0 case. In the spin-0 case, the peeling property is violated by the logarithmic terms that appear in the expansion of $\tilde{\phi}$, as shown in \eqref{eq:phi_tilde}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr{I}$}
@@ -933,9 +925,7 @@ Thus, based on the insights provided by Remark \ref{rem:l0} and assuming the reg
   & = \lim_{\substack{\rho \to 0 \\ \tau \to 1}}\left[\frac{2^{-2}}{0 !} \rho^{-1} A_{0;0,0} +\frac{2^{-2}}{\rho !} \rho^{0} A_{1;0,0} +\sum_{p=2}^{\infty} \frac{2^{-2}}{p !} \rho^{p-1} A_{p;0,0}(1-\tau)^{p-1}\right] = -A_{100}.
 \end{align}
 
-It is expected that the regularity condition must be imposed to ensure well-defined classical NP constants, as a similar observation holds for the spin-1 and spin-2 cases in \cite{GasVal20} (see also \cite{Val98, Val99a}). Additionally, Remark \ref{rem:l0} demonstrates that only the term with $p=1$ contributes to the calculation. This aligns with the "constancy" of the NP constants, indicating that their value does not depend on the chosen cut \cite{NewPen68}. In other words, if we assume that the NP constants are well-defined, the specific form of the expressions in Remark \ref{rem:l0} is not necessary to determine the contribution of the initial data parameters from Lemma \ref{Lemma:Sol_Jacobi_and_Logs} to $\mathcal{N}^{+}_{0,0}$. As long as only the parameter $A_{p;\ell,m}$ (and not $B_{p;\ell,m}$) appears in Equation \ref{rem:l0:eq2}, the value of $\mathcal{N}^{+}_{0,0}$ can be determined. 
-\pagebreak
-
+It is expected that the regularity condition must be imposed to ensure well-defined classical NP constants, as a similar observation holds for the spin-1 and spin-2 cases in \cite{GasVal20} (see also \cite{Val98, Val99a}). Additionally, Remark \ref{rem:l0} demonstrates that only the term with $p=1$ contributes to the calculation. This aligns with the "constancy" of the NP constants, indicating that their value does not depend on the chosen cut \cite{NewPen68}. In other words, if we assume that the NP constants are well-defined, the specific form of the expressions in Remark \ref{rem:l0} is not necessary to determine the contribution of the initial data parameters from Lemma \ref{Lemma:Sol_Jacobi_and_Logs} to $\mathcal{N}^{+}_{0,0}$. As long as only the parameter $A_{p;\ell,m}$ (and not $B_{p;\ell,m}$) appears in Equation \ref{rem:l0:eq2}, the value of $\mathcal{N}^{+}_{0,0}$ can be determined.\\
 To calculate the $\ell = 1$ NP constants, we must evaluate $(\boldsymbol{e}^{+})^{2}(\phi_{1m})$. By utilizing Proposition 1 and building upon the previous calculation, we obtain:
 \begin{align}\label{eq:bmeplus2philmraw}
   (\boldsymbol{e}^{+})^2(\phi_{\ell m})= 4^2(\Lambda_{+})^{2}\boldsymbol{e} \Big((\Lambda_{+}{})^2 \sum_{p=\ell}^{\infty}\frac{1}{p!}\rho^{p}Q^{0}_{p,\ell,m}(\tau)\Big).
@@ -971,7 +961,6 @@ Similar to the previous case, we have the following:
    \text{for}\qquad p\neq 1.
  \end{align}
 \end{remark}
-\pagebreak
 By observing Remark \ref{rem:l1}, it becomes apparent that only the term with $p=2$ in equation \eqref{NP1_precomputation} contributes to the overall sum. \\
 Direct evaluation leads to:
 \begin{align}
@@ -1189,9 +1178,10 @@ In this section, we derive the $\ell$-NP constants using an inductive approach. 
   \end{align}
   Using the induction hypothesis \eqref{eq:Qn}, we can compute all the pieces to construct $R^{n}_{p;\ell,m}$:
   \begin{align}\label{eq:Qndot}
-    & \dot{Q}_{p;\ell,m}^{n-1} = \frac{d}{d \tau}\left[\sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q}(1+\tau)^{n-q}a_{p;\ell,m}^{(n-q)}(\tau)\right] = \sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q} \left[(1+\tau)^{n-q} a_{p;\ell,m}^{(n-q+1)} +(n-q)(1+\tau)^{n-q-1} a_{p;\ell,m}^{(n-q)}\right].
+    & \dot{Q}_{p;\ell,m}^{n-1} = \frac{d}{d \tau}\left[\sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q}(1+\tau)^{n-q}a_{p;\ell,m}^{(n-q)}(\tau)\right] = \nonumber \\
+    & = \sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q} \left[(1+\tau)^{n-q} a_{p;\ell,m}^{(n-q+1)} +(n-q)(1+\tau)^{n-q-1} a_{p;\ell,m}^{(n-q)}\right].
   \end{align}
-  By substituting equation \eqref{eq:Qn} (induction hypothesis) and rearranging, we obtain the following expression:
+By substituting equation \eqref{eq:Qn} (induction hypothesis) and rearranging, we obtain the following:
   \begin{align}\label{eq:Rn1}
     & R^{n}_{p;\ell,m} = \sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q}\left\{(1+\tau)^{n-q+1} a^{(n-q+1)}+[n-q-(p+n)](1+\tau)^{n-q} a^{(n-q)}\right\} = \nonumber \\
     & =\sum_{q=0}^{n}(-1)^{n}p^{[q]}{n \choose q}\left\{(1+\tau)^{n-q+1} a^{(n-q+1)}-(p+q)(1+\tau)^{n-q} a^{(n-q)}\right\}.

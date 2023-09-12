@@ -17,10 +17,10 @@
 \contentsline {section}{\numberline {3.1}Conservation Laws}{27}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Definition of NP constants}{30}{section.3.2}%
 \contentsline {section}{\numberline {3.3}The classical NP constants at $\mathscr {I}^{+}$}{30}{section.3.3}%
-\contentsline {section}{\numberline {3.4}The classical NP constants at $\mathscr {I}^{-}$}{34}{section.3.4}%
-\contentsline {section}{\numberline {3.5}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{+}$}{37}{section.3.5}%
-\contentsline {section}{\numberline {3.6}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{38}{section.3.6}%
-\contentsline {section}{\numberline {3.7}The general case: Induction proof}{39}{section.3.7}%
-\contentsline {section}{\numberline {3.8}The NP constants in terms of initial data}{46}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Conclusions}{48}{section.3.9}%
-\contentsline {chapter}{Bibliography}{51}{section*.7}%
+\contentsline {section}{\numberline {3.4}The classical NP constants at $\mathscr {I}^{-}$}{33}{section.3.4}%
+\contentsline {section}{\numberline {3.5}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{+}$}{36}{section.3.5}%
+\contentsline {section}{\numberline {3.6}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{37}{section.3.6}%
+\contentsline {section}{\numberline {3.7}The general case: Induction proof}{38}{section.3.7}%
+\contentsline {section}{\numberline {3.8}The NP constants in terms of initial data}{45}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Conclusions}{47}{section.3.9}%
+\contentsline {chapter}{Bibliography}{49}{section*.7}%
