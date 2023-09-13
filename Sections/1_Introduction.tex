@@ -200,7 +200,6 @@ Once equations (1.12) and (1.13) are integrated, they yield
 \begin{equation}\label{eq:Phi1}
   \Phi_{1} = \frac{\Phi_{1}^{0}}{r^2} + \sum_{n=0}^{N}\frac{\overline{\dh} \phi_{0}^{n}}{(n+1)r^{3+n}}+o(r^{-3-N}),
 \end{equation}
-
 \begin{equation}\label{eq:Phi2}
   \Phi_{2} = \frac{\Phi_{2}^{0}}{r} + \frac{1}{r^2}\overline{\dh} \Phi_{1}^{0} + \sum_{n=0}^{N}\frac{\overline{\dh}^2 \phi_{0}^{n}}{(n+1)(n+2)r^{3+n}}+o(r^{-3-N}).
 \end{equation}
@@ -371,27 +370,6 @@ In the forthcoming exposition, we shall use the symbol $\{l^{\prime}, n^{\prime}
   \mathcal{N}_{u_{\circ}}.
   \end{equation*}
   \end{itemize}
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Cylinder at $i^0$}
@@ -767,16 +745,12 @@ The conservation laws \eqref{eq:cons_laws} have been generalized to a Schwarzsch
 \pagebreak
 \begin{proof}
   This identity can be proven through an induction process. In terms of $\underline{L}$, $L$, and $\phi$, the equation $\tilde{\square}\tilde{\phi}=0$ can be expressed as follows:
-
 \begin{align}\label{eq:uLLphiToSource}
   \underline{L} L \phi = \frac{1}{\tilde{\rho}^2}(\Delta_{\mathbb{S}^2} \phi)
 \end{align}
 Equation \eqref{eq:uLLphiToSource} corresponds to the case $n=0$ of expression \eqref{eq:main_commutation} and serves as the basis for the induction. Assuming that expression \eqref{eq:main_commutation} holds true for $n=N$, let's proceed with the induction step by calculating $\underline{L} L (\boldsymbol{e}^+)^{n+1} \phi$ as follows:
 
 % change the vertical spacing between lines of the align environment
-\setlength{\jot}{10pt}
-
-
 \begin{align}\label{eq:inductionstep_commutation}
   & \underline{L} L\left(e^{+}\right)^{N+1} \phi=\underline{L} L\left\{\left(e^{+}\right)\left[\left(e^{+}\right)^{N} \phi\right]\right\}=L\left[\underline{L}\left[\left(p^{2} L\right)\left(e^{+}\right)^{N} \phi\right]\right]= \nonumber\\ 
   & =L\left[\underline{L}\left(\rho^{2} L\left(e^{+}\right)^{N} \phi\right)\right]=L\left[\tilde{\rho}^{2} \underline{L} L\left(e^{+}\right)^{N} \phi-2 \tilde{\rho} L\left(e^{+}\right)^{N} \phi\right]= \nonumber \\
