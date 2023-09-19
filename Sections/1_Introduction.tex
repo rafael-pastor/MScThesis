@@ -576,7 +576,6 @@ here, the over-dot represents a derivative with respect to $\partial_\tau$. A ca
   (1-\tau^2)\ddot{a}_{p;\ell,m} + 2\tau(p-1)\dot{a}_{p,\ell,m}+(\ell+p)(\ell-p+1){a}_{p;\ell,m}=0.
 \end{equation}
 \begin{proof}
-
 In order to obtain \eqref{eq:ODE_wave_JacobiPoly}, one needs to apply the operator $\partial_{\rho}^{n}$ to \eqref{eq:UnphysicalWaveExplicit}:
 \begin{align}\label{eq:ODE_wave_JacobiPolytransformed}
   \partial_{\rho}^{n}\left(\left(\tau^2-1\right) \partial_\tau^2 \phi-2 \rho \tau \partial_\tau \partial_\rho \phi+\rho^2 \partial_\rho^2 \phi+2 \tau \partial_\tau \phi+\Delta_{\mathbb{S}^2} \phi\right)=0.
@@ -749,7 +748,6 @@ The conservation laws \eqref{eq:cons_laws} have been generalized to a Schwarzsch
   \underline{L} L \phi = \frac{1}{\tilde{\rho}^2}(\Delta_{\mathbb{S}^2} \phi)
 \end{align}
 Equation \eqref{eq:uLLphiToSource} corresponds to the case $n=0$ of expression \eqref{eq:main_commutation} and serves as the basis for the induction. Assuming that expression \eqref{eq:main_commutation} holds true for $n=N$, let's proceed with the induction step by calculating $\underline{L} L (\boldsymbol{e}^+)^{n+1} \phi$ as follows:
-
 % change the vertical spacing between lines of the align environment
 \begin{align}\label{eq:inductionstep_commutation}
   & \underline{L} L\left(e^{+}\right)^{N+1} \phi=\underline{L} L\left\{\left(e^{+}\right)\left[\left(e^{+}\right)^{N} \phi\right]\right\}=L\left[\underline{L}\left[\left(p^{2} L\right)\left(e^{+}\right)^{N} \phi\right]\right]= \nonumber\\ 
@@ -776,7 +774,6 @@ Noticing that \eqref{eq:RHS1plusRHS2} is the same as expression \eqref{eq:main_c
 \end{proof}
 Furthermore, it is important to note that since this calculation is performed in flat spacetime, we have made trivial commutations involving $\underline{L}$, $L$, and $\Delta_{\mathbb{S}^2}$.
 Using Proposition \ref{prop:main_commutation} for $\ell=n$ and rearranging gives the following:
-\pagebreak
 \begin{corollary}\label{coro:main_commutation}
   Let $\tilde{\phi}$ be a solution to
   $\tilde{\square}\tilde{\phi}=0$ and let $\phi =

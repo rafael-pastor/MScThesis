@@ -6,21 +6,21 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Global structure of spacetimes}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Newman-Penrose constants}{6}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Peeling Theorem}{13}{section.1.4}%
-\contentsline {section}{\numberline {1.5}The Newman-Penrose gauge}{14}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Cylinder at $i^0$}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The $i^0$ cylinder representation in Minkowski spacetime}{16}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Linear model equations}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Spin-0 fields close to $i^0$ and $\mathscr {I}$}{21}{section.2.3}%
-\contentsline {chapter}{\numberline {3}The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr {I}$}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Conservation Laws}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Definition of NP constants}{30}{section.3.2}%
-\contentsline {section}{\numberline {3.3}The classical NP constants at $\mathscr {I}^{+}$}{30}{section.3.3}%
-\contentsline {section}{\numberline {3.4}The classical NP constants at $\mathscr {I}^{-}$}{33}{section.3.4}%
-\contentsline {section}{\numberline {3.5}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{+}$}{36}{section.3.5}%
-\contentsline {section}{\numberline {3.6}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{37}{section.3.6}%
-\contentsline {section}{\numberline {3.7}The general case: Induction proof}{38}{section.3.7}%
-\contentsline {section}{\numberline {3.8}The NP constants in terms of initial data}{45}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Conclusions}{47}{section.3.9}%
-\contentsline {chapter}{Bibliography}{49}{section*.7}%
+\contentsline {section}{\numberline {1.3}Newman-Penrose constants}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Peeling Theorem}{12}{section.1.4}%
+\contentsline {section}{\numberline {1.5}The Newman-Penrose gauge}{13}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Cylinder at $i^0$}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The $i^0$ cylinder representation in Minkowski spacetime}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Linear model equations}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Spin-0 fields close to $i^0$ and $\mathscr {I}$}{20}{section.2.3}%
+\contentsline {chapter}{\numberline {3}The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr {I}$}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Conservation Laws}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Definition of NP constants}{28}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The classical NP constants at $\mathscr {I}^{+}$}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}The classical NP constants at $\mathscr {I}^{-}$}{31}{section.3.4}%
+\contentsline {section}{\numberline {3.5}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{+}$}{33}{section.3.5}%
+\contentsline {section}{\numberline {3.6}The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{35}{section.3.6}%
+\contentsline {section}{\numberline {3.7}The general case: Induction proof}{35}{section.3.7}%
+\contentsline {section}{\numberline {3.8}The NP constants in terms of initial data}{41}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Conclusions}{44}{section.3.9}%
+\contentsline {chapter}{Bibliography}{47}{section*.7}%
