@@ -1,13 +1,18 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{amsmath}  % AMS mathematical facilities for LaTeX.
+\usepackage{lmodern}  % AMS mathematical facilities for LaTeX.
 \usepackage{amsthm}   % Typesetting theorems (AMS style).
 \usepackage{amsfonts} % 
 \usepackage{mathrsfs}
 \usepackage{amsmath,fourier}
 \usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{mathpazo}
+\usepackage{mathtools}
 \theoremstyle{remark}
 \newtheorem{remark}{Remark}
 \theoremstyle{plain}
@@ -92,12 +97,96 @@
 % Section 2: Literature Review
 \section{Cylinder at $i^0$}
 \begin{frame}{The $i^0$ cylinder representation in Minkowski  spacetime}
-  % Your content for the literature review goes here
+  \begin{itemize}
+    \item Consider spherical polar coordinates $(\tilde{t}, \tilde{\rho}, \vartheta^A)$
+    with $A = 1, 2$.
+    \item The metric of physical Minkowski spacetime in this coordinate system is given by $\tilde{\boldsymbol{\eta}}$:
+    \begin{equation}
+      \tilde{\boldsymbol{\eta}}=-\mathbf{d} \tilde{t} \otimes \mathbf{d} \tilde{t}+\mathbf{d} \tilde{\rho} \otimes \mathbf{d} \tilde{\rho}+\tilde{\rho}^2 \boldsymbol{\sigma}.
+    \end{equation}
+    \item Introduce unphysical spherical polar coordinates $(t, \rho, \vartheta^A)$ as an intermediate step:
+    \begin{equation}
+      t = \frac{\tilde{t}}{\tilde{\rho}^2 - \tilde{t}^2}, \quad \rho = \frac{\tilde{\rho}}{\tilde{\rho}^2 - \tilde{t}^2}.
+    \end{equation}
+    \item The conformal metric in unphysical coordinates, $\boldsymbol{\eta} = \Xi^2 \boldsymbol{\tilde{\eta}}$: 
+    \begin{equation}
+      \boldsymbol{\eta} = -\frac{1}{\tilde{\rho}^2 - \tilde{t}^2} (-\mathbf{d} \tilde{t} \otimes \mathbf{d} \tilde{t} + \mathbf{d} \tilde{\rho} \otimes \mathbf{d} \tilde{\rho} + \tilde{\rho}^2 \boldsymbol{\sigma}).
+    \end{equation}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$i^0$ Representation in Unphysical Coordinates}
+  \begin{itemize}
+    \item In this conformal representation ($t \in (-\infty, \infty)$, $\rho \in [0, \infty)$), spatial infinity and the origin interchange.
+    \item $i^0$ is represented by the point $(t = 0, \rho = 0)$ in $(\mathbb{R}^4, \eta)$.
+    \item Introduce coordinates $(\tau, \rho, \vartheta^A)$ with $t = \rho \tau$.
+    \item Consider the conformal metric $\boldsymbol{g} = \rho^{-2} \boldsymbol{\eta}$.
+    \item Express the unphysical metric $\boldsymbol{g}$ in $F$-coordinates:
+    \begin{align}
+      & \boldsymbol{g} = -\mathbf{d} \tau \otimes \mathbf{d} \tau + \frac{1 - \tau^2}{\rho^2} \mathbf{d} \rho \otimes \mathbf{d} \rho - \frac{\tau}{\rho} \left(\mathbf{d} \rho \otimes \mathbf{d} \tau + \mathbf{d} \rho \otimes \mathbf{d} \tau\right) + \boldsymbol{\sigma}.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conformal Factor and Lorentz Transformation}
+  \begin{itemize}
+    \item The conformal factor $\Theta$ in $F$-coordinates and physical coordinates:
+    \begin{align}
+      \Theta := \rho (1-\tau^2) = \frac{1}{\tilde{\rho}}.
+    \end{align}
+    \item The boost parameter $\kappa$:
+    \begin{align}
+      \kappa := \frac{1+\tau}{1-\tau} = -\frac{\tilde{v}}{\tilde{u}}.
+    \end{align}
+    \item The Lorentz transformation that connects the NP and F-frames:
+    \begin{align}
+      (\Lambda_{+})^{2} := \Theta^{-1}\kappa^{-1}, \quad (\Lambda_{-})^{2} := \Theta^{-1}\kappa.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$i^0$ Cylinder and Null Frames}
+  \begin{itemize}
+    \item Identify future and past null infinity in the conformal representation:
+    \begin{align*}
+      \mathscr{I}^{+} & \equiv \{ p \in \mathcal{M} \; \rvert\; \tau(p) =1\}, \\
+      \mathscr{I}^{-} & \equiv \{ p \in \mathcal{M} \; \rvert \;\tau(p) =-1\}.
+    \end{align*}
+    \item The $i^0$-cylinder represents spatial infinity as an extended set $I \approx \mathbb{R}\times \mathbb{S}^2$:
+    \begin{align*}
+      I & \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| < 1, \;\rho(p)=0\}, \\
+      I^{0} & \equiv \{ p \in \mathcal{M}\; \rvert \;\tau(p)=0, \; \rho(p)=0\}.
+    \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$F$-Frame and Null Frames}
+  \begin{itemize}
+    \item Introduce the $F$-frame:
+    \begin{align}
+      & \boldsymbol{e}=(1+\tau) \boldsymbol{\partial}_\tau-\rho \boldsymbol{\partial}_\rho, \quad \underline{\boldsymbol{e}}=(1-\tau) \boldsymbol{\partial}_\tau+\rho \boldsymbol{\partial}_\rho, \quad \boldsymbol{e}_{\boldsymbol{A}} \quad \text { with } \nonumber \\ 
+      & \boldsymbol{A}=\{\uparrow, \downarrow\}.
+    \end{align}
+    \item The NP-frame hinged at $\mathscr{I}^{\pm}$:
+    \begin{align*}
+      \text{NP hinged at} \; \mathscr{I}^{+}: & \quad \boldsymbol{e}^{+}, \underline{\boldsymbol{e}}^{+}, \boldsymbol{e}_{\boldsymbol{A}}^{+}, \\
+      \text{NP hinged at} \; \mathscr{I}^{-}: & \quad \boldsymbol{e}^{-}, \underline{\boldsymbol{e}}^{-}, \boldsymbol{e}_{\boldsymbol{A}}^{-}.
+    \end{align*}
+    \item Transformation between NP and F-frames:
+    \begin{align*}
+      \text{\emph{NP hinged at} $\mathscr{I}^{+}$}:& \quad\boldsymbol{e}^{+} = \Theta^{-2} L, \quad \underline{\boldsymbol{e}}^{+}= \underline{L},\quad \boldsymbol{e}_{\boldsymbol{A}}^{+}= \boldsymbol{e}_{\boldsymbol{A}}= \Theta^{-1}\tilde{\boldsymbol{e}}_{\boldsymbol{A}}\\ \text{\emph{NP hinged at} $\mathscr{I}^{-}$}:& \quad\boldsymbol{e}^{-} =
+       L,\quad \underline{\boldsymbol{e}}^{-}=  \Theta^{-2} \underline{L},\quad \boldsymbol{e}_{\boldsymbol{A}}^{-}= \boldsymbol{e}_{\boldsymbol{A}} = \Theta^{-1}\tilde{\boldsymbol{e}}_{\boldsymbol{A}}.
+    \end{align*}
+  \end{itemize}
 \end{frame}
 
 % Section 3: Methodology
-\section{Methodology}
-\begin{frame}{Methodology}
+\section{Spin-0 fields close to $i^0$ and $\mathscr{I}$}
+\begin{frame}{Spin-0 fields close to $i^0$ and $\mathscr{I}$}
   % Your content for the methodology goes here
 \end{frame}
 
