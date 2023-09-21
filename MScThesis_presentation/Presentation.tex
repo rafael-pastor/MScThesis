@@ -18,7 +18,7 @@
 \theoremstyle{plain}
 \newtheorem{proposition}{Proposition}
 \theoremstyle{plain}
-\usetheme{Berlin} % Choose a theme (e.g., Madrid, Berlin, etc.)
+\usetheme{Madrid} % Choose a theme (e.g., Madrid, Berlin, etc.)
 \usecolortheme{default} % Choose a color theme (e.g., default, albatross, etc.)
 
 % Customize the title page
@@ -186,20 +186,159 @@
 
 % Section 3: Methodology
 \section{Spin-0 fields close to $i^0$ and $\mathscr{I}$}
-\begin{frame}{Spin-0 fields close to $i^0$ and $\mathscr{I}$}
-  % Your content for the methodology goes here
+\begin{frame}
+  \begin{itemize}
+    \item For $(\tilde{M},\tilde{\boldsymbol{g}})$ and $(M,\boldsymbol{g})$, the transformation of the D'Alembertian operator under conformal transformations is,
+    \begin{equation}\label{eq:waveConfTr}
+      \Box \phi-\frac{1}{6} \phi R=\Omega^{-3}\left(\tilde{\Box} \tilde{\phi}-\frac{1}{6} \tilde{\phi} \tilde{R}\right).
+    \end{equation}
+    \item Using $F$-coordinates, the wave equation is represented by
+    \begin{equation}\label{eq:UnphysicalWaveExplicit}
+      \left(\tau^2-1\right) \partial_\tau^2 \phi-2 \rho \tau \partial_\tau \partial_\rho \phi+\rho^2 \partial_\rho^2 \phi+2 \tau \partial_\tau \phi+\Delta_{\mathbb{S}^2} \phi=0.
+    \end{equation}
+    \item We consider the Ansatz
+    \begin{equation}\label{eq:ansatz}
+      \phi = \sum_{p = 0}^{\infty}\sum_{\ell = 0}^{p}\sum_{m = -\ell}^{m = \ell}\frac{1}{p!}a_{p;\ell,m}(\tau)\rho^{p}Y_{\ell m}.
+    \end{equation}
+    \item Solving \eqref{eq:UnphysicalWaveExplicit} simplifies to solving the following (ODE) for every $p$, $\ell$, and $m$:
+    \begin{equation}\label{eq:ODE_wave_JacobiPoly}
+      (1-\tau^2)\ddot{a}_{p;\ell,m} + 2\tau(p-1)\dot{a}_{p,\ell,m}+(\ell+p)(\ell-p+1){a}_{p;\ell,m}=0.
+    \end{equation}
+  \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \begin{lemma}\label{Lemma:Sol_Jacobi_and_Logs} The solution to equation \eqref{eq:ODE_wave_JacobiPoly} is given
+    by:
+    \begin{enumerate}
+    \item For $p\geq 1$ and $0\leq \ell \leq p-1$
+     \begin{align}\label{eq:Sol_jac_poly}
+      & a(\tau)_{p;\ell,m} =A_{p,\ell,m}\bigg(\frac{1-\tau}{2}\bigg)^{p}P_{\ell}^{(p,-p)}(\tau) + \nonumber \\
+      & B_{p,\ell,m}\bigg(\frac{1+\tau}{2}\bigg)^{p}P_{\ell}^{(-p,p)}(\tau)
+     \end{align}
+    
+    \item For $p\geq 0$ and $\ell=p$:
+       \begin{align}\label{eq:Sol_highestharmonic}
+        {a}_{p;p,m}(\tau) =\bigg(\frac{1-\tau}{2}\bigg)^{p}\bigg(\frac{1+\tau}{2}\bigg)^{p}\Bigg(C_{p,p,m}+D_{p,p,m}\int_{0}^{\tau} \frac{ds}{(1-s^2)^{p+1}}\Bigg)
+       \end{align}
+      \end{enumerate}
+  \end{lemma}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item When analyzing the hypergeometric function presented in Equation \eqref{eq:Sol_highestharmonic} for different values of $p$ we can see the emergence of logarithmic terms. Let's consider the cases of $p = 0$ and $p = 1$, which yield the following expressions:
+    \begin{align}
+      {a}_{0;0,0}(\tau) & = C_{000} + \tfrac{1}{2} D_{000} (\log(1 + \tau)- \log(1 - \tau ))\\ 
+      {a}_{1;1,m}(\tau) & = \tfrac{1}{4} (1 - \tau )(1 + \tau ) (C_{11m} + \tfrac{1}{4} D_{11m}( \log(1 + \tau ) - \nonumber \\
+      & -\log(1 - \tau ) + 2\tau(1-\tau^2))).
+    \end{align}
+    \item These logarithmic terms have implications for the linear version of the associated peeling property.
+    \begin{remark}\label{Remark:logfreeRemark}(Regularity condition).
+      \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}} implies that expanding the integral in \eqref{eq:Sol_highestharmonic} results in logarithmic terms, hence $D_{p,p,m} = 0$ is called the regularity condition. The solutions for
+      $a(\tau)$ are polynomic in $\tau$, except for $\ell = p$ where one needs to impose the regularity condition to only have polynomic solutions.
+    \end{remark}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item We can see how peeling is violated for the spin-0 field by expanding $\tilde{\phi}$ in terms of the $F$-frame. Making use of eqs (2.34), (2.35) and \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}}, we truncate \eqref{eq:ansatz} up tp $p = 1$ and get the following expression:
+    \begin{align}\label{eq:phi_tilde}
+      & \tilde{\phi}=\frac{C_{000}}{\tilde{\rho}}+\frac{1}{2 \tilde{\rho}} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{00} + \frac{1}{8{\tilde{\rho}}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
+      & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{1-1}+D_{110} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}\right] \nonumber \\     
+      &+\left[D_{111} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{11}\right]+ \frac{1}{2 \tilde{\rho}}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right) Y_{00}+ \nonumber \\
+      &\frac{1}{4 \tilde{\rho}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right).
+    \end{align}
+    \item The expantion of the physical field $\tilde{\phi}$ helps to understand the concept of peeling in the spin-0 case. In the spin-0 case, the peeling property is violated by the logarithmic terms that appear in the expansion of $\tilde{\phi}$.
+  \end{itemize}
+\end{frame}
 % Section 4: Results
-\section{Results}
-\begin{frame}{Results}
-  % Your content for the results goes here
+\section{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr{I}$}
+\begin{frame}{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr{I}$}
+  \begin{itemize}
+    \item The NP constants emerge from a set of asymptotic conservation laws. For the spin-0 field in flat spacetime one has:
+    \begin{equation}\label{eq:cons_laws}
+      {\underline{{L}}}({\tilde{\rho}}^{-2\ell}L(e^{+})^{\ell+1}\phi_{\ell m})=0, \qquad L({\tilde{\rho}}^{-2\ell}\underline{L}(e^{-})^{\ell+1}\phi_{\ell m})=0
+    \end{equation}
+    here, $\phi_{\ell m}= \int_{\mathbb{S}^2} \phi  Y_{\ell m}  d\sigma$ represents the integral of $\phi$ multiplied by the spherical harmonics $Y_{\ell m}$ over the surface $\mathbb{S}^2$, where $d\sigma$ denotes the area element on $\mathbb{S}^2$.
+    \item One can introduce the $f(\tilde{\rho})$-modified NP constants in the following manner: 
+    \begin{align}\label{eq:DefModifiedNP}
+      {}^{f}\mathcal{N}^{+}_{\ell,m}:= f(\tilde{\rho})L (\boldsymbol{e}^{+})^{\ell}\phi_{\ell m} \Big|_{{C}^{+}}, \\ 
+      {}^{f}\mathcal{N}^{-}_{\ell,m}:= f(\tilde{\rho})\underline{L} (\boldsymbol{\underline{e}}^{-})^{\ell}\phi_{\ell m}\Big|_{{C}^{-}}.
+    \end{align}
+    here, ${C^{\pm}} \approx \mathbb{S}^2$ represents a cut of $\mathscr{I}^{\pm}$.
+  \end{itemize}
+\end{frame}
+  
+\begin{frame}
+  \begin{itemize}
+    \item In the specific case of $f(\tilde{\rho})=\tilde{\rho}^2$, these quantities are referred to as the "classical NP-constants" and are denoted as $\mathcal{N}^{\pm}_{\ell,m}$. They can be succinctly expressed as follows:
+    \begin{align}\label{eq:classicalNP}
+      \mathcal{N}^{+}_{\ell,m}:= (\boldsymbol{e}^{+})^{\ell+1}\phi_{\ell m}\Big|_{{C}^{+}},\\ 
+      \mathcal{N}^{-}_{\ell,m}:= (\boldsymbol{\underline{e}}^{-})^{\ell+1}\phi_{\ell m} \Big|_{{C}^{-}}.
+    \end{align}
+    In the notation for ${}^{f}\mathcal{N}^{+}_{\ell,m}$ presented below, it will be implicitly assumed that $m$ takes values from $-\ell$ to $\ell$.
+  \end{itemize}
 \end{frame}
 
 % Section 5: Conclusion
-\section{Conclusion}
-\begin{frame}{Conclusion}
-  % Your content for the conclusion goes here
+\section{The classical NP constants at $\mathscr{I}^{+}$}
+\begin{frame}{The classical NP constants at $\mathscr{I}^{+}$}
+  \begin{itemize}
+    \item This analysis is facilitated by the expression,
+    \begin{align}\label{eq:exp_phi_lm}
+      \phi_{\ell m}= \sum_{p=\ell}^{\infty}\frac{1}{p!}a_{p;\ell,m}(\tau)\rho^{p}.
+    \end{align}
+    \item Considering $\ell=0$, the computation of $\boldsymbol{e}^{+}(\phi_{00})$ is sufficient.
+    \begin{align}\label{eq:bmeplus1philmraw}
+      & \boldsymbol{e}^{+}(\phi_{\ell m}) = 4 \rho^{-1}(1+\tau)^{-2}\sum_{p=0}^{\infty} \frac{1}{p!}\rho^p((1+\tau)\dot{a}_{p;\ell,m}-p a_{p;\ell,m}).
+    \end{align}
+    With
+    \begin{align}\label{eq:defQ0}
+      Q^{0}_{p;\ell,m}(\tau):=(1+\tau)\dot{a}_{p;\ell,m}-p a_{p;\ell,m}.
+    \end{align}
+    \item With this definition in place, we can express $\boldsymbol{e}^{+}(\phi_{\ell m})$ as follows:
+    \begin{align}\label{eq:bmeplus1philm}
+      \boldsymbol{e}^{+}(\phi_{\ell m}) = 4 (\Lambda_{+})^{2}\sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p}Q^{0}_{p,\ell,m}(\tau).
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item To compute the $\ell=0$ NP constant at $\mathscr{I}^{+}$, it is necessary to evaluate $\boldsymbol{e}^{+}(\phi_{00})$ at a specific cut ${C}^{+}$ of $\mathscr{I}^{+}$. By utilizing equation \eqref{eq:bmeplus1philm} we obtain the following expression:
+    \begin{align}
+      \mathcal{N}^{+}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}}  \boldsymbol{e}^{+}(\phi_{00}) =\sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}Q^{0}_{p,0,0}|_{\mathscr{I}^{+}} = -A_{100}.
+    \end{align}
+    \item To calculate the $\ell = 1$ NP constants, we must evaluate $(\boldsymbol{e}^{+})^{2}(\phi_{1m})$.\\
+    \begin{align}\label{eq:bmeplus2philmraw}
+      (\boldsymbol{e}^{+})^2(\phi_{\ell m})= 4^2(\Lambda_{+})^{2}\boldsymbol{e} \Big((\Lambda_{+}{})^2 \sum_{p=\ell}^{\infty}\frac{1}{p!}\rho^{p}Q^{0}_{p,\ell,m}(\tau)\Big),
+    \end{align}
+    where
+    \begin{align}\label{eq:defQ1}
+      \boldsymbol{e}\left(\Lambda_{+}^{2}\right)= -\Lambda_{+}^{2}.
+    \end{align}
+    \item Utilizing the aforementioned equations yields:
+    \begin{align}\label{eq:defQ1}
+      & (\boldsymbol{e}^{+})^2(\phi_{\ell m})= \nonumber \\
+      & = 4^2(\Lambda_{+})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p}\big((1+\tau)\dot{Q}^{0}_{p;\ell,m}(\tau)-(p+1){Q}^{0}_{p;\ell,m}(\tau)\big).
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item Where
+    \begin{equation}
+      Q^{1}_{p,\ell,m}(\tau):= \big((1+\tau)\dot{Q}^{0}_{p,\ell,m}(\tau)-(p+1){Q}^{0}_{p,\ell,m}(\tau)\big).
+    \end{equation}
+    \item Finally, one has:
+    \begin{align}
+      \mathcal{N}^{+}_{1,m} = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}}2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}\cdot(\tau) = 3A_{21m}.
+    \end{align}
+    \item The NP constants for $\mathscr{I}^{-}$ can be calculated in a similar manner, where the time reversed version of the $F$-frame is used.
+  \end{itemize}
 \end{frame}
 
 % References (optional)
