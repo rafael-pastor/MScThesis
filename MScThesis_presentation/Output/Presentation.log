@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  21 SEP 2023 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.14)  22 SEP 2023 13:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,12 +922,12 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 36.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 36.
  (Output/Presentation.nav)
-<centra.png, id=50, 203.76125pt x 248.93pt>
+<centra.png, id=62, 203.76125pt x 248.93pt>
 File: centra.png Graphic file (type png)
 <use centra.png>
 Package pdftex.def Info: centra.png  used on input line 45.
 (pdftex.def)             Requested size: 42.67912pt x 52.14009pt.
-<grit.png, id=51, 116.435pt x 116.435pt>
+<grit.png, id=63, 116.435pt x 116.435pt>
 File: grit.png Graphic file (type png)
 <use grit.png>
 Package pdftex.def Info: grit.png  used on input line 45.
@@ -992,172 +992,236 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 7
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-<penrose constants.png, id=160, 1132.23pt x 1003.75pt>
+<penrose constants.png, id=177, 1132.23pt x 1003.75pt>
 File: penrose constants.png Graphic file (type png)
 <use penrose constants.png>
 Package pdftex.def Info: penrose constants.png  used on input line 70.
 (pdftex.def)             Requested size: 154.03186pt x 136.54189pt.
  [4
 
- <./penrose constants.png>] [5
+ <./penrose constants.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 72.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 72.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 72.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <14.4> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 90.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 90.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 90.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 90.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 90.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 90.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 90.
+[5
 
 ] [6
 
+] [7
+
 ]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
+LaTeX Warning: Command \textless invalid in math mode on input line 138.
 
+Missing character: There is no ‚ in font zplmr7y!
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 98.
+LaTeX Warning: Command \textless invalid in math mode on input line 138.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/it' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 116.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 116.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 116.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 116.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 116.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 116.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 116.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 116.
-[7
-
-] [8
+Missing character: There is no ‚ in font zplmr7y!
+[8
 
 ] [9
 
 ]
-Missing character: There is no ‚ in font zplmr7y!
-Missing character: There is no ‚ in font zplmr7y!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 162.
+
 [10
 
 ] [11
 
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 188.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 188.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 188.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 188.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 188.
-
-[12
+] [12
 
 ] [13
 
-] [14
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 231.
+
+[14
 
 ] [15
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
+(hyperref)                removing `math shift' on input line 260.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 257.
+(hyperref)                removing `superscript' on input line 260.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 257.
+(hyperref)                removing `math shift' on input line 260.
 
 [16
 
-] [17
-
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 286.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 286.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 286.
-
-[18
-
-]
-Overfull \vbox (0.59087pt too high) detected at line 328
+Overfull \hbox (12.62013pt too wide) detected at line 301
+[]
  []
 
-[19
+[17
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{eq:defQ1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.328 \end{frame}
-                 ] [20
+l.301 \end{frame}
+                 ] [18
 
-] [21
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 317.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 317.
+
+[19
+
+] [20
+
+]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 366.
+
+[21
 
 ] [22
+
+] [23
+
+] [24
+
+] [25
+
+]
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7.6> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 460.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 460.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 460.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 460.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 460.
+<friedrich cylinder.pdf, id=851, 361.35pt x 355.3275pt>
+File: friedrich cylinder.pdf Graphic file (type pdf)
+<use friedrich cylinder.pdf>
+Package pdftex.def Info: friedrich cylinder.pdf  used on input line 460.
+(pdftex.def)             Requested size: 136.91605pt x 134.63547pt.
+ [26
+
+ <./friedrich cylinder.pdf>] [27
 
 ]
 \tf@nav=\write6
@@ -1174,21 +1238,21 @@ l.328 \end{frame}
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: BF49B88F8C91EB905649C4A91CC9E5E0;1158.
+(rerunfilecheck)             Checksum: 00A286B336CDF02580D3DE449080698F;1946.
  ) 
 Here is how much of TeX's memory you used:
- 23694 strings out of 478268
- 462188 string characters out of 5846347
- 706472 words of memory out of 5000000
- 41248 multiletter control sequences out of 15000+600000
- 597798 words of font info for 169 fonts, out of 8000000 for 9000
+ 23806 strings out of 478268
+ 464376 string characters out of 5846347
+ 706857 words of memory out of 5000000
+ 41333 multiletter control sequences out of 15000+600000
+ 613655 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,571b,965s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Output/Presentation.pdf (22 pages, 518482 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbo10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on Output/Presentation.pdf (27 pages, 553569 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
- 726 compressed objects within 8 object streams
- 71 named destinations out of 1000 (max. 500000)
- 238 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1036 PDF objects out of 1200 (max. 8388607)
+ 907 compressed objects within 10 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 

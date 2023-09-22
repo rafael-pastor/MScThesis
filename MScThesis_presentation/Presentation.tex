@@ -68,32 +68,6 @@
       \caption{Visual representation of the behavior of the Newman-Penrose constants at null infinity.}
   \end{figure}
 \end{frame}
-
-\begin{frame}{Spin-1 (EM) Field}
-  \begin{itemize}
-    \item A complex tetrad can be selected as follows:
-      \begin{align}\label{eq:tetrad}
-        & l^{\mu} = \delta_{1}^{\mu}, \quad n^{\mu} = \delta_{0}^{\mu} - \delta_{1}^{\mu}, \nonumber \\
-        & m^{\mu} = \displaystyle\frac{1}{\tau}\left(\delta_{2}^{\mu} + \displaystyle\frac{1}{\sin\theta}\ \delta_{3}^{\mu}\right), \qquad \overline{m}^{\mu} = \displaystyle\frac{1}{\tau}\left(\delta_{2}^{\mu} - \displaystyle\frac{1}{\sin\theta}\ \delta_{3}^{\mu}\right).
-      \end{align}
-    \item To describe the electromagnetic (EM) field, we make use of three complex tetrad components of the Maxwell field tensor denoted as $F_{\mu \nu}$:
-      \begin{align}\label{eq:Maxtensor}
-        & \Phi_{0} = F_{\mu \nu}l^{\mu}n^{\nu}, \nonumber \\
-        & \Phi_{1} = \frac{1}{2} F_{\mu \nu}(l^{\mu}n^{\nu} + \overline{m}^{\mu}m^{\nu}), \nonumber \\
-        & \Phi_{2} = F_{\mu \nu}\overline{m}^{\mu}n^{\nu}.
-      \end{align}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{NP Constants Calculation}
-  \begin{itemize}
-    \item The NP constants are calculated using the following formula:
-    \begin{equation}
-      F_{m}^{n,k} = \int{_{1}\overline{Y}_{n-k+1,m}\Phi_{0}^{n+1} d\omega}.
-    \end{equation}
-    \item The interpretation of charges, such as the Newman-Penrose constants, remains an open debate, yet their conservation is evident in general asymptotically flat spacetimes, even in events like black hole collisions.
-  \end{itemize}
-\end{frame}
 % Section 2: Literature Review
 \section{Cylinder at $i^0$}
 \begin{frame}{The $i^0$ cylinder representation in Minkowski  spacetime}
@@ -155,10 +129,10 @@
       \mathscr{I}^{+} & \equiv \{ p \in \mathcal{M} \; \rvert\; \tau(p) =1\}, \\
       \mathscr{I}^{-} & \equiv \{ p \in \mathcal{M} \; \rvert \;\tau(p) =-1\}.
     \end{align*}
-    \item The $i^0$-cylinder represents spatial infinity as an extended set $I \approx \mathbb{R}\times \mathbb{S}^2$:
+    \item The $i^0$-cylinder represents spatial infinity as an extended set $\mathcal{I} \approx \mathbb{R}\times \mathbb{S}^2$:
     \begin{align*}
-      I & \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| < 1, \;\rho(p)=0\}, \\
-      I^{0} & \equiv \{ p \in \mathcal{M}\; \rvert \;\tau(p)=0, \; \rho(p)=0\}.
+      \mathcal{I} & \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| \textless 1, \;\rho(p)=0\}, \\
+      \mathcal{I}^{0} & \equiv \{ p \in \mathcal{M}\; \rvert \;\tau(p)=0, \; \rho(p)=0\}.
     \end{align*}
   \end{itemize}
 \end{frame}
@@ -321,8 +295,7 @@
     \end{align}
     \item Utilizing the aforementioned equations yields:
     \begin{align}\label{eq:defQ1}
-      & (\boldsymbol{e}^{+})^2(\phi_{\ell m})= \nonumber \\
-      & = 4^2(\Lambda_{+})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p}\big((1+\tau)\dot{Q}^{0}_{p;\ell,m}(\tau)-(p+1){Q}^{0}_{p;\ell,m}(\tau)\big).
+      (\boldsymbol{e}^{+})^2(\phi_{\ell m})= 4^2(\Lambda_{+})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p}\big((1+\tau)\dot{Q}^{0}_{p;\ell,m}(\tau)-(p+1){Q}^{0}_{p;\ell,m}(\tau)\big).
     \end{align}
   \end{itemize}
 \end{frame}
@@ -341,15 +314,159 @@
   \end{itemize}
 \end{frame}
 
+\section{The $i^0$ cylinder logarithmic NP constants at $\mathscr{I}^{-}$}
+\begin{frame}{The $i^0$ cylinder logarithmic NP constants at $\mathscr{I}^{-}$}
+  \begin{itemize}
+    \item There exists a choice of $f(\tilde{\rho})$ that allows the calculation of the associated modified NP constants without imposing the regularity condition. 
+    \item The constants $D_{p;\ell,m}$ that define the regularity condition precisely correspond to the $f(\tilde{\rho}) = \tilde{\rho}$-modified NP constants.
+    \item We will compute the $\ell=0$ and $\ell=1$ modified NP constants ${}^{f}\mathcal{N}^{-}_{\ell,m}$.
+    \begin{align}
+      \tilde{\rho}\underline{L} (\phi_{\ell m}) = \frac{(1+\tau)}{(1-\tau)}\sum_{p=0}^{\infty}\underline{Q}^{0}_{p;\ell,m}(\tau)\rho^p.
+    \end{align}
+    Therefore, for $\ell=0$, we have:
+    \begin{align}
+      \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \kappa(\underline{\boldsymbol{e}^{-}})(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1+\tau)}{(1-\tau)}\underline{Q}^{0}_{p;0,0}\biggr]|_{\mathscr{I}^{-}}.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item Evaluating at the critical set $\mathcal{I}^{-}$, we obtain:
+    \begin{align}
+      \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1+\tau)}{(1-\tau)}\underline{Q}^{0}_{p;0,0}\biggr] = \frac{1}{2}D_{000}.
+    \end{align}
+    \item Similarly, for $\ell=1$, the relevant quantity to evaluate is:
+    \begin{align}
+      \tilde{\rho} \underline{L} (\underline{\boldsymbol{e}^{-}}) \phi_{1m}= 4\kappa(\Lambda_{-})^{2}\sum_{p=1}^{\infty}\frac{1}{p!}\rho^p\underline{Q}^{1}_{p;\ell,m}.
+    \end{align}
+    \item Therefore, for $\ell=1$, we have:
+    \begin{align}
+      \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{1,m} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \kappa\underline{\boldsymbol{e}}(\underline{\boldsymbol{e}^{-}})\phi_{1m} = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-1}(\kappa \underline{Q}^{1}_{p;1,m})|_{\mathscr{I}^{-}}.
+    \end{align}
+    \item Evaluating at the critical set $\mathcal{I}^{-}$, we obtain:
+    \begin{align}
+      \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{1,m} = - \frac{1}{4}D_{11m}.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\section{The general case: Induction proof}
+\begin{frame}{The general case: Induction proof}
+  \begin{proposition}\label{lemmaMainNPplus}
+    \begin{align}\label{eq:bmelplusonephilm}
+      (\boldsymbol{e}^{+})^{n}\phi_{\ell m} = (\Lambda_{+})^{2n}\sum_{p=\ell}^{\infty}\frac{1}{p!}Q^{n-1}_{p;\ell,m}(\tau)\rho^{p}
+    \end{align}
+    with
+    \begin{align}\label{eq:Qn}
+      Q^{n-1}_{p;\ell,m}(\tau)= \sum_{q=0}^{n}(-1)^q p^{[q]} {n \choose q}(1+\tau)^{n-q}a_{p;\ell,m}^{(n-q)}(\tau)
+    \end{align}
+    where $p^{[q]}$ denotes the rising factorial.
+  \end{proposition}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item Assuming that equations \eqref{eq:bmelplusonephilm} and \eqref{eq:Qn} are valid (induction hypothesis), we can apply $\boldsymbol{e}^{+}$ to equation \eqref{eq:bmelplusonephilm}, which yields the following expression:
+    \begin{align}\label{eq:inductionNp2step1}
+      (\boldsymbol{e}^+)^{n+1}\phi_{\ell m} = (\Lambda_{+})^{2}\boldsymbol{e}\Big((\Lambda_{+})^{2n}\sum_{p=\ell}^{\infty}\rho^p Q^{n-1}_{p;\ell,m}(\tau)\Big).
+    \end{align}
+    \item Expanding expression \eqref{eq:inductionNp2step1}, we can get the following result:
+    \begin{align}\label{eq:inductionNp2step2}
+      & (\boldsymbol{e}^+)^{n+1}\phi_{\ell m}=(\Lambda_{+})^{2(n+1)} \sum_{p=\ell}^{\infty} \rho^{p} \left[(1+\tau)\dot{Q}^{n-1}_{p;\ell,m}-(p+n)Q^{n-1}_{p;\ell,m}\right].
+    \end{align}
+    \item Thus we have shown that:
+    \begin{align}\label{eq:inductionNp2step3}
+      (\boldsymbol{e}^+)^{n+1}\phi_{\ell m} = (\Lambda_{+})^{2(n+1)} \sum_{p=\ell}^{\infty} \rho^{p}  R^{n}_{p;\ell,m}
+    \end{align}
+    where 
+    \begin{align}\label{eq:QNrecursive}
+      R^{n}_{p;\ell,m}=(1+\tau)\dot{Q}^{n-1}_{p;\ell,m}-(p+n)Q^{n-1}_{p;\ell,m}.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item Using the induction hypothesis \eqref{eq:Qn}, we can compute all the pieces to construct $R^{n}_{p;\ell,m}$:
+    \begin{align}\label{eq:Qndot}
+      & \dot{Q}_{p;\ell,m}^{n-1} = \frac{d}{d \tau}\left[\sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q}(1+\tau)^{n-q}a_{p;\ell,m}^{(n-q)}(\tau)\right] = \nonumber \\
+      & = \sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q} \nonumber \\
+      & \left[(1+\tau)^{n-q} a_{p;\ell,m}^{(n-q+1)} + (n-q)(1+\tau)^{n-q-1} a_{p;\ell,m}^{(n-q)}\right].
+    \end{align}
+    \item By substituting equation \eqref{eq:Qn} (induction hypothesis) and rearranging, we obtain the following:
+    \begin{align}\label{eq:Rn1}
+      & R^{n}_{p;\ell,m} =\sum_{q=0}^{n}(-1)^{n}p^{[q]}{n \choose q} \nonumber\\ 
+      & \left\{(1+\tau)^{n-q+1} a^{(n-q+1)}-(p+q)(1+\tau)^{n-q} a^{(n-q)}\right\}.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item It follows from the definition of the rising factorial that $p^{[q+1]}=(p+q)p^{[q]}$, in particular $p^{[n+1]}=(p+n+1)p^{[n]}$. Using this fact and relabeling according to $i = q-1 \rightarrow q = i+1$ and $i(q=1) = 0$ \& $i(q= n+1) = n$, we have:
+    \begin{align}
+      & R^{n}_{p;\ell,m} = p^{[0]}(1+\tau)^{n+1} a^{(n+1)}+ \nonumber \\
+      & + \sum_{i=0}^{n-1}(-1)^{i+1} p^{[i+1]}\Biggl[{n \choose i+1} + {n \choose i}\Biggr](1+\tau)^{n-i} a^{n-i} + \nonumber \\
+      & + (-1)^{n+1} p^{[n+1]} a.
+    \end{align}
+    \item Using the recursive identity of the binomial coefficients, the latter can be rewritten more compactly as
+    \begin{align}
+      R^{n}_{p;\ell,m} = \sum_{q=0}^{n+1}(-1)^{q} p^{[q]} {n+1 \choose q}(1+\tau)^{n-q+1}a^{(n-q+1)}.
+    \end{align}
+    \item And recalling equation \eqref{eq:Qn} then one concludes that
+    \begin{align}\label{eq:RnIsQnplusone}
+      R^{n}_ {p;\ell,m}=Q^{n}_{p;\ell,m}.
+    \end{align}
+  \end{itemize}
+\end{frame}
+
+\section{The NP constants in terms of initial data}
+\begin{frame}{The NP constants in terms of initial data}
+  \begin{itemize}
+    \item Classical NP Constants at $\mathscr{I}^{+}$:
+    \begin{align*}
+      \mathcal{N}^{+}_{\ell,m} = q^{+}(\ell) \;A_{\ell+1,\ell,m}
+    \end{align*}
+    \item Modified NP Constants at $\mathscr{I}^{+}$ (with $f(\tilde{\rho})=\tilde{\rho}$):
+    \begin{align*}
+       {}^{\tilde{\rho}}\mathcal{N}^{+}_{\ell,m} = q^{+}(\ell) \;D_{\ell,\ell,m}
+    \end{align*}
+    \item Classical NP Constants at $\mathscr{I}^{-}$:
+    \begin{align*}
+      \mathcal{N}^{-}_{\ell,m} = q^{-}(\ell) \; B_{\ell+1,\ell,m}
+    \end{align*}
+    \item Modified NP Constants at $\mathscr{I}^{-}$ (with $f(\tilde{\rho})=\tilde{\rho}$):
+    \begin{align*}
+      {}^{\tilde{\rho}}\mathcal{N}^{-}_{\ell,m} = q^{-}(\ell) \;D_{\ell,\ell,m}
+    \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item Key Observations for Spin-0 Field Near $i^0$:
+    \begin{enumerate}
+      \item Regularity condition is essential for well-defined NP constants.
+      \item Classical NP constants differ between $\mathscr{I}^{\pm}$.
+      \item Logarithmic NP constants at $\mathscr{I}^{\pm}$ are equivalent (up to a numerical constant) with the same initial data.
+    \end{enumerate}
+  \end{itemize}
+  \begin{figure}[h]
+    \centering \includegraphics[width =0.4\textwidth]{friedrich cylinder.pdf}
+      \caption{Representation of the Friedrich Cylinder. Past null infinity is represented by
+      $\mathscr{I}^{-}$, Future null infinity $\mathscr{I}^{+}$, spatial infinity as $i^{0}$ and the critical sets as $\mathcal{I}^{+}$ and $\mathcal{I}^{-}$.}
+  \end{figure}
+\end{frame}
 % References (optional)
-\section{References}
-\begin{frame}{References}
-  % Your references go here
+\section{Conclusions}
+\begin{frame}{Conclusions}
+  \begin{itemize}
+    \item Computed the NP constants for a spin-0 field near spatial and null infinity using the \(i^0\) cylinder framework, exploring the link between NP constants at future and past null infinity based on initial data. 
+    \item Analytic initial data prescribed near \(i^0\) results in solution irregularity at the convergence sets \(\mathcal{I}^{\pm}\), controlled by a constant \(D_{p;p,m}\). 
+    \item When the regularity condition, \(D_{p;p,m} = 0\), is unmet, the classical NP constants become undefined, allowing a polyhomogeneous expansion for the physical field \(\tilde{\phi}\) around null infinities. 
+    \item Upon satisfying the regularity condition, the classical NP constants at \(\mathscr{I}^{\pm}\) arise from unique initial data components. 
+    \item Conclusively, while classical NP constants at \(\mathscr{I}^{\pm}\) usually lack correspondence, the \(i^0\) cylinder NP constants at \(\mathscr{I}^{\pm}\) consistently align due to shared origins in the initial data.
+  \end{itemize}
 \end{frame}
-
-% Thank You Slide
-\begin{frame}{Thank You}
-  % Thank your audience and any acknowledgments
-\end{frame}
-
 \end{document}
