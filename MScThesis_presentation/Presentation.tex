@@ -40,7 +40,7 @@
   \titlepage
   \vfill
   \begin{center}
-    Advisors: \textbf{Dr. Edgar Gasper\'in} and \textbf{Dr. Alex Va\~{n}\'o Vi\~{n}uales}
+    Advisors: \textbf{Dr. Edgar Gasper\'in} and \textbf{Dr. Alex Va\~{n}\'o - Vi\~{n}uales}
   \end{center}
 \end{frame}
 
@@ -72,28 +72,14 @@
 \section{Cylinder at $i^0$}
 \begin{frame}{The $i^0$ cylinder representation in Minkowski  spacetime}
   \begin{itemize}
-    \item Consider spherical polar coordinates $(\tilde{t}, \tilde{\rho}, \vartheta^A)$
-    with $A = 1, 2$.
-    \item The metric of physical Minkowski spacetime in this coordinate system is given by $\tilde{\boldsymbol{\eta}}$:
+    \item The metric of physical Minkowski spacetime is given by $\tilde{\boldsymbol{\eta}}$:
     \begin{equation}
       \tilde{\boldsymbol{\eta}}=-\mathbf{d} \tilde{t} \otimes \mathbf{d} \tilde{t}+\mathbf{d} \tilde{\rho} \otimes \mathbf{d} \tilde{\rho}+\tilde{\rho}^2 \boldsymbol{\sigma}.
-    \end{equation}
-    \item Introduce unphysical spherical polar coordinates $(t, \rho, \vartheta^A)$ as an intermediate step:
-    \begin{equation}
-      t = \frac{\tilde{t}}{\tilde{\rho}^2 - \tilde{t}^2}, \quad \rho = \frac{\tilde{\rho}}{\tilde{\rho}^2 - \tilde{t}^2}.
     \end{equation}
     \item The conformal metric in unphysical coordinates, $\boldsymbol{\eta} = \Xi^2 \boldsymbol{\tilde{\eta}}$: 
     \begin{equation}
       \boldsymbol{\eta} = -\frac{1}{\tilde{\rho}^2 - \tilde{t}^2} (-\mathbf{d} \tilde{t} \otimes \mathbf{d} \tilde{t} + \mathbf{d} \tilde{\rho} \otimes \mathbf{d} \tilde{\rho} + \tilde{\rho}^2 \boldsymbol{\sigma}).
     \end{equation}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{$i^0$ Representation in Unphysical Coordinates}
-  \begin{itemize}
-    \item In this conformal representation ($t \in (-\infty, \infty)$, $\rho \in [0, \infty)$), spatial infinity and the origin interchange.
-    \item $i^0$ is represented by the point $(t = 0, \rho = 0)$ in $(\mathbb{R}^4, \eta)$.
     \item Introduce coordinates $(\tau, \rho, \vartheta^A)$ with $t = \rho \tau$.
     \item Consider the conformal metric $\boldsymbol{g} = \rho^{-2} \boldsymbol{\eta}$.
     \item Express the unphysical metric $\boldsymbol{g}$ in $F$-coordinates:
@@ -123,19 +109,35 @@
 
 \begin{frame}
   \frametitle{$i^0$ Cylinder and Null Frames}
-  \begin{itemize}
-    \item Identify future and past null infinity in the conformal representation:
-    \begin{align*}
-      \mathscr{I}^{+} & \equiv \{ p \in \mathcal{M} \; \rvert\; \tau(p) =1\}, \\
-      \mathscr{I}^{-} & \equiv \{ p \in \mathcal{M} \; \rvert \;\tau(p) =-1\}.
-    \end{align*}
-    \item The $i^0$-cylinder represents spatial infinity as an extended set $\mathcal{I} \approx \mathbb{R}\times \mathbb{S}^2$:
-    \begin{align}
-      & \mathcal{I} \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| \leq 1, \;\rho(p)=0\}, \\
-      & \mathcal{I}^{0} \equiv \{ p \in \mathcal{M}\; \rvert \;\tau(p)=0, \; \rho(p)=0\}.
-    \end{align}
-  \end{itemize}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Identify future and past null infinity in the conformal representation:
+        \begin{align*}
+          \mathscr{I}^{+} & \equiv \{ p \in \mathcal{M} \; \rvert\; \tau(p) =1\}, \\
+          \mathscr{I}^{-} & \equiv \{ p \in \mathcal{M} \; \rvert \;\tau(p) =-1\}.
+        \end{align*}
+        \vspace{0.4cm}
+        \item The $i^0$-cylinder represents spatial infinity:
+        \begin{align}
+          & \mathcal{I} \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| \leq 1, \;\rho(p)=0\}, \\
+          & \mathcal{I}^{0} \equiv \{ p \in \mathcal{M}\; \rvert \;\tau(p)=0, \; \rho(p)=0\}.
+        \end{align}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \vspace*{-6.5em} % Adjust the vertical position as needed
+      \hfill
+      \begin{figure}[h]
+        \includegraphics[width=0.7\textwidth]{friedrich cylinder.pdf} % Make sure your file name matches the actual file.
+        \caption{Representation of the Friedrich Cylinder.}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
+
+
+
 
 \begin{frame}
   \frametitle{$F$-Frame and Null Frames}
@@ -201,7 +203,7 @@
 
 \begin{frame}
   \begin{itemize}
-    \item When analyzing the hypergeometric function presented in Equation \eqref{eq:Sol_highestharmonic} for different values of $p$ we can see the emergence of logarithmic terms. Let's consider the cases of $p = 0$ and $p = 1$, which yield the following expressions:
+    \item Consider the cases of $p = 0$ and $p = 1$, which yield the following expressions:
     \begin{align}
       {a}_{0;0,0}(\tau) & = C_{000} + \tfrac{1}{2} D_{000} (\log(1 + \tau)- \log(1 - \tau ))\\ 
       {a}_{1;1,m}(\tau) & = \tfrac{1}{4} (1 - \tau )(1 + \tau ) (C_{11m} + \tfrac{1}{4} D_{11m}( \log(1 + \tau ) - \nonumber \\
@@ -217,45 +219,36 @@
 
 \begin{frame}
   \begin{itemize}
-    \item We can see how peeling is violated for the spin-0 field by expanding $\tilde{\phi}$ in terms of the $F$-frame. Making use of eqs (2.34), (2.35) and \emph{Lemma \ref{Lemma:Sol_Jacobi_and_Logs}}, we truncate \eqref{eq:ansatz} up tp $p = 1$ and get the following expression:
+    \item We can see how peeling is violated for the spin-0 field by expanding $\tilde{\phi}$ in terms of the $F$-frame:
     \begin{align}\label{eq:phi_tilde}
       & \tilde{\phi}=\frac{C_{000}}{\tilde{\rho}}+\frac{1}{2 \tilde{\rho}} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{00} + \frac{1}{8{\tilde{\rho}}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
       & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{1-1}+D_{110} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}\right] \nonumber \\     
       &+\left[D_{111} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{11}\right]+ \frac{1}{2 \tilde{\rho}}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right) Y_{00}+ \nonumber \\
       &\frac{1}{4 \tilde{\rho}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right).
     \end{align}
-    \item The expantion of the physical field $\tilde{\phi}$ helps to understand the concept of peeling in the spin-0 case. In the spin-0 case, the peeling property is violated by the logarithmic terms that appear in the expansion of $\tilde{\phi}$.
+    \item In the spin-0 case, the peeling property is violated by the logarithmic terms that appear in the expansion of $\tilde{\phi}$.
   \end{itemize}
 \end{frame}
 % Section 4: Results
 \section{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr{I}$}
 \begin{frame}{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr{I}$}
   \begin{itemize}
-    \item The NP constants emerge from a set of asymptotic conservation laws. For the spin-0 field in flat spacetime one has:
+    \item Conservation laws:
     \begin{equation}\label{eq:cons_laws}
       {\underline{{L}}}({\tilde{\rho}}^{-2\ell}L(e^{+})^{\ell+1}\phi_{\ell m})=0, \qquad L({\tilde{\rho}}^{-2\ell}\underline{L}(e^{-})^{\ell+1}\phi_{\ell m})=0
     \end{equation}
-    here, $\phi_{\ell m}= \int_{\mathbb{S}^2} \phi  Y_{\ell m}  d\sigma$ represents the integral of $\phi$ multiplied by the spherical harmonics $Y_{\ell m}$ over the surface $\mathbb{S}^2$, where $d\sigma$ denotes the area element on $\mathbb{S}^2$.
     \item One can introduce the $f(\tilde{\rho})$-modified NP constants in the following manner: 
     \begin{align}\label{eq:DefModifiedNP}
       {}^{f}\mathcal{N}^{+}_{\ell,m}:= f(\tilde{\rho})L (\boldsymbol{e}^{+})^{\ell}\phi_{\ell m} \Big|_{{C}^{+}}, \\ 
       {}^{f}\mathcal{N}^{-}_{\ell,m}:= f(\tilde{\rho})\underline{L} (\boldsymbol{\underline{e}}^{-})^{\ell}\phi_{\ell m}\Big|_{{C}^{-}}.
     \end{align}
-    here, ${C^{\pm}} \approx \mathbb{S}^2$ represents a cut of $\mathscr{I}^{\pm}$.
-  \end{itemize}
-\end{frame}
-  
-\begin{frame}
-  \begin{itemize}
-    \item In the specific case of $f(\tilde{\rho})=\tilde{\rho}^2$, these quantities are referred to as the "classical NP-constants" and are denoted as $\mathcal{N}^{\pm}_{\ell,m}$. They can be succinctly expressed as follows:
+    \item For $f(\tilde{\rho})=\tilde{\rho}^2$, these quantities are referred to as the "classical NP-constants" and are denoted as $\mathcal{N}^{\pm}_{\ell,m}$.
     \begin{align}\label{eq:classicalNP}
       \mathcal{N}^{+}_{\ell,m}:= (\boldsymbol{e}^{+})^{\ell+1}\phi_{\ell m}\Big|_{{C}^{+}},\\ 
       \mathcal{N}^{-}_{\ell,m}:= (\boldsymbol{\underline{e}}^{-})^{\ell+1}\phi_{\ell m} \Big|_{{C}^{-}}.
     \end{align}
-    In the notation for ${}^{f}\mathcal{N}^{+}_{\ell,m}$ presented below, it will be implicitly assumed that $m$ takes values from $-\ell$ to $\ell$.
   \end{itemize}
 \end{frame}
-
 % Section 5: Conclusion
 \section{The classical NP constants at $\mathscr{I}^{+}$}
 \begin{frame}{The classical NP constants at $\mathscr{I}^{+}$}
@@ -285,28 +278,7 @@
     \begin{align}
       \mathcal{N}^{+}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}}  \boldsymbol{e}^{+}(\phi_{00}) =\sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}Q^{0}_{p,0,0}|_{\mathscr{I}^{+}} = -A_{100}.
     \end{align}
-    \item To calculate the $\ell = 1$ NP constants, we must evaluate $(\boldsymbol{e}^{+})^{2}(\phi_{1m})$.\\
-    \begin{align}\label{eq:bmeplus2philmraw}
-      (\boldsymbol{e}^{+})^2(\phi_{\ell m})= 4^2(\Lambda_{+})^{2}\boldsymbol{e} \Big((\Lambda_{+}{})^2 \sum_{p=\ell}^{\infty}\frac{1}{p!}\rho^{p}Q^{0}_{p,\ell,m}(\tau)\Big),
-    \end{align}
-    where
-    \begin{align}\label{eq:defQ1}
-      \boldsymbol{e}\left(\Lambda_{+}^{2}\right)= -\Lambda_{+}^{2}.
-    \end{align}
-    \item Utilizing the aforementioned equations yields:
-    \begin{align}\label{eq:defQ1}
-      (\boldsymbol{e}^{+})^2(\phi_{\ell m})= 4^2(\Lambda_{+})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p}\big((1+\tau)\dot{Q}^{0}_{p;\ell,m}(\tau)-(p+1){Q}^{0}_{p;\ell,m}(\tau)\big).
-    \end{align}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \begin{itemize}
-    \item Where
-    \begin{equation}
-      Q^{1}_{p,\ell,m}(\tau):= \big((1+\tau)\dot{Q}^{0}_{p,\ell,m}(\tau)-(p+1){Q}^{0}_{p,\ell,m}(\tau)\big).
-    \end{equation}
-    \item Finally, one has:
+    \item To calculate the $\ell = 1$ NP constants, one has\\
     \begin{align}
       \mathcal{N}^{+}_{1,m} = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}}2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}\cdot(\tau) = 3A_{21m}.
     \end{align}
@@ -317,7 +289,7 @@
 \section{The $i^0$ cylinder logarithmic NP constants at $\mathscr{I}^{-}$}
 \begin{frame}{The $i^0$ cylinder logarithmic NP constants at $\mathscr{I}^{-}$}
   \begin{itemize}
-    \item There exists a choice of $f(\tilde{\rho})$ that allows the calculation of the associated modified NP constants without imposing the regularity condition. 
+    \item Choice of $f(\tilde{\rho})$.
     \item The constants $D_{p;\ell,m}$ that define the regularity condition precisely correspond to the $f(\tilde{\rho}) = \tilde{\rho}$-modified NP constants.
     \item We will compute the $\ell=0$ and $\ell=1$ modified NP constants ${}^{f}\mathcal{N}^{-}_{\ell,m}$.
     \begin{align}
@@ -354,27 +326,10 @@
 \section{The NP constants in terms of initial data}
 \begin{frame}{The NP constants in terms of initial data}
   \begin{itemize}
-    \item Classical NP Constants at $\mathscr{I}^{+}$:
-    \begin{align*}
-      \mathcal{N}^{+}_{\ell,m} = q^{+}(\ell) \;A_{\ell+1,\ell,m}
-    \end{align*}
-    \item Modified NP Constants at $\mathscr{I}^{+}$ (with $f(\tilde{\rho})=\tilde{\rho}$):
-    \begin{align*}
-       {}^{\tilde{\rho}}\mathcal{N}^{+}_{\ell,m} = q^{+}(\ell) \;D_{\ell,\ell,m}
-    \end{align*}
-    \item Classical NP Constants at $\mathscr{I}^{-}$:
-    \begin{align*}
-      \mathcal{N}^{-}_{\ell,m} = q^{-}(\ell) \; B_{\ell+1,\ell,m}
-    \end{align*}
-    \item Modified NP Constants at $\mathscr{I}^{-}$ (with $f(\tilde{\rho})=\tilde{\rho}$):
-    \begin{align*}
-      {}^{\tilde{\rho}}\mathcal{N}^{-}_{\ell,m} = q^{-}(\ell) \;D_{\ell,\ell,m}
-    \end{align*}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \begin{itemize}
+    \item Classical NP Constants at $\mathscr{I}^{+}$: $\mathcal{N}^{+}_{\ell,m} = q^{+}(\ell) \;A_{\ell+1,\ell,m}$.
+    \item Modified NP Constants at $\mathscr{I}^{+}$: ${}^{\tilde{\rho}}\mathcal{N}^{+}_{\ell,m} = q^{+}(\ell) \;D_{\ell,\ell,m}$.
+    \item Classical NP Constants at $\mathscr{I}^{-}$: $\mathcal{N}^{-}_{\ell,m} = q^{-}(\ell) \; B_{\ell+1,\ell,m}$.
+    \item Modified NP Constants at $\mathscr{I}^{-}$: ${}^{\tilde{\rho}}\mathcal{N}^{-}_{\ell,m} = q^{-}(\ell) \;D_{\ell,\ell,m}$.
     \item Key Observations for Spin-0 Field Near $i^0$:
     \begin{enumerate}
       \item Regularity condition is essential for well-defined NP constants.
@@ -382,11 +337,6 @@
       \item Logarithmic NP constants at $\mathscr{I}^{\pm}$ are equivalent (up to a numerical constant) with the same initial data.
     \end{enumerate}
   \end{itemize}
-  \begin{figure}[h]
-    \centering \includegraphics[width =0.4\textwidth]{friedrich cylinder.pdf}
-      \caption{Representation of the Friedrich Cylinder. Past null infinity is represented by
-      $\mathscr{I}^{-}$, Future null infinity $\mathscr{I}^{+}$, spatial infinity as $i^{0}$ and the critical sets as $\mathcal{I}^{+}$ and $\mathcal{I}^{-}$.}
-  \end{figure}
 \end{frame}
 % References (optional)
 \section{Conclusions}

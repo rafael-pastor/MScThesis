@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1695738250 "/Users/rafaelpastor/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MEFT/spin0-np-constants/MScThesis/MScThesis_presentation/Presentation.tex" "Output/Presentation.pdf" "Presentation" 1695738254
-  "/Users/rafaelpastor/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MEFT/spin0-np-constants/MScThesis/MScThesis_presentation/Presentation.tex" 1695738245 22587 0022129c9588ca59dc93d3cc044cfe4f ""
+["pdflatex"] 1695754355 "/Users/rafaelpastor/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MEFT/spin0-np-constants/MScThesis/MScThesis_presentation/Presentation.tex" "Output/Presentation.pdf" "Presentation" 1695754360
+  "/Users/rafaelpastor/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MEFT/spin0-np-constants/MScThesis/MScThesis_presentation/Presentation.tex" 1695754355 19361 370e1dabddbe3a151e74851a68680096 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -262,11 +262,11 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1663183605 2826440 364576d6a27a832500f6dbc25a310034 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Output/Presentation.aux" 1695738253 9665 d3166811452d8a197f9cb1c1a088bf45 "pdflatex"
-  "Output/Presentation.nav" 1695738253 4036 f6986cf4bd095a5afb98c8e70f477295 "pdflatex"
-  "Output/Presentation.out" 1695738253 1726 42e91c94b3501828c22ada9a7382c437 "pdflatex"
-  "Output/Presentation.toc" 1695738253 618 94c0c6db48ded15a3bcd9e404dbf5b60 "pdflatex"
-  "Presentation.tex" 1695738245 22587 0022129c9588ca59dc93d3cc044cfe4f ""
+  "Output/Presentation.aux" 1695754359 8699 bd51946b2ac3b3c7f5d2dde76e6e300a "pdflatex"
+  "Output/Presentation.nav" 1695754359 3665 9c82be15b4d0986875cd97f4ef89982b "pdflatex"
+  "Output/Presentation.out" 1695754359 1726 42e91c94b3501828c22ada9a7382c437 "pdflatex"
+  "Output/Presentation.toc" 1695754359 617 ff7057e0b24dde84ab524e861846a026 "pdflatex"
+  "Presentation.tex" 1695754355 19361 370e1dabddbe3a151e74851a68680096 ""
   "centra.png" 1662994182 7860 f964ff2c71d36f877bd7f5d3e27139cd ""
   "friedrich cylinder.pdf" 1695384478 18449 fc7be99ae9d2c0923bab0e38e804f32f ""
   "grit.png" 1662994182 13602 d68e722c1225e905486a54f3624e6eda ""

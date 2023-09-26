@@ -1,8 +1,8 @@
 \beamer@sectionintoc {1}{Newman-Penrose constants}{3}{0}{1}
 \beamer@sectionintoc {2}{Cylinder at $i^0$}{5}{0}{2}
-\beamer@sectionintoc {3}{Spin-0 fields close to $i^0$ and $\mathscr {I}$}{10}{0}{3}
-\beamer@sectionintoc {4}{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr {I}$}{14}{0}{4}
-\beamer@sectionintoc {5}{The classical NP constants at $\mathscr {I}^{+}$}{16}{0}{5}
-\beamer@sectionintoc {6}{The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{19}{0}{6}
-\beamer@sectionintoc {7}{The NP constants in terms of initial data}{21}{0}{7}
-\beamer@sectionintoc {8}{Conclusions}{23}{0}{8}
+\beamer@sectionintoc {3}{Spin-0 fields close to $i^0$ and $\mathscr {I}$}{9}{0}{3}
+\beamer@sectionintoc {4}{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr {I}$}{13}{0}{4}
+\beamer@sectionintoc {5}{The classical NP constants at $\mathscr {I}^{+}$}{14}{0}{5}
+\beamer@sectionintoc {6}{The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{16}{0}{6}
+\beamer@sectionintoc {7}{The NP constants in terms of initial data}{18}{0}{7}
+\beamer@sectionintoc {8}{Conclusions}{19}{0}{8}
