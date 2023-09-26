@@ -4,6 +4,5 @@
 \beamer@sectionintoc {4}{The NP-constants for the spin-0 fields close to $i^0$ \& $\mathscr {I}$}{14}{0}{4}
 \beamer@sectionintoc {5}{The classical NP constants at $\mathscr {I}^{+}$}{16}{0}{5}
 \beamer@sectionintoc {6}{The $i^0$ cylinder logarithmic NP constants at $\mathscr {I}^{-}$}{19}{0}{6}
-\beamer@sectionintoc {7}{The general case: Induction proof}{21}{0}{7}
-\beamer@sectionintoc {8}{The NP constants in terms of initial data}{25}{0}{8}
-\beamer@sectionintoc {9}{Conclusions}{27}{0}{9}
+\beamer@sectionintoc {7}{The NP constants in terms of initial data}{21}{0}{7}
+\beamer@sectionintoc {8}{Conclusions}{23}{0}{8}

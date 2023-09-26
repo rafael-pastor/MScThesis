@@ -131,7 +131,7 @@
     \end{align*}
     \item The $i^0$-cylinder represents spatial infinity as an extended set $\mathcal{I} \approx \mathbb{R}\times \mathbb{S}^2$:
     \begin{align}
-      & \mathcal{I} \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| < 1, \;\rho(p)=0\}, \\
+      & \mathcal{I} \equiv \{ p \in \mathcal{M} \; \rvert \;\; |\tau(p)| \leq 1, \;\rho(p)=0\}, \\
       & \mathcal{I}^{0} \equiv \{ p \in \mathcal{M}\; \rvert \;\tau(p)=0, \; \rho(p)=0\}.
     \end{align}
   \end{itemize}
@@ -347,76 +347,6 @@
     \item Evaluating at the critical set $\mathcal{I}^{-}$, we obtain:
     \begin{align}
       \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{1,m} = - \frac{1}{4}D_{11m}.
-    \end{align}
-  \end{itemize}
-\end{frame}
-
-\section{The general case: Induction proof}
-\begin{frame}{The general case: Induction proof}
-  \begin{proposition}\label{lemmaMainNPplus}
-    \begin{align}\label{eq:bmelplusonephilm}
-      (\boldsymbol{e}^{+})^{n}\phi_{\ell m} = (\Lambda_{+})^{2n}\sum_{p=\ell}^{\infty}\frac{1}{p!}Q^{n-1}_{p;\ell,m}(\tau)\rho^{p}
-    \end{align}
-    with
-    \begin{align}\label{eq:Qn}
-      Q^{n-1}_{p;\ell,m}(\tau)= \sum_{q=0}^{n}(-1)^q p^{[q]} {n \choose q}(1+\tau)^{n-q}a_{p;\ell,m}^{(n-q)}(\tau)
-    \end{align}
-    where $p^{[q]}$ denotes the rising factorial.
-  \end{proposition}
-\end{frame}
-
-\begin{frame}
-  \begin{itemize}
-    \item Assuming that equations \eqref{eq:bmelplusonephilm} and \eqref{eq:Qn} are valid (induction hypothesis), we can apply $\boldsymbol{e}^{+}$ to equation \eqref{eq:bmelplusonephilm}, which yields the following expression:
-    \begin{align}\label{eq:inductionNp2step1}
-      (\boldsymbol{e}^+)^{n+1}\phi_{\ell m} = (\Lambda_{+})^{2}\boldsymbol{e}\Big((\Lambda_{+})^{2n}\sum_{p=\ell}^{\infty}\rho^p Q^{n-1}_{p;\ell,m}(\tau)\Big).
-    \end{align}
-    \item Expanding expression \eqref{eq:inductionNp2step1}, we can get the following result:
-    \begin{align}\label{eq:inductionNp2step2}
-      & (\boldsymbol{e}^+)^{n+1}\phi_{\ell m}=(\Lambda_{+})^{2(n+1)} \sum_{p=\ell}^{\infty} \rho^{p} \left[(1+\tau)\dot{Q}^{n-1}_{p;\ell,m}-(p+n)Q^{n-1}_{p;\ell,m}\right].
-    \end{align}
-    \item Thus we have shown that:
-    \begin{align}\label{eq:inductionNp2step3}
-      (\boldsymbol{e}^+)^{n+1}\phi_{\ell m} = (\Lambda_{+})^{2(n+1)} \sum_{p=\ell}^{\infty} \rho^{p}  R^{n}_{p;\ell,m}
-    \end{align}
-    where 
-    \begin{align}\label{eq:QNrecursive}
-      R^{n}_{p;\ell,m}=(1+\tau)\dot{Q}^{n-1}_{p;\ell,m}-(p+n)Q^{n-1}_{p;\ell,m}.
-    \end{align}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \begin{itemize}
-    \item Using the induction hypothesis \eqref{eq:Qn}, we can compute all the pieces to construct $R^{n}_{p;\ell,m}$:
-    \begin{align}\label{eq:Qndot}
-      & \dot{Q}_{p;\ell,m}^{n-1} = \frac{d}{d \tau}\left[\sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q}(1+\tau)^{n-q}a_{p;\ell,m}^{(n-q)}(\tau)\right] = \nonumber \\
-      & = \sum_{q=0}^{n}(-1)^{q} p^{[q]}{n \choose q} \nonumber \\
-      & \left[(1+\tau)^{n-q} a_{p;\ell,m}^{(n-q+1)} + (n-q)(1+\tau)^{n-q-1} a_{p;\ell,m}^{(n-q)}\right].
-    \end{align}
-    \item By substituting equation \eqref{eq:Qn} (induction hypothesis) and rearranging, we obtain the following:
-    \begin{align}\label{eq:Rn1}
-      & R^{n}_{p;\ell,m} =\sum_{q=0}^{n}(-1)^{n}p^{[q]}{n \choose q} \nonumber\\ 
-      & \left\{(1+\tau)^{n-q+1} a^{(n-q+1)}-(p+q)(1+\tau)^{n-q} a^{(n-q)}\right\}.
-    \end{align}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \begin{itemize}
-    \item It follows from the definition of the rising factorial that $p^{[q+1]}=(p+q)p^{[q]}$, in particular $p^{[n+1]}=(p+n+1)p^{[n]}$. Using this fact and relabeling according to $i = q-1 \rightarrow q = i+1$ and $i(q=1) = 0$ \& $i(q= n+1) = n$, we have:
-    \begin{align}
-      & R^{n}_{p;\ell,m} = p^{[0]}(1+\tau)^{n+1} a^{(n+1)}+ \nonumber \\
-      & + \sum_{i=0}^{n-1}(-1)^{i+1} p^{[i+1]}\Biggl[{n \choose i+1} + {n \choose i}\Biggr](1+\tau)^{n-i} a^{n-i} + \nonumber \\
-      & + (-1)^{n+1} p^{[n+1]} a.
-    \end{align}
-    \item Using the recursive identity of the binomial coefficients, the latter can be rewritten more compactly as
-    \begin{align}
-      R^{n}_{p;\ell,m} = \sum_{q=0}^{n+1}(-1)^{q} p^{[q]} {n+1 \choose q}(1+\tau)^{n-q+1}a^{(n-q+1)}.
-    \end{align}
-    \item And recalling equation \eqref{eq:Qn} then one concludes that
-    \begin{align}\label{eq:RnIsQnplusone}
-      R^{n}_ {p;\ell,m}=Q^{n}_{p;\ell,m}.
     \end{align}
   \end{itemize}
 \end{frame}
