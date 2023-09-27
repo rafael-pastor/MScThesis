@@ -94,13 +94,13 @@ which is the metric of the Einstein static universe. The conformal boundary is g
       Region & Name & Symbol \\
      \hline
      $\tilde{r} \rightarrow \infty \enspace \;  \text{with} \; \;\;\;\;
-     |\tilde{t}| $<$ \infty$ & Spatial Infinity & $i^{0}$ \\
+     \tilde{t} $<$ \infty$ & Spatial Infinity & $i^{0}$ \\
      \hline 
-     $\tilde{r} \rightarrow \pm \infty$  \;\; with \;\; $\tilde{t}$<$\infty$
+     $\tilde{r} \rightarrow $<$ \infty$  \;\; with \;\; $\tilde{t} \rightarrow \pm \infty$
      \enspace & Future/Past Timelike Infinity & $i^{\pm}$ \\
      \hline
      $\tilde{r} \rightarrow \infty, \enspace \tilde{t} \rightarrow \infty \enspace
-     \text{with} \;\; |u|$<$\infty$ &  Future Null-infinity & $\mathscr{I}^+$ \\ 
+     \text{with} \;\; |u|$>$\infty$ &  Future Null-infinity & $\mathscr{I}^+$ \\ 
      \hline
      $\tilde{r} \rightarrow\infty, \enspace \tilde{t} \rightarrow-\infty \;\;
      \text{with} \enspace |v|$<$\infty$ & Past Null-infinity & $\mathscr{I}^-$ \\
@@ -115,9 +115,8 @@ The visual representation of this is a Penrose Diagram, depicted in Fig.1
       time, solid black lines, and the curves of constant r, dotted
       black lines.}
 \end{figure}
-\\
-\textcolor{red}{check}
-In this representation we can see that the spatial infinity, $i^0$, is mapped to the origin and $\mathscr{I}^{\pm}$ and to the future/past null cone through the origin.\\
+
+In this representation we can see that the spatial infinity, $i^0$, is mapped to the origin ($T = 0 \rightarrow U = \frac{-\pi}{2}$ and $\psi = \pi \rightarrow V = \frac{\pi}{2}$) and $\mathscr{I}^{\pm}$ and to the future/past null cone through the origin.\\
 \begin{figure}[h!]
 	\centering \includegraphics[width =0.2\textwidth]{spatial infinity.jpeg}
     \caption{Representation of spatial infinity, $i^0$, in the Penrose Diagram.\\ Taken from \cite{Ste91}.}
@@ -151,7 +150,7 @@ with
   x^0 = u, \quad x^1 = r, \quad x^2 = \theta, \quad x^3 = \phi.
 \end{equation}
 
-\textcolor{red}{check}At any point in spacetime, a complex tetrad can be selected as follows: The vector $l^{\mu}$ represents the outward null direction tangent to the cone defined by $u = \text{const.}$, while $n^{\mu}$ points inward and is the null vector directed toward $r = 0$. Additionally, $m^{\mu}$ and $\overline{m}^{\mu}$ are complex vectors tangent to the two-dimensional sphere formed by constant $r$ and $u$. In the given null coordinate system, these vectors are chosen to have the form 
+At any point in spacetime, a complex tetrad can be selected as follows: The vector $l^{\mu}$ represents the outward null direction tangent to the cone defined by $u = \text{const.}$, while $n^{\mu}$ points inward and is the null vector directed toward $r = 0$. Additionally, $m^{\mu}$ and $\overline{m}^{\mu}$ are complex vectors tangent to the two-dimensional sphere formed by constant $r$ and $u$. In the given null coordinate system, these vectors are chosen to have the form 
 \begin{align}\label{eq:tetrad}
   & l^{\mu} = \delta_{1}^{\mu}, \quad n^{\mu} = \delta_{0}^{\mu} - \delta_{1}^{\mu}, \nonumber \\
   & m^{\mu} = \displaystyle\frac{1}{\tau}\left(\delta_{2}^{\mu} + \displaystyle\frac{1}{\sin\theta}\ \delta_{3}^{\mu}\right), \qquad \overline{m}^{\mu} = \displaystyle\frac{1}{\tau}\left(\delta_{2}^{\mu} - \displaystyle\frac{1}{\sin\theta}\ \delta_{3}^{\mu}\right).
@@ -168,7 +167,25 @@ Using \eqref{eq:tetrad}, we can express the Maxwell field tensor in terms of the
   & \Phi_{1} = \frac{1}{2}(\boldsymbol{E} + i\boldsymbol{B})\cdot \boldsymbol{c} , \nonumber \\
   & \Phi_{2} = -2^{\frac{-1}{2}}(\boldsymbol{E} + i\boldsymbol{B})\cdot \boldsymbol{\overline{m}}.
 \end{align}
-From \eqref{eq:Maxtensor} we can see that $\Phi_{0}$, $\Phi_{1}$ and $\Phi_{2}$ have spin weights of 1, 0 and -1, respectively. Thus, we can write the Maxwell equations in terms of $\Phi$, the null polar coordinates and the operator $\dh$ in the following way,
+From \eqref{eq:Maxtensor} we can see that $\Phi_{0}$, $\Phi_{1}$ and $\Phi_{2}$ have spin weights of 1, 0 and -1, respectively.\\
+Let $S$ be a sphere of radius r with the following line element,
+\begin{equation}\label{eq:lineelement}
+  ds^{2} = -r^{2}(d\theta^{2} + \sin^{2}\theta d\phi^{2}) = -2m _{(a}\overline{m}_{b)}dx^{a}dx^{b}.
+\end{equation}
+Note that can be the following gauge freedom,
+\begin{equation}\label{eq:gaugefreedom}
+  m \rightarrow \hat{m} = e^{i\psi}m, \quad \overline{m} \rightarrow \hat{\overline{m}} = e^{-i\psi}\overline{m},
+\end{equation}
+where $\psi$ is a real function. This represents a spin through $\psi$. Let $\eta_{a...by...z}$ be a tensor in $S$, where there are $p$ indices in the first index set and $q$ indices in the second. Let
+\begin{equation}
+  \eta = m^{a}...m^{b}\overline{m}^{y}...\overline{m}^{z}\eta_{a...by...z}.
+\end{equation}
+Under spins \eqref{eq:gaugefreedom} $\eta$ transforms as follows,
+\begin{equation}
+  \eta \rightarrow \hat{\eta} = e^{is\psi}\eta,
+\end{equation}
+where $s = p - q$ is the spin weight of $\eta$.\\
+Thus, we can write the Maxwell equations in terms of $\Phi$, the null polar coordinates and the operator $\dh$ in the following way,
 \begin{align}\label{eq:MaxwellEqns}
   & \Biggl(\frac{\partial}{\partial r} + \frac{2}{r}\Biggr)\Phi_{1}  + \frac{1}{r}\dh \Phi_{0} = 0, \\ 
   & \Biggl(\frac{\partial}{\partial r} + \frac{1}{r}\Biggr)\Phi_{2}  + \frac{1}{r}\dh \Phi_{1} = 0, \\ 
@@ -197,10 +214,11 @@ Once equations (1.12) and (1.13) are integrated, they yield
 \begin{equation}\label{eq:Phi2}
   \Phi_{2} = \frac{\Phi_{2}^{0}}{r} + \frac{1}{r^2}\overline{\dh} \Phi_{1}^{0} + \sum_{n=0}^{N}\frac{\overline{\dh}^2 \phi_{0}^{n}}{(n+1)(n+2)r^{3+n}}+o(r^{-3-N}).
 \end{equation}
-Substituting into equations (1.14) and (1.15), we obtain the following \textcolor{red}{over dot definition}
+Substituting into equations (1.14) and (1.15), we obtain the following
 \begin{equation}\label{eq:Phi0}
-  \dot{\Phi}_{1}^{0} = -\dh\Phi_{2}^{0}, \quad \dot{\Phi}_{0}^{0} = -\dh \Phi_{1}^{0}
+  \dot{\Phi}_{1}^{0} = -\dh\Phi_{2}^{0}, \quad \dot{\Phi}_{0}^{0} = -\dh \Phi_{1}^{0},
 \end{equation}
+where the over dot represents the derivative with respect to $u$.\\
 Using  $\overline{\dh}\dh \eta - \dh \overline{\dh} \eta = 2s\eta$, we can write
 \begin{equation}\label{eq:Phin+1}
   (n + 1)\dot{\Phi}_{0}^{n+1} = -\{\overline{\dh}\dh \Phi_{0}^{n} + (n+3)n\Phi_{0}^{n}\} \qquad (N \textgreater n \geq 0).
