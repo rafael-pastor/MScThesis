@@ -153,11 +153,11 @@ with
 At any point in spacetime, a complex tetrad can be selected as follows: The vector $l^{\mu}$ represents the outward null direction tangent to the cone defined by $u = \text{const.}$, while $n^{\mu}$ points inward and is the null vector directed toward $r = 0$. Additionally, $m^{\mu}$ and $\overline{m}^{\mu}$ are complex vectors tangent to the two-dimensional sphere formed by constant $r$ and $u$. In the given null coordinate system, these vectors are chosen to have the form 
 \begin{align}\label{eq:tetrad}
   & l^{\mu} = \delta_{1}^{\mu}, \quad n^{\mu} = \delta_{0}^{\mu} - \delta_{1}^{\mu}, \nonumber \\
-  & m^{\mu} = \displaystyle\frac{1}{\tau}\left(\delta_{2}^{\mu} + \displaystyle\frac{1}{\sin\theta}\ \delta_{3}^{\mu}\right), \qquad \overline{m}^{\mu} = \displaystyle\frac{1}{\tau}\left(\delta_{2}^{\mu} - \displaystyle\frac{1}{\sin\theta}\ \delta_{3}^{\mu}\right).
+  & m^{\mu} = \displaystyle\frac{1}{r}\left(\delta_{2}^{\mu} + \displaystyle\frac{i}{\sin\theta}\ \delta_{3}^{\mu}\right), \qquad \overline{m}^{\mu} = \displaystyle\frac{1}{r}\left(\delta_{2}^{\mu} - \displaystyle\frac{i}{\sin\theta}\ \delta_{3}^{\mu}\right).
 \end{align}
 To describe the electromagnetic (EM) field, we make use of three complex tetrad components of the Maxwell field tensor denoted as $F_{\mu \nu}$. These components are defined as follows:
 \begin{align}\label{eq:Maxtensor}
-  & \Phi_{0} = F_{\mu \nu}l^{\mu}n^{\nu}, \nonumber \\
+  & \Phi_{0} = F_{\mu \nu}l^{\mu}m^{\nu}, \nonumber \\
   & \Phi_{1} = \frac{1}{2} F_{\mu \nu}(l^{\mu}n^{\nu} + \overline{m}^{\mu}m^{\nu}), \nonumber \\
   & \Phi_{2} = F_{\mu \nu}\overline{m}^{\mu}n^{\nu}.
 \end{align}
@@ -199,7 +199,7 @@ Using this notation, it becomes easy to establish a set of orthogonal functions 
   { }_0 Y_{l m}(\theta, \phi)=Y_{l m}(\theta, \phi),
 \end{equation}
 \begin{equation}\label{eq:spinweightSH}
-  { }_s Y_{l m}(\theta, \phi)= \begin{cases}(-1)^s R^s\left[2^s \frac{(l-s) !}{(l+s) !}\right]^{1 / 2} \dh^s Y_{l m}(\theta, \phi) & 0 \leq s \leq l \\ R^{-s}\left[2^{-s} \frac{(l+s) !}{(l-s) !}\right]^{1 / 2} \overline{\dh}^{-s} Y_{l m}(\theta, \phi) & 0 \geq s \geq-l \\ 0 & \text { otherwise. }\end{cases}
+  { }_s Y_{l m}(\theta, \phi)= \begin{cases}(-1)^s \left[2^s \frac{(l-s) !}{(l+s) !}\right]^{1 / 2} \dh^s Y_{l m}(\theta, \phi) & 0 \leq s \leq l \\ \left[2^{-s} \frac{(l+s) !}{(l-s) !}\right]^{1 / 2} \overline{\dh}^{-s} Y_{l m}(\theta, \phi) & 0 \geq s \geq-l \\ 0 & \text { otherwise. }\end{cases}
 \end{equation}
 \\
 Our focus lies on solutions that fulfill a suitable asymptotic boundary condition. This condition allows for all sufficiently smooth retarded fields and includes fields with incoming waves that decay appropriately. We employ the integer $N$ to gauge the degree of smoothness needed, and our requirement is as follows:
@@ -227,7 +227,7 @@ Before proceeding to derive the new conservation laws, it is essential to first 
 \begin{equation}\label{eq:YPhi0}
   \frac{d}{du} \int {_{0}Y_{0,0}\Phi_{1}^{0} d\omega} = - \int {_{0}Y_{0,0}\dh \Phi_{2}^{0} d\omega} = 0
 \end{equation}
-with \textcolor{red}{add a proposition}$\int{_{s}Y_{l,m}\dh^{l-s+1}\xi d\omega} = 0$. Therefore, $\int {_{0}Y_{0,0}\Phi_{1}^{0} d\omega}$ is constant and proportional to the total electric charge.\\
+with $\int{_{s}Y_{l,m}\dh^{l-s+1}\xi d\omega} = 0$ \cite{NewPen68}. Therefore, $\int {_{0}Y_{0,0}\Phi_{1}^{0} d\omega}$ is constant and proportional to the total electric charge.\\
 Using the same approach, we can obtain the new conserved quantities multiplying \eqref{eq:Phin+1} by $_{1}\overline{Y}_{n-k+1,m}$ and integrating over the sphere $\int {_{s}\overline{Y}_{l,m}\overline{\dh}\dh \eta d \omega} = -(l-s)(l+s+1) \int{_{s}\overline{Y}_{l,m}\eta d\omega}$:
 \begin{equation}\label{eq:Eleccharge}
   (n+1)\frac{d}{du}\int{_{1}Y_{n-k+1,m}\Phi_{0}^{n+1} d\omega} = - \int{_{1}\overline{Y}_{n-k+1,m}(\overline{\dh}\dh \Phi_{0}^{n}+(n+3)n\Phi_{0}^{n})d\omega} = -k(2n-k+3)\int{_{1}\overline{Y}_{n-k+1,m}\Phi_{0}^{n} d\omega}.
@@ -597,11 +597,16 @@ In order to obtain \eqref{eq:ODE_wave_JacobiPoly}, one needs to apply the operat
 After expanding, $\partial_{\rho}^{n}$ is going to act on each term thus giving the following expressions:
 \begin{align}\label{eq:operatorexpressions}
   & \partial_{\rho}^{n}\left[\left(\tau^{2}-1\right) \partial_{\tau}^{2} \phi\right]=\left(\tau^{2}-1\right) \partial_{\tau}^{2}\left(\partial_{\rho}^{n} \phi\right), \\
-  & \partial_{\rho}^{n}\left(2 \rho \tau \partial_{\tau} \partial_{\rho} \phi\right)=2 \rho \tau \partial_{\tau} \partial_{\rho}^{n+1} \phi+2 n \tau \partial_{\tau} \partial_{\rho}^{n} \phi, \\
-  & \partial_{\rho}^{n}\left(\rho^{2} \partial_{\rho}^{2} \phi\right)=\rho^{2} \partial_{\rho}^{n+2} \phi+2 n \rho \partial_{\rho}^{n+1} \phi+n(n-1) \partial_{\rho}^{n} \phi, \\
   & \partial_{\rho}^{n}\left(2 \tau \partial_{\tau} \phi\right)=2 \tau \partial_{\tau}\left(\partial_{\rho}^{n} \phi\right), \\
   & \partial_{\rho}^{n}(\Delta \phi)=-\ell(\ell+1) \partial_{\rho}^{n} \phi.
 \end{align}
+\begin{proposition}\label{prop:operator_phi}
+  \begin{align}
+    & \partial_{\rho}^{n}\left(2 \rho \tau \partial_{\tau} \partial_{\rho} \phi\right)=2 \rho \tau \partial_{\tau} \partial_{\rho}^{n+1} \phi+2 n \tau \partial_{\tau} \partial_{\rho}^{n} \phi, \\
+    & \partial_{\rho}^{n}\left(\rho^{2} \partial_{\rho}^{2} \phi\right)=\rho^{2} \partial_{\rho}^{n+2} \phi+2 n \rho \partial_{\rho}^{n+1} \phi+n(n-1) \partial_{\rho}^{n} \phi.
+  \end{align}
+\end{proposition}
+
 The term $\partial_{\rho}^{n} \phi$ can be written as,
 \begin{align}\label{eq:operator_phi}
   & \partial_{\rho}^{n} \phi=\partial_{p}^{n}\left[\sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p;\ell, m}(\tau) Y_{\ell m} \rho^{p}\right]= \sum_{p=0}^{\infty} \sum_{\ell=0}^{p} \sum_{m=-\ell}^{m=\ell} \frac{1}{p !} a_{p; \ell, m}(\tau) \partial_{p}^{n}\left(\rho^{p} Y_{\ell m}\right)= \nonumber \\
@@ -629,8 +634,8 @@ Taking $\rho=0$ gets,
   & \Leftrightarrow\left(\tau^{2}-1\right) \ddot{a}_{p;\ell,m}(\tau)-2 p \tau \dot{a}_{p;\ell, m}(\tau)+p(p-1) a_{p;\ell, m}(\tau)+ 2\tau \dot{a}_{p;\ell,m}(\tau)-\ell(\ell+1)a_{p;\ell,m}(\tau)=0 \nonumber \\
   & \Leftrightarrow\left(1-\tau^{2}\right) \ddot{a}_{p;\ell,m}(\tau)+2 \tau(p-1) \dot{a}_{p;\ell, m}(\tau)+(l+p)(l-p+1) a_{p;\ell, m}(\tau)=0.
 \end{align}
-\begin{proof}
-  To prove eqs. (2.34) and (2.35), we proceed inductively as follows. We first verify that equation (2.34) when substituting $n = 1$ and $n = 2$, taking $A = \tau\partial_{\tau}\partial_{\rho}\phi$, gives the following:
+\begin{lemma}\label{Lemma:JacobiPoly}
+  To prove \eqref{prop:operator_phi}, we proceed inductively as follows. We first verify that equation (2.36) when substituting $n = 1$ and $n = 2$, taking $A = \tau\partial_{\tau}\partial_{\rho}\phi$, gives the following:
   \begin{equation}\label{eq:n=1}
     \partial_{\rho}^{1}(\rho A) = \rho\partial_{\rho}A + A.
   \end{equation}
@@ -638,12 +643,17 @@ Taking $\rho=0$ gets,
     \partial_{\rho}^{2}(\rho A) = \rho\partial_{\rho}^{2}A + \partial_{\rho}A + \partial_{\rho}A = \rho\partial_{\rho}^{2}A + 2\partial_{\rho}A.
   \end{equation}
   This is the basis of induction.
-  Assuming equation (2.34) is valid for $n = N$ (induction hypothesis), we will show that it is also valid for $n = N + 1$. We have:
+  Assuming equation (2.36) is valid for $n = N$ (induction hypothesis), 
+  \begin{equation}\label{eq:induction_hypothesis}
+    \partial_{\rho}^{N}(\rho A) = \rho\partial^{N}_{\rho}A + N\partial^{N-1}_{\rho}A.
+  \end{equation}
+  we will show that it is also valid for $n = N + 1$ (induction step). We have:
   \begin{align}\label{eq:induction}
     \partial_{\rho}^{N+1}(\rho A) & = \partial_{\rho}(\partial_{\rho}^{N}(\rho A)) = \partial_{\rho}(\rho\partial_{\rho}^{N}A + N\partial_{\rho}^{N-1}A) = \partial_{\rho}^{2}(\rho\partial_{\rho}^{N-1}A) + N\partial_{\rho}^{N-1}A + \partial_{\rho}(\rho\partial_{\rho}^{N-1}A) = \nonumber \\
     & = \rho\partial_{\rho}^{N+1}A + 2\partial_{\rho}^{N}A + N\partial_{\rho}^{N-1}A.
   \end{align}
-  For equation (2.35), we proceed in a similar manner. Taking $B = \rho C$, gives the following:
+\end{lemma}
+  For equation (2.37), we proceed in a similar manner. Taking $B = \rho C$, gives the following:
   \begin{align}
     & \partial_{\rho}^{n}\left(\rho^{2} C\right)=\rho \partial_{\rho}^{n}(\rho C)+n \partial_{\rho}^{n-1}(\rho C)=\rho\left(\rho \partial_{\rho}^{n} C+n \partial_{\rho}^{n-1} C\right) + n\left(\rho \partial_{\rho}^{n-1} C+n-1 \partial_{\rho}^{n-2} C\right) \equiv \nonumber \\
     & \partial_{\rho}^{n}\left(\rho^{2} C\right)=\rho^{2} \partial_{\rho}^{n} C+2 n \rho \partial_{\rho}^{n-1} C+n(n-1) \partial_{\rho}^{n-2} C
@@ -653,7 +663,6 @@ Taking $\rho=0$ gets,
       & \partial_{\rho}^{n}\left(\rho \partial_{\rho} \phi\right)=\rho \partial_{\rho}^{n}\left(\partial_{\rho} \phi\right)+n \partial_{\rho}^{n-1} \partial_{\rho} \phi=\rho \partial_{\rho}^{n+1} \phi+n \partial_{\rho}^{n} \phi \\
       & \partial_{\rho}\left(\rho^{2} \partial_{\rho}^{2} \phi\right)=\rho^{2} \partial_{\rho}^{n}\left(\partial_{\rho}^{2} \phi\right)+2 n \rho \partial_{\rho}^{n-1}\left(\partial_{\rho}^{2} \phi\right)+n(n-1) \partial_{\rho}^{n-2}\left(\partial_{\rho}^{2} \phi\right)
     \end{align}
-\end{proof}
 \noindent The solution to the ODE \eqref{eq:ODE_wave_JacobiPolytransformed4} can be expressed as follows
 
 \begin{lemma} (wave equation in the $i^0$-cylinder
@@ -712,22 +721,22 @@ Substituting in \eqref{eq:phi_expansion} we get:
   & + \frac{1}{4}\left(1-\tau^{2}\right) \left(C_{110} Y_{10}+C_{111} Y_{11}+C_{11-1}Y_{1-1}\right) + \frac{1}{16}\left(1-\tau^{2}\right)D_{110} + \log \left(\frac{1+\tau}{1-\tau}\right)Y_{10} + \nonumber \\
   & + \frac{1}{16}\left(1-\tau^{2}\right) D_{111}\log\left(\frac{1+\tau}{1-\tau}\right) Y_{11}+\frac{1}{16}\left(1-\tau^{2}\right)D_{11-1}\log\left(\frac{1+\tau}{1-\tau}\right) Y_{1-1} \Leftrightarrow \nonumber \\
   & \Leftrightarrow \phi=C_{000}+\frac{1}{2} D_{000} \log \left(\frac{1+\tau}{1-\tau}\right)+\frac{\rho}{2}\biggl[A_{100}+B_{100}\biggr](1+\tau)(1-\tau) Y_{00} + \frac{\rho}{4}\left(1-\tau^{2}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right) + \nonumber \\
-  & + \frac{\rho}{16}\left(1-\tau^{2}\right)\left(D_{11-1} \log \left(\frac{11 \tau}{1-\tau}\right)Y_{1-1}+D_{110} \log \left(\frac{1+\tau}{1-\tau}\right) Y_{10}+D_{111}\log \left(\frac{1+\tau}{1-\tau}\right) Y_{11}\right).
+  & + \frac{\rho}{16}\left(1-\tau^{2}\right)\left(D_{11-1} \log \left(\frac{1+\tau}{1-\tau}\right)Y_{1-1}+D_{110} \log \left(\frac{1+\tau}{1-\tau}\right) Y_{10}+D_{111}\log \left(\frac{1+\tau}{1-\tau}\right) Y_{11}\right).
 \end{align}
 Using the transformation \eqref{Ftophys} one gets,
 \begin{align}\label{eq:phi_expansion_3}
   & \phi=\left[C_{000}+\frac{1}{2} D_{000}\log\left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right)+\frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{2}\left(A_{100}+B_{100}\right)\left(1+\frac{\tilde{t}}{\tilde{\rho}}\right)\left(1-\frac{\tilde{t}}{\tilde{\rho}}\right)\right]Y_{00} + \nonumber \\
   & + \frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{4}\left[1-\left(\frac{\tilde{t}}{\tilde{\rho}}\right)^{2}\right]\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right) + \frac{\frac{\tilde{\rho}}{\tilde{\rho}^{2}-\tilde{t}^{2}}}{16}\left[1-\left(\frac{\tilde{t}}{\tilde{\rho}}\right)^{2}\right] \nonumber \\
   & \left(D_{11-1} \log \left(\frac{1+\tilde{t}/\tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right) Y_{1-1}+D_{110} \log \left(\frac{1+\tilde{t} / \tilde{\rho}}{1-\tilde{t}/\tilde{\rho}}\right) Y_{10} D_{111} \log \left(\frac{1+\tilde{t} / \tilde{\rho}}{1-\tilde{t} / \tilde{\rho}}\right) Y_{11}\right) \Leftrightarrow \nonumber \\
-  & \Leftrightarrow \phi=\left[C_{000}+\frac{1}{2} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)+\frac{1}{2}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right)\right]Y_{00} + \nonumber \\
-  & + \frac{1}{4}\left(1-\frac{\tilde{t}^{2}}{\tilde{p}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110}Y_{10}+C_{111} Y_{11}\right)+\frac{1}{8}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
+  & \Leftrightarrow \phi=\left[C_{000}+\frac{1}{2} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)+\frac{1}{2\tilde{\rho}}\left(A_{100}+B_{100}\right)\right]Y_{00} + \nonumber \\
+  & + \frac{1}{4\tilde{\rho}}\left(C_{11-1} Y_{1-1}+C_{110}Y_{10}+C_{111} Y_{11}\right)+\frac{1}{16\tilde{\rho}} \nonumber \\
   & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{1-1}+D_{110} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111}\log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{11}\right].
 \end{align}
 Therefore the physical field $\tilde{\phi}$ is given by,
 \begin{align}\label{eq:phi_tilde}
-  & \tilde{\phi}=\Theta \phi \Leftrightarrow \tilde{\phi}=\frac{1}{\tilde{\rho}} \phi \Leftrightarrow \tilde{\phi}=\frac{C_{000}}{\tilde{\rho}}+\frac{1}{2 \tilde{\rho}} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{00} + \frac{1}{8{\tilde{\rho}}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right) \nonumber \\
+  & \tilde{\phi}=\Theta \phi \Leftrightarrow \tilde{\phi}=\frac{1}{\tilde{\rho}} \phi \Leftrightarrow \tilde{\phi}=\frac{C_{000}}{\tilde{\rho}}+\frac{1}{2 \tilde{\rho}} D_{000} \log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{00} + \frac{1}{16{\tilde{\rho}^2}} \nonumber \\
   & \left[D_{11-1}\log \left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{1-1}+D_{110} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right) Y_{10}+D_{111} \log\left(\frac{\tilde{\rho}+\tilde{t}}{\tilde{\rho}-\tilde{t}}\right)Y_{11}\right] + \nonumber \\
-  & + \frac{1}{2 \tilde{\rho}}\left(\tilde{t}^{2}-\tilde{\rho}^{2}\right)\left(A_{100}+B_{100}\right) Y_{00}+\frac{1}{4 \tilde{\rho}}\left(1-\frac{\tilde{t}^{2}}{\tilde{\rho}^{2}}\right)\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right).
+  & + \frac{1}{2 \tilde{\rho}^2}\left(A_{100}+B_{100}\right) Y_{00}+\frac{1}{4 \tilde{\rho}^2}\left(C_{11-1} Y_{1-1}+C_{110} Y_{10}+C_{111} Y_{11}\right).
 \end{align}
 The expantion of the physical field $\tilde{\phi}$ helps to understand the concept of peeling in the spin-0 case. In the spin-0 case, the peeling property is violated by the logarithmic terms that appear in the expansion of $\tilde{\phi}$, as shown in \eqref{eq:phi_tilde}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
