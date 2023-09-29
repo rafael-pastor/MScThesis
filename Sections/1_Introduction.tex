@@ -97,10 +97,10 @@ which is the metric of the Einstein static universe. The conformal boundary is g
      \enspace & Future/Past Timelike Infinity & $i^{\pm}$ \\
      \hline
      $\tilde{r} \rightarrow \infty, \enspace \tilde{t} \rightarrow \infty \enspace
-     \text{with} \;\; |u|$>$\infty$ &  Future Null-infinity & $\mathscr{I}^+$ \\ 
+     \text{with} \;\; |\tilde{u}|$>$\infty$ &  Future Null-infinity & $\mathscr{I}^+$ \\ 
      \hline
      $\tilde{r} \rightarrow\infty, \enspace \tilde{t} \rightarrow-\infty \;\;
-     \text{with} \enspace |v|$<$\infty$ & Past Null-infinity & $\mathscr{I}^-$ \\
+     \text{with} \enspace |\tilde{v}|$<$\infty$ & Past Null-infinity & $\mathscr{I}^-$ \\
      \hline
     \end{tabular}
     \end{center}
@@ -113,7 +113,7 @@ The visual representation of this is a Penrose Diagram, depicted in Fig.1
       black lines.}
 \end{figure}
 
-In this representation we can see that the spatial infinity, $i^0$, is mapped to the origin ($T = 0 \rightarrow U = \frac{-\pi}{2}$ and $\psi = \pi \rightarrow V = \frac{\pi}{2}$) and $\mathscr{I}^{\pm}$ and to the future/past null cone through the origin.\\
+In this representation we can see that the spatial infinity, $i^0$, is mapped to the origin ($T = 0$ and $\psi = 0$) and $\mathscr{I}^{\pm}$ and to the future/past null cone through the origin.\\
 \begin{figure}[h!]
 	\centering \includegraphics[width =0.2\textwidth]{spatial infinity.jpeg}
     \caption{Representation of spatial infinity, $i^0$, in the Penrose Diagram.\\ Taken from \cite{Ste91}.}
@@ -603,7 +603,7 @@ After expanding, $\partial_{\rho}^{n}$ is going to act on each term thus giving 
   & \partial_{\rho}^{n}\left(2 \tau \partial_{\tau} \phi\right)=2 \tau \partial_{\tau}\left(\partial_{\rho}^{n} \phi\right), \\
   & \partial_{\rho}^{n}(\Delta \phi)=-\ell(\ell+1) \partial_{\rho}^{n} \phi.
 \end{align}
-\begin{proposition}\label{prop:operator_phi}
+\begin{proposition}\label{prop:operator_phi} The following expressions will be inductively proved by using \eqref{Lemma:JacobiPoly}.
   \begin{align}
     & \partial_{\rho}^{n}\left(2 \rho \tau \partial_{\tau} \partial_{\rho} \phi\right)=2 \rho \tau \partial_{\tau} \partial_{\rho}^{n+1} \phi+2 n \tau \partial_{\tau} \partial_{\rho}^{n} \phi, \\
     & \partial_{\rho}^{n}\left(\rho^{2} \partial_{\rho}^{2} \phi\right)=\rho^{2} \partial_{\rho}^{n+2} \phi+2 n \rho \partial_{\rho}^{n+1} \phi+n(n-1) \partial_{\rho}^{n} \phi.
@@ -637,7 +637,7 @@ Taking $\rho=0$ gets,
   & \Leftrightarrow\left(\tau^{2}-1\right) \ddot{a}_{p;\ell,m}(\tau)-2 p \tau \dot{a}_{p;\ell, m}(\tau)+p(p-1) a_{p;\ell, m}(\tau)+ 2\tau \dot{a}_{p;\ell,m}(\tau)-\ell(\ell+1)a_{p;\ell,m}(\tau)=0 \nonumber \\
   & \Leftrightarrow\left(1-\tau^{2}\right) \ddot{a}_{p;\ell,m}(\tau)+2 \tau(p-1) \dot{a}_{p;\ell, m}(\tau)+(l+p)(l-p+1) a_{p;\ell, m}(\tau)=0.
 \end{align}
-\begin{lemma}\label{Lemma:JacobiPoly}
+\begin{proof}
   To prove \eqref{prop:operator_phi}, we proceed inductively as follows. We first verify that equation (2.36) when substituting $n = 1$ and $n = 2$, taking $A = \tau\partial_{\tau}\partial_{\rho}\phi$, gives the following:
   \begin{equation}\label{eq:n=1}
     \partial_{\rho}^{1}(\rho A) = \rho\partial_{\rho}A + A.
@@ -646,6 +646,7 @@ Taking $\rho=0$ gets,
     \partial_{\rho}^{2}(\rho A) = \rho\partial_{\rho}^{2}A + \partial_{\rho}A + \partial_{\rho}A = \rho\partial_{\rho}^{2}A + 2\partial_{\rho}A.
   \end{equation}
   This is the basis of induction.
+  \begin{lemma}\label{Lemma:JacobiPoly}
   Assuming equation (2.36) is valid for $n = N$ (induction hypothesis), 
   \begin{equation}\label{eq:induction_hypothesis}
     \partial_{\rho}^{N}(\rho A) = \rho\partial^{N}_{\rho}A + N\partial^{N-1}_{\rho}A.
@@ -666,6 +667,7 @@ Taking $\rho=0$ gets,
       & \partial_{\rho}^{n}\left(\rho \partial_{\rho} \phi\right)=\rho \partial_{\rho}^{n}\left(\partial_{\rho} \phi\right)+n \partial_{\rho}^{n-1} \partial_{\rho} \phi=\rho \partial_{\rho}^{n+1} \phi+n \partial_{\rho}^{n} \phi \\
       & \partial_{\rho}\left(\rho^{2} \partial_{\rho}^{2} \phi\right)=\rho^{2} \partial_{\rho}^{n}\left(\partial_{\rho}^{2} \phi\right)+2 n \rho \partial_{\rho}^{n-1}\left(\partial_{\rho}^{2} \phi\right)+n(n-1) \partial_{\rho}^{n-2}\left(\partial_{\rho}^{2} \phi\right)
     \end{align}
+  \end{proof}
 \noindent The solution to the ODE \eqref{eq:ODE_wave_JacobiPolytransformed4} can be expressed as follows
 
 \begin{lemma} (wave equation in the $i^0$-cylinder
@@ -946,8 +948,8 @@ Where $Q^{1}_{p,\ell,m}(\tau):= \big((1+\tau)\dot{Q}^{0}_{p,\ell,m}(\tau)-(p+1){
 Therefore, one can compute $\mathcal{N}^{+}_{1,m}$ as
 \begin{align}\label{NP1_precomputation}
   & \mathcal{N}^{+}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} (\boldsymbol{e}^{+})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}Q^{1}_{p,1,m}|_{\mathscr{I}^{+}} =  (1+\tau)^{-4} \sum_{p=0}^{\infty} \frac{1}{p !} Q_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
-  & = (1+\tau)^{-4}\left(\sum_{p=0}^{1} \frac{1}{p !} \rho^{p-2} Q_{p; 1, m}^{1}\cdot(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} Q_{p, 1, m}^{1}\cdot(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} A_{p, 1, m}^{1}\cdot{(\tau)}\right) = \nonumber \\
-  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4}\big\{\rho^{-2} Q_{0,1, m}^{1}\cdot(\tau)+\rho^{-1} Q_{1,1, m}^{1}\cdot(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}\cdot(\tau). 
+  & = (1+\tau)^{-4}\left(\sum_{p=0}^{1} \frac{1}{p !} \rho^{p-2} Q_{p; 1, m}^{1}(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} Q_{p, 1, m}^{1}(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} A_{p, 1, m}^{1}\cdot{(\tau)}\right) = \nonumber \\
+  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4}\big\{\rho^{-2} Q_{0,1, m}^{1}(\tau)+\rho^{-1} Q_{1,1, m}^{1}(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}(\tau). 
 \end{align}
 Similar to the previous case, we have the following:
 \begin{remark}\label{rem:l1}
@@ -961,7 +963,7 @@ Similar to the previous case, we have the following:
 By observing Remark \ref{rem:l1}, it becomes apparent that only the term with $p=2$ in equation \eqref{NP1_precomputation} contributes to the overall sum. \\
 Direct evaluation leads to:
 \begin{align}
-  \mathcal{N}^{+}_{1,m} = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}}2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}\cdot(\tau) = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}}2^{-4}\left(2^{2-2}(2-1)2(2+1)A_{2,1,m}(1-\tau)^{2-2}\right) = 3A_{21m}.
+  \mathcal{N}^{+}_{1,m} = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}}2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}(\tau) = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}}2^{-4}\left(2^{2-2}(2-1)2(2+1)A_{2,1,m}(1-\tau)^{2-2}\right) = 3A_{21m}.
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The classical NP constants at $\mathscr{I}^{-}$}
@@ -986,7 +988,7 @@ With this definition in place, we can express $\underline{\boldsymbol{e}^{-}}(\p
 \end{align}
 To compute the $\ell=0$ NP constant at $\mathscr{I}^{-}$, it is necessary to evaluate $\underline{\boldsymbol{e}^{-}}(\phi_{00})$ at a specific cut ${C}^{-}$ of $\mathscr{I}^{-}$. By utilizing equation \eqref{eq:bmeplus1philm} and referring to Lemma \ref{Lemma:Sol_Jacobi_and_Logs}, we obtain the following expression:
 \begin{align}
-  \mathcal{N}^{-}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}  \underline{\boldsymbol{e}^{-}}(\phi_{00}) = \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p,0,0}|_{\mathscr{I}^{-}}.
+  \mathcal{N}^{-}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}  \underline{\boldsymbol{e}^{-}}(\phi_{00}) = \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p,0,0}(\tau)|_{\mathscr{I}^{-}}.
 \end{align}
 here, $\rho_{\star}$ represents a constant that parametrizes the cut ${C}^{-}$, and $\underline{Q}^{0}_{p,\ell,m}|_{\mathscr{I}^{-}}$ denotes the value of $\underline{Q}^{0}_{p,\ell,m}$ at $\mathscr{I}^{-}$, specifically at $\tau=-1$. Notably, when $\rho_{\star}=0$, it corresponds to selecting ${C}^{-}$ as $\mathcal{I}^{-}$.
 A direct calculation using Lemma \ref{Lemma:Sol_Jacobi_and_Logs} shows the following:
@@ -1009,7 +1011,7 @@ gives
 \end{remark}
 Thus, based on the insights provided by Remark \ref{rem:lu0} and assuming the regularity condition is fulfilled, we can conclude that:
 \begin{align}
-  &\mathcal{N}^{-}_{0,0}= \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p;0,0}|_{\mathscr{I}^{-}} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \sum_{p=0}^{\infty} \frac{1}{p !}(1-\tau)^{-2} \rho_{\star}^{p-1} \underline{Q}_{p; 0,0}^{0}(\tau) = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\sum_{p=0}^{\infty} \frac{1}{p !} 2^{-2} \rho_{\star}^{p-1} \underline{Q}_{p; 0,0}^{0}(\tau) = \nonumber \\
+  &\mathcal{N}^{-}_{0,0}= \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p;0,0}(\tau)|_{\mathscr{I}^{-}} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \sum_{p=0}^{\infty} \frac{1}{p !}(1-\tau)^{-2} \rho_{\star}^{p-1} \underline{Q}_{p; 0,0}^{0}(\tau) = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\sum_{p=0}^{\infty} \frac{1}{p !} 2^{-2} \rho_{\star}^{p-1} \underline{Q}_{p; 0,0}^{0}(\tau) = \nonumber \\
   & = \lim_{\substack{\rho \to 0 \\ \tau \to -1}}\left[\frac{2^{-2}}{\rho !} \rho^{0} B_{1;0,0} +\sum_{p=2}^{\infty} \frac{2^{-2}}{p !} \rho^{p-1} B_{p;0,0}(1-\tau)^{p-1}\right] = B_{100}.
 \end{align}
 
@@ -1026,8 +1028,8 @@ Performing an explicit calculation with equations \eqref{eq:Fframe} and \eqref{e
 \end{align}
 Utilizing the aforementioned equations yields:
 \begin{align}\label{eq:defQu1}
-  & (\underline{\boldsymbol{e}^{-}})^2(\phi_{\ell m})= 4^2(\Lambda_{-})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\big(\underline{\boldsymbol{e}^{-}}\left(\rho^{p} \underline{Q}_{p; \ell, m}^{0}\right)+\underline{Q}_{p; \ell, m}^{0} \rho^{p}\big) = \nonumber \\
-  & = 4^2(\Lambda_{-})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\left[(1-\tau) \rho^{p} \underline{Q}_{p; \ell, m}^{0}+\rho^{p} \underline{Q}_{p; \ell, m}^{0} p \rho^{p-1}\right]+\rho^{p} \underline{Q}_{p; \ell, m}^{0} = \nonumber \\
+  & (\underline{\boldsymbol{e}^{-}})^2(\phi_{\ell m})= 4^2(\Lambda_{-})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\big(\underline{\boldsymbol{e}^{-}}\left(\rho^{p} \underline{Q}_{p; \ell, m}^{0}(\tau)\right)+\underline{Q}_{p; \ell, m}^{0}(\tau) \rho^{p}\big) = \nonumber \\
+  & = 4^2(\Lambda_{-})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\left[(1-\tau) \rho^{p} \underline{Q}_{p; \ell, m}^{0}(\tau)+\rho^{p} \underline{Q}_{p; \ell, m}^{0}(\tau) p \rho^{p-1}\right]+\rho^{p} \underline{Q}_{p; \ell, m}^{0}(\tau) = \nonumber \\
   & = 4^2(\Lambda_{-})^{4}\sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p}\big((1-\tau)\dot{\underline{Q}}^{0}_{p;\ell,m}(\tau)+(p+1)\underline{Q}^{0}_{p;\ell,m}(\tau)\big).
 \end{align}
 Where $\underline{Q}^{1}_{p,\ell,m}(\tau):= \big((1-\tau)\dot{\underline{Q}}^{0}_{p,\ell,m}(\tau)+(p+1)\underline{Q}^{0}_{p,\ell,m}(\tau)\big)$ and \eqref{eq:defQu0} gives 
@@ -1037,23 +1039,23 @@ Where $\underline{Q}^{1}_{p,\ell,m}(\tau):= \big((1-\tau)\dot{\underline{Q}}^{0}
 \end{align}
 Therefore, one can compute $\mathcal{N}^{-}_{1,m}$ as
 \begin{align}\label{NP1-_precomputation}
-  & \mathcal{N}^{-}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} (\underline{\boldsymbol{e}^{-}})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}\underline{Q}^{1}_{p,1,m}|_{\mathscr{I}^{-}} =  \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4} \sum_{p=0}^{\infty} \frac{1}{p !} \underline{Q}_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
-  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4}\left(\sum_{p=0}^{1} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p; 1, m}^{1}\cdot(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} \underline{Q}_{p, 1, m}^{1}\cdot(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p, 1, m}^{1}\cdot{(\tau)}\right) = \nonumber \\
-  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4}\big\{\rho^{-2} \underline{Q}_{0,1, m}^{1}\cdot(\tau)+\rho^{-1} \underline{Q}_{1,1, m}^{1}\cdot(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4} \frac{1}{2 !} \underline{Q}^{1}_{2, 1, m}\cdot(\tau). 
+  & \mathcal{N}^{-}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} (\underline{\boldsymbol{e}^{-}})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}\underline{Q}^{1}_{p,1,m}(\tau)|_{\mathscr{I}^{-}} =  \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4} \sum_{p=0}^{\infty} \frac{1}{p !} \underline{Q}_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
+  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4}\left(\sum_{p=0}^{1} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p; 1, m}^{1}(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} \underline{Q}_{p, 1, m}^{1}(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p, 1, m}^{1}{(\tau)}\right) = \nonumber \\
+  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4}\big\{\rho^{-2} \underline{Q}_{0,1, m}^{1}(\tau)+\rho^{-1} \underline{Q}_{1,1, m}^{1}(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4} \frac{1}{2 !} \underline{Q}^{1}_{2, 1, m}(\tau). 
 \end{align}
 Similar to the previous case, we have the following:
 \begin{remark}\label{rem:lu1}
   By directly applying Lemma \ref{Lemma:Sol_Jacobi_and_Logs}, we can calculate: 
  \begin{align}
-   \underline{Q}^{1}_{1;1,m} &=-2^{-1}D_{11m}(1-\tau)^{-1},\\
-   \underline{Q}^{1}_{p;1,m} &=-2^{2-p}(p-1)p(p+1)B_{2,p,m}(1-\tau)^{p-2} \qquad
+   \underline{Q}^{1}_{1;1,m}(\tau) &=-2^{-1}D_{11m}(1-\tau)^{-1},\\
+   \underline{Q}^{1}_{p;1,m}(\tau) &=-2^{2-p}(p-1)p(p+1)B_{2,p,m}(1-\tau)^{p-2} \qquad
    \text{for}\qquad p\neq 1.
  \end{align}
 \end{remark}
 By observing Remark \ref{rem:lu1}, it becomes apparent that only the term with $p=2$ in equation \eqref{NP1-_precomputation} contributes to the overall sum. \\
 Direct evaluation leads to:
 \begin{align}
-  \mathcal{N}^{-}_{1,m} = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}2^{-4} \frac{1}{2 !} \underline{Q}^{1}_{2, 1, m}\cdot(\tau) = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}2^{-4}\left(-2^{2-2}(2-1)2(2+1)B_{2,1,m}(1-\tau)^{2-2}\right) = -3B_{21m}.
+  \mathcal{N}^{-}_{1,m} = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}2^{-4} \frac{1}{2 !} \underline{Q}^{1}_{2, 1, m}(\tau) = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}2^{-4}\left(-2^{2-2}(2-1)2(2+1)B_{2,1,m}(1-\tau)^{2-2}\right) = -3B_{21m}.
 \end{align}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The $i^0$ cylinder logarithmic NP constants at $\mathscr{I}^{+}$}
@@ -1066,22 +1068,22 @@ In this section, we will compute the $\ell=0$ and $\ell=1$ modified NP constants
 \end{align}
 Therefore, for $\ell=0$, we have:
 \begin{align}
-  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e}(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1-\tau)}{(1+\tau)}Q^{0}_{p;0,0}\biggr]|_{\mathscr{I}^{+}}.
+  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e}(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1-\tau)}{(1+\tau)}Q^{0}_{p;0,0}(\tau)\biggr]|_{\mathscr{I}^{+}}.
 \end{align}
 Using Remark \ref{rem:l0} and evaluating at the critical set $I^{+}$, we obtain:
 \begin{align}
-  & \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e}(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1-\tau)}{(1+\tau)}Q^{0}_{p;0,0}\biggr] = \nonumber \\
+  & \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e}(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1-\tau)}{(1+\tau)}Q^{0}_{p;0,0}(\tau)\biggr] = \nonumber \\
   & = \frac{(1-\tau)}{(1+\tau)}\biggl\{D_{000}(1-\tau)^{-1} + (1+\tau)\rho B_{100}-\frac{1}{2}A_{100}(1-\tau)\rho - \frac{1}{2}B_{100}(1+\tau)\rho\biggr\} + O(\rho^{2}) =\nonumber \\
   & = \frac{(1-\tau)}{(1+\tau)}\biggl\{D_{000}(1-\tau)^{-1} - \rho A_{100}\biggr\} = \frac{1}{2}D_{000}.
 \end{align}
 \\
 Similarly, for $\ell=1$, the relevant quantity to evaluate is:
 \begin{align}
-  \tilde{\rho} L (\boldsymbol{e}^{+}) \phi_{1m}= \varkappa^{-1}\boldsymbol{e} (\boldsymbol{e}^{+})\phi_{1m} = 4^{-1}\frac{(1-\tau)}{(1+\tau)}\rho^{-1}(1+\tau)^{-2}(\boldsymbol{e}^{+})^2\phi_{1m} = 4\varkappa^{-1}(\Lambda_{+})^{2}\sum_{p=1}^{\infty}\frac{1}{p!}\rho^pQ^{1}_{p;\ell,m},
+  \tilde{\rho} L (\boldsymbol{e}^{+}) \phi_{1m}= \varkappa^{-1}\boldsymbol{e} (\boldsymbol{e}^{+})\phi_{1m} = 4^{-1}\frac{(1-\tau)}{(1+\tau)}\rho^{-1}(1+\tau)^{-2}(\boldsymbol{e}^{+})^2\phi_{1m} = 4\varkappa^{-1}(\Lambda_{+})^{2}\sum_{p=1}^{\infty}\frac{1}{p!}\rho^pQ^{1}_{p;\ell,m}(\tau),
 \end{align}
 in the last equality, we have used equations \eqref{eq:defQ1} and \eqref{eq:DefQ1IntermsQ0}. Therefore, for $\ell=1$, we have:
 \begin{align}
-  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{1,m} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e} (\boldsymbol{e}^{+}) \phi_{1m} = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-1}(\varkappa^{-1}Q^{1}_{p;1,m})|_{\mathscr{I}^{+}}.
+  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{1,m} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e} (\boldsymbol{e}^{+}) \phi_{1m} = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-1}(\varkappa^{-1}Q^{1}_{p;1,m}(\tau))|_{\mathscr{I}^{+}}.
 \end{align}
 \\
 Using Remark \ref{rem:l1} and evaluating at the critical set $I^{+}$, we obtain:
@@ -1103,22 +1105,22 @@ In this section, we will compute the $\ell=0$ and $\ell=1$ modified NP constants
 \end{align}
 Therefore, for $\ell=0$, we have:
 \begin{align}
-  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \varkappa(\underline{\boldsymbol{e}^{-}})(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1+\tau)}{(1-\tau)}\underline{Q}^{0}_{p;0,0}\biggr]|_{\mathscr{I}^{-}}.
+  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \varkappa(\underline{\boldsymbol{e}^{-}})(\phi_{00}) = \sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1+\tau)}{(1-\tau)}\underline{Q}^{0}_{p;0,0}(\tau)\biggr]|_{\mathscr{I}^{-}}.
 \end{align}
 Using Remark \ref{rem:lu0} and evaluating at the critical set $I^{-}$, we obtain:
 \begin{align}
-  & \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \varkappa(\underline{\boldsymbol{e}^{-}})(\phi_{00}) = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1+\tau)}{(1-\tau)}\underline{Q}^{0}_{p;0,0}\biggr] = \nonumber \\
+  & \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{0,0} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \varkappa(\underline{\boldsymbol{e}^{-}})(\phi_{00}) = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\sum_{p=0}^{\infty}\rho_{\star}^p\biggl[\frac{(1+\tau)}{(1-\tau)}\underline{Q}^{0}_{p;0,0}(\tau)\biggr] = \nonumber \\
   & = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}\frac{(1+\tau)}{(1-\tau)}\biggl\{D_{000}(1+\tau)^{-1} + \rho B_{100}\biggr\} + O(\rho^{2}) =\nonumber \\
   & = \frac{1}{2}D_{000}.
 \end{align}
 \\
 Similarly, for $\ell=1$, the relevant quantity to evaluate is:
 \begin{align}
-  \tilde{\rho} \underline{L} (\underline{\boldsymbol{e}^{-}}) \phi_{1m}= \varkappa\underline{\boldsymbol{e}} (\underline{\boldsymbol{e}^{-}})\phi_{1m} = 4^{-1}\frac{(1+\tau)}{(1-\tau)}\rho^{-1}(1-\tau)^{-2}(\underline{\boldsymbol{e}^{-}})^2\phi_{1m} = 4\varkappa(\Lambda_{-})^{2}\sum_{p=1}^{\infty}\frac{1}{p!}\rho^p\underline{Q}^{1}_{p;\ell,m},
+  \tilde{\rho} \underline{L} (\underline{\boldsymbol{e}^{-}}) \phi_{1m}= \varkappa\underline{\boldsymbol{e}} (\underline{\boldsymbol{e}^{-}})\phi_{1m} = 4^{-1}\frac{(1+\tau)}{(1-\tau)}\rho^{-1}(1-\tau)^{-2}(\underline{\boldsymbol{e}^{-}})^2\phi_{1m} = 4\varkappa(\Lambda_{-})^{2}\sum_{p=1}^{\infty}\frac{1}{p!}\rho^p\underline{Q}^{1}_{p;\ell,m}(\tau),
 \end{align}
 in the last equality, we have used equations \eqref{eq:defQu1} and \eqref{eq:DefQu1IntermsQ0}. Therefore, for $\ell=1$, we have:
 \begin{align}
-  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{1,m} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \varkappa\underline{\boldsymbol{e}}(\underline{\boldsymbol{e}^{-}})\phi_{1m} = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-1}(\varkappa \underline{Q}^{1}_{p;1,m})|_{\mathscr{I}^{-}}.
+  \mathcal{}^{\tilde{\rho}}\mathcal{N}^{-}_{1,m} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} \; \varkappa\underline{\boldsymbol{e}}(\underline{\boldsymbol{e}^{-}})\phi_{1m} = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-1}(\varkappa \underline{Q}^{1}_{p;1,m}(\tau))|_{\mathscr{I}^{-}}.
 \end{align}
 \\
 Using Remark \ref{rem:lu1} and evaluating at the critical set $I^{-}$, we obtain:
@@ -1228,9 +1230,9 @@ and recalling equation \eqref{eq:Qn} then one concludes that
 Notice that Proposition \ref{lemmaMainNPplus} provides, via equations \eqref{eq:RnIsQnplusone} and \eqref{eq:QNrecursive}, a recursive way to compute $Q^{n-1}_{p;\ell,m}$. This can be summarized as follows:
 
 \begin{corollary}
-  $Q^{n-1}_{p;\ell,m}$ satisfies
+  $Q^{n-1}_{p;\ell,m}(\tau)$ satisfies
   \begin{align}\label{eq:Qnrecursion_coro}
-    Q^{n}_{p;\ell,m}=(1+\tau)\dot{Q}^{n-1}_{p;\ell,m}-(p+n)Q^{n-1}_{p;\ell,m}.
+    Q^{n}_{p;\ell,m}(\tau)=(1+\tau)\dot{Q}^{n-1}_{p;\ell,m}(\tau)-(p+n)Q^{n-1}_{p;\ell,m}(\tau).
   \end{align}
 \end{corollary}
 \medskip
@@ -1273,7 +1275,7 @@ h_{k}^{n+1}:= \Big(\frac{1+\tau}{2}\Big)(\ell+ k+ 1)h_{k-1}^{n} +
 \begin{proof}
   We proceed inductively as follows. For the case $p \neq \ell$, a direct calculation using Lemma \ref{Lemma:Sol_Jacobi_and_Logs} gives:
   \begin{align}
-    & Q^{0}_{p;\ell,m}= (1+\tau)\dot{a}_{p;\ell,m} = (\ell+1)^{[1]}\Big(\frac{1+\tau}{2}\Big)^{p+1}B_{p;\ell,m}P_{\ell-1}^{(-p+1,p+1)}(\tau)+\sum_{k=0}^{1}A_{p;\ell,m}h^{0}_{k}(\tau)P_{\ell-k}^{(p+k,-p+k)}(\tau) = \nonumber \\
+    & Q^{0}_{p;\ell,m}(\tau)= (1+\tau)\dot{a}_{p;\ell,m} = (\ell+1)^{[1]}\Big(\frac{1+\tau}{2}\Big)^{p+1}B_{p;\ell,m}P_{\ell-1}^{(-p+1,p+1)}(\tau)+\sum_{k=0}^{1}A_{p;\ell,m}h^{0}_{k}(\tau)P_{\ell-k}^{(p+k,-p+k)}(\tau) = \nonumber \\
     & = B_{p;\ell,m}(\ell+1)\Big(\frac{1+\tau}{2}\Big)^{p+1}P_{\ell-1}^{(-p+1,p+1)} + A_{p;\ell,m}h^{0}_{0}(\tau)P_{\ell}^{(p,-p)}(\tau) + A_{p;\ell,m}h^{0}_{1}(\tau)P_{\ell-1}^{(p+1,-p+1)}(\tau) = \nonumber \\
     & = B_{p;\ell,m}(\ell+1)\Big(\frac{1+\tau}{2}\Big)^{p+1}P_{\ell-1}^{(-p+1,p+1)} - A_{p;\ell,m}p \Big(\frac{1-\tau}{2}\Big)^{p-1}P_{\ell}^{(p,-p)}(\tau) + A_{p;\ell,m}(\ell+1) \Big(\frac{1-\tau}{2}\Big)^{p}\Big(\frac{1+\tau}{2}\Big)P_{\ell-1}^{(p+1,-p+1)}(\tau).
 \end{align}
@@ -1281,9 +1283,9 @@ This proves the case $n=0$, with:
 \begin{align}\label{eq:h0andh1}
   h_{0}^{0}(\tau)=-p \Big(\frac{1-\tau}{2}\Big)^{p-1}, \qquad h_{1}^0(\tau)=(\ell+1) \Big(\frac{1-\tau}{2}\Big)^{p}\Big(\frac{1+\tau}{2}\Big),
 \end{align}
-Now, assuming equation \eqref{eq:ind_Qpnotl} is valid as the induction hypothesis, we proceed with the induction step to compute $Q^{n}_{p;\ell,m}$. Using equation \eqref{eq:Qnrecursion_coro}, we have:
+Now, assuming equation \eqref{eq:ind_Qpnotl} is valid as the induction hypothesis, we proceed with the induction step to compute $Q^{n}_{p;\ell,m}(\tau)$. Using equation \eqref{eq:Qnrecursion_coro}, we have:
 \begin{align}
-  & Q^{n}_{p;\ell,m}=\sum_{k=0}^{n}A_{p;\ell,m} \Big[(1+\tau)\Big(h^{n-1}_{k} \dot{P}_{\ell-k}^{(p+k,-p+k)} + P_{\ell-k}^{(p+k,-p+k)}\dot{h}^{n-1}_{k} \Big) -(p+n)h^{n-1}_{k} P_{\ell-k}^{(p+k,-p+k)}\Big] + \nonumber \\ 
+  & Q^{n}_{p;\ell,m}(\tau)=\sum_{k=0}^{n}A_{p;\ell,m} \Big[(1+\tau)\Big(h^{n-1}_{k} \dot{P}_{\ell-k}^{(p+k,-p+k)} + P_{\ell-k}^{(p+k,-p+k)}\dot{h}^{n-1}_{k} \Big) -(p+n)h^{n-1}_{k} P_{\ell-k}^{(p+k,-p+k)}\Big] + \nonumber \\ 
   & + 2 B_{p;\ell,m}(\ell+1)^{[n]}\Big(\frac{1+\tau}{2}\Big)^{p+n+1}\dot{P}_{\ell-n-2}^{(-p+n,p+n)}.
 \end{align}
 Observe from the previous expression that in terms with the coefficient $B_{p;\ell,m}$, only $\dot{P}$ appears, and the terms of the form $B_{p,\ell,m} P$ cancel out.
@@ -1294,7 +1296,7 @@ Observe from the previous expression that in terms with the coefficient $B_{p;\e
 
 By utilizing the identity \ref{eq:firstDerJac} to compute the derivatives of the Jacobi polynomials and taking into account that $(\ell+n+1)(\ell+1)^{[n]}=(\ell+1)^{[n+1]}$, we obtain the following expression.
 \begin{align}
-  & Q^{n}_{p;\ell,m}=\sum_{k=0}^{n}A_{p;\ell,m} \Big[\Big(\frac{1+\tau}{2}\Big)(\ell+k+1)h^{n-1}_{k} P_{\ell-k-1}^{(p+k+1,-p+k+1)}+\Big((1+\tau) \dot{h}^{n-1}_{k} -(p+n)h^{n-1}_{k}\Big)P_{\ell-k}^{(p+k,-p+k)} \Big] + \nonumber \\ 
+  & Q^{n}_{p;\ell,m}(\tau)=\sum_{k=0}^{n}A_{p;\ell,m} \Big[\Big(\frac{1+\tau}{2}\Big)(\ell+k+1)h^{n-1}_{k} P_{\ell-k-1}^{(p+k+1,-p+k+1)}+\Big((1+\tau) \dot{h}^{n-1}_{k} -(p+n)h^{n-1}_{k}\Big)P_{\ell-k}^{(p+k,-p+k)} \Big] + \nonumber \\ 
   & + B_{p;\ell,m}(\ell+1)^{[n+1]} \Big(\frac{1+\tau}{2}\Big)^{p+n+1}P_{\ell-n-3}^{(-p+n+1,p+n+1)}.
 \end{align}
 Rearranging the sum, the latter expression can be rewritten as follows
