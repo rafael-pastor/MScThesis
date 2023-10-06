@@ -1569,6 +1569,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./Penrose diagram.pdf
+INPUT ./Penrose diagram.pdf
+INPUT Penrose diagram.pdf
+INPUT ./Penrose diagram.pdf
+INPUT ./Penrose diagram.pdf
 INPUT ./friedrich cylinder.pdf
 INPUT ./friedrich cylinder.pdf
 INPUT friedrich cylinder.pdf
@@ -1614,23 +1619,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/futmi.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 OUTPUT Output/Presentation.nav
 OUTPUT Output/Presentation.toc
 OUTPUT Output/Presentation.snm
