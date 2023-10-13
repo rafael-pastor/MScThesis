@@ -1426,9 +1426,6 @@ INPUT ./grit.png
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss8.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT Output/Presentation.toc
-INPUT Output/Presentation.toc
-INPUT Output/Presentation.toc
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmss.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmss.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ot1lmss.fd
@@ -1486,12 +1483,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso8.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
@@ -1504,7 +1495,6 @@ INPUT ./penrose constants.png
 INPUT penrose constants.png
 INPUT ./penrose constants.png
 INPUT ./penrose constants.png
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
@@ -1551,6 +1541,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fourier/fourier-bb.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
@@ -1569,6 +1560,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT ./Penrose diagram.pdf
 INPUT ./Penrose diagram.pdf
 INPUT Penrose diagram.pdf
@@ -1579,6 +1574,8 @@ INPUT ./friedrich cylinder.pdf
 INPUT friedrich cylinder.pdf
 INPUT ./friedrich cylinder.pdf
 INPUT ./friedrich cylinder.pdf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmss8.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
