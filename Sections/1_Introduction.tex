@@ -84,7 +84,7 @@ domain of $U$ and $V$, we introduce the following, $T=V+U$ $\&$ $\psi=V-U$. The 
 \begin{equation}\label{eq:metricMink-cf}
 	d s^2=-d T^2+d \psi^2+\sin ^2 \psi d \Omega^2,
 \end{equation}
-which is the metric of the Einstein static universe. The conformal boundary is given by $\psi = \pi/2$, which is the cylinder $\mathbb{R} \times \mathbb{S}^2$, the Einstein Cylinder. The purpose of this thesis is  to study what happens at infinity, and in order to do that we will focus on the region where $\Xi = 0$. This condition gives us the following regions, which are presented in the following table
+which is the metric of the Einstein static universe. The conformal boundary is given by $\Xi = \cos T + \cos \psi$, where the cylinder $\mathbb{R} \times \mathbb{S}^2$ is the Einstein Cylinder. The purpose of this thesis is  to study what happens at infinity, and in order to do that we will focus on the region where $\Xi = 0$. This condition gives us the following regions, which are presented in the following table
 \begin{center}
     \begin{tabular}{ |c|c|c| }
       \hline
@@ -97,7 +97,7 @@ which is the metric of the Einstein static universe. The conformal boundary is g
      \enspace & Future/Past Timelike Infinity & $i^{\pm}$ \\
      \hline
      $\tilde{r} \rightarrow \infty, \enspace \tilde{t} \rightarrow \infty \enspace
-     \text{with} \;\; |\tilde{u}|$>$\infty$ &  Future Null-infinity & $\mathscr{I}^+$ \\ 
+     \text{with} \;\; |\tilde{u}|$<$\infty$ &  Future Null-infinity & $\mathscr{I}^+$ \\ 
      \hline
      $\tilde{r} \rightarrow\infty, \enspace \tilde{t} \rightarrow-\infty \;\;
      \text{with} \enspace |\tilde{v}|$<$\infty$ & Past Null-infinity & $\mathscr{I}^-$ \\
@@ -113,7 +113,7 @@ The visual representation of this is a Penrose Diagram, depicted in Fig.1
       black lines.}
 \end{figure}
 
-In this representation we can see that the spatial infinity, $i^0$, is mapped to the origin ($T = 0$ and $\psi = 0$) and $\mathscr{I}^{\pm}$ and to the future/past null cone through the origin.\\
+In this representation we can see that the spatial infinity, $i^0$, is mapped to the origin ($T = 0$ and $\psi = \pi$) and $\mathscr{I}^{\pm}$ and to the future/past null cone through the origin.\\
 \begin{figure}[h!]
 	\centering \includegraphics[width =0.2\textwidth]{spatial infinity.jpeg}
     \caption{Representation of spatial infinity, $i^0$, in the Penrose Diagram.\\ Taken from \cite{Ste91}.}
@@ -137,7 +137,7 @@ A conservation law arises when the value of an integral remains constant regardl
 
 The newly (in 1968) discovered conservation laws are distinct and not connected to any previously known laws. While a comprehensive physical interpretation of these new quantities is not yet evident, a preliminary understanding of their significance can be proposed. This interpretation is largely based on their meaning in the linear theories, where their conservation is relatively straightforward, as well as their interpretation in the context of static fields. To gain deeper insights, we will conduct a detailed analysis of the linear gravitational and Maxwell theories. Through this investigation, we hope to shed light on the nature and implications of these novel conservation laws.
 
-In the context of flat spacetime, we will introduce a set of null polar coordinates, where the usual spherical polar angles, $\theta$ and $\phi$, are retained. However, we will introduce new coordinates, $r$ and $u$, such that $r/\sqrt{2}$ represents the radial distance, and $(2u - r)/\sqrt{2}$ serves as the time parameter in the standard system. Consequently, $\sqrt{2u}$ corresponds to the conventional retarded time parameter, while $\sqrt{2(u + r)}$ represents the corresponding advanced time. The hypersurfaces defined by $u = \text{constant}$ are the outgoing null cones with their vertices at $r = 0$. The metric is given by:
+In the context of flat spacetime, we will introduce a set of null polar coordinates, where the usual spherical polar angles, $\theta$ and $\phi$, are retained. However, we will introduce new coordinates, $r$ and $u$, such that $r/\sqrt{2}$ represents the radial distance, and $(2u - r)/\sqrt{2}$ serves as the time parameter in the standard system. Consequently, $\sqrt{2}u$ corresponds to the conventional retarded time parameter, while $\sqrt{2}(u + r)$ represents the corresponding advanced time. The hypersurfaces defined by $u = \text{constant}$ are the outgoing null cones with their vertices at $r = 0$. The metric is given by:
 \begin{equation}\label{eq:flatmetric}
   d s^2 = 2d u^2 + 2dudr - \frac{1}{2} r^2(d\theta^{2} + \sin^2\theta d\phi^2) = g_{\mu \nu}dx^{\mu}dx^{\nu}.
 \end{equation}
@@ -165,7 +165,7 @@ Using \eqref{eq:tetrad}, we can express the Maxwell field tensor in terms of the
   & \Phi_{2} = -2^{\frac{-1}{2}}(\boldsymbol{E} + i\boldsymbol{B})\cdot \boldsymbol{\overline{m}}.
 \end{align}
 From \eqref{eq:Maxtensor} we can see that $\Phi_{0}$, $\Phi_{1}$ and $\Phi_{2}$ have spin weights of 1, 0 and -1, respectively.\\
-Let $S$ be a sphere of radius r with the following line element,
+Let $S$ be a $\mathbb{S}^2$ sphere of radius r with the following line element,
 \begin{equation}\label{eq:lineelement}
   ds^{2} = -r^{2}(d\theta^{2} + \sin^{2}\theta d\phi^{2}) = -2m _{(a}\overline{m}_{b)}dx^{a}dx^{b}.
 \end{equation}
@@ -269,7 +269,7 @@ Furthermore, these conclusions and results obtained in the context of Maxwell th
 In the context of linearized gravitational theory, we introduce the five complex functions denoted by $\Psi$, where $C_{\mu\nu\rho\sigma}$ represents the linearized Weyl tensor. These functions play an analogous role to the $\Phi$'s in the Maxwell theory. Their dynamics are governed by the linearized Bianchi identities. Much like the correspondence between $F_{\mu \nu}$ and the electromagnetic fields $(\boldsymbol{E}, \boldsymbol{B})$, the linearized Weyl tensor corresponds to two trace-free symmetric, 3-dimensional tensors denoted as $C_{km}$ and $E_{km}$, with $C_{km}$ given by $C_{\alpha \kappa \beta \mu}(l^{\alpha}+n^{\alpha})(l^{\beta}+n^{\beta})$ and $E_{km}$ given by $C_{\alpha \kappa \beta \mu}^{*}(l^{\alpha}+n^{\alpha})(l^{\beta}+n^{\beta})$. Writting $$Z_{k,j} = \frac{1}{2}C_{k,j} + \frac{i}{2}E_{k,j},$$ we get $$\Psi_{0} = - Z_{k,j}m_{k}m_{j}, \qquad \Psi_{1} = 2^{\frac{1}{2}}Z_{k,j}c_{k}m_{j}, \qquad \Psi_{2} = Z_{k,j}m_{k}\overline{m}_{j}, \qquad \Psi_{3} = - 2^{\frac{1}{2}}Z_{k,j}c_{k}\overline{m}_{j}, \qquad \Psi_{4} = -Z_{k,j}\overline{m}_{k}\overline{m}_{j}.$$
 Similar to the Maxwell theory, our focus lies on solutions that satisfy a boundary condition at infinity, allowing for sufficiently smooth retarded fields and properly tailing off incoming fields. Specifically, we demand behavior of the form:
 \begin{equation}\label{eq:Psi0ansatz}
-  \Psi_{0}=\sum_{n=0}^{N}\frac{\Psi_{0}^{n}}{r^{5+n}}+(o^{-5-N}),
+  \Psi_{0}=\sum_{n=0}^{N}\frac{\Psi_{0}^{n}}{r^{5+n}}+o(r^{-5-N}),
 \end{equation}
 under these conditions, the 'Bianchi identities' can be integrated to yield:
 \begin{align}\label{eq:Psiintegrals}
@@ -777,13 +777,13 @@ The conservation laws \eqref{eq:cons_laws} have been generalized to a Schwarzsch
 Equation \eqref{eq:uLLphiToSource} corresponds to the case $n=0$ of expression \eqref{eq:main_commutation} and serves as the basis for the induction. Assuming that expression \eqref{eq:main_commutation} holds true for $n=N$, let's proceed with the induction step by calculating $\underline{L} L (\boldsymbol{e}^+)^{n+1} \phi$ as follows:
 % change the vertical spacing between lines of the align environment
 \begin{align}\label{eq:inductionstep_commutation}
-  & \underline{L} L\left(e^{+}\right)^{N+1} \phi=\underline{L} L\left\{\left(e^{+}\right)\left[\left(e^{+}\right)^{N} \phi\right]\right\}=L\left[\underline{L}\left[\left(p^{2} L\right)\left(e^{+}\right)^{N} \phi\right]\right]= \nonumber\\ 
+  & \underline{L} L\left(e^{+}\right)^{N+1} \phi=\underline{L} L\left\{\left(e^{+}\right)\left[\left(e^{+}\right)^{N} \phi\right]\right\}=L\left[\underline{L}\left[\left(\rho^{2} L\right)\left(e^{+}\right)^{N} \phi\right]\right]= \nonumber\\ 
   & =L\left[\underline{L}\left(\rho^{2} L\left(e^{+}\right)^{N} \phi\right)\right]=L\left[\tilde{\rho}^{2} \underline{L} L\left(e^{+}\right)^{N} \phi-2 \tilde{\rho} L\left(e^{+}\right)^{N} \phi\right]= \nonumber \\
-  & =L\left[-2 N \tilde{p} L\left(e^{+}\right)^{N} \phi+(N(N+1)+\Delta)\left(e^{+}\right)^{N} \phi-2 \tilde{p} L\left(e^{+}\right)^{N} \phi\right]= \nonumber \\
-  & =-2 N \tilde{p} L L\left(e^{+}\right)^{N} \phi-2 N L\left(e^{+}\right)^{N} \phi+L\left[\left(N(N+1)\right)\left(e^{+}\right)^{N} \phi\right]+L\left(\Delta\left(e^{+}\right)^{N} \phi\right) -2 \tilde{p} L L\left(e^{+}\right)^{N} \phi-2 L\left(e^{+}\right)^{N} \phi= \nonumber \\
+  & =L\left[-2 N \tilde{\rho} L\left(e^{+}\right)^{N} \phi+(N(N+1)+\Delta)\left(e^{+}\right)^{N} \phi-2 \tilde{\rho} L\left(e^{+}\right)^{N} \phi\right]= \nonumber \\
+  & =-2 N \tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 N L\left(e^{+}\right)^{N} \phi+L\left[\left(N(N+1)\right)\left(e^{+}\right)^{N} \phi\right]+L\left(\Delta\left(e^{+}\right)^{N} \phi\right) -2 \tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 L\left(e^{+}\right)^{N} \phi= \nonumber \\
   & =-2 N\tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 N L\left(e^{+}\right)^{N} \phi+(N(N+1)) L\left(e^{+}\right)^{N} \phi + \nonumber \\
   & + \left(e^{+}\right)^{N} \phi L(N(N+1))+\Delta L\left(e^{+}\right)^{N} \phi-2 \tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 L\left(e^{+}\right)^{N} \phi= \nonumber \\
-  & =-2 N\tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 N L\left(e^{+}\right)^{N} \phi+N^{2} L\left(e^{+}\right)^{N} \phi+N L\left(e^{+}\right)^{N} \phi+\Delta L\left(e^{+}\right)^{N} \phi -2 \tilde{p} L L\left(e^{+}\right)^{N} \phi-2 L\left(e^{+}\right)^{N} \phi = \nonumber \\
+  & =-2 N\tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 N L\left(e^{+}\right)^{N} \phi+N^{2} L\left(e^{+}\right)^{N} \phi+N L\left(e^{+}\right)^{N} \phi+\Delta L\left(e^{+}\right)^{N} \phi -2 \tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 L\left(e^{+}\right)^{N} \phi = \nonumber \\
   & =-2 N\tilde{\rho} L L\left(e^{+}\right)^{N} \phi-N L\left(e^{+}\right)^{N} \phi+N^{2} L\left(e^{+}\right)^{N} \phi +\Delta L\left(e^{+}\right)^{N} \phi-2 \tilde{\rho} L L\left(e^{+}\right)^{N} \phi-2 L\left(e^{+}\right)^{N} \phi.
 \end{align}
 The RHS of \eqref{eq:main_commutation} with $n = N+1$ can be broken down into individual components and computed individually,
@@ -878,7 +878,7 @@ In the notation for ${}^{f}\mathcal{N}^{+}_{\ell,m}$ presented below, it will be
 \section{The classical NP constants at $\mathscr{I}^{+}$}
 \label{sec:classicalNP}
 
-In this section, we focus on computing the classical NP constants, which are determined by the initial data expressed through the constant parameters discussed in Lemma \ref{Lemma:Sol_Jacobi_and_Logs}. To aid our comprehension, we begin by calculating a few initial NP constants before proceeding to the general case. Specifically, we delve into computing the classical NP constants at $\mathscr{I}^{+}$ for $\ell=0$ and $\ell=1$. This analysis is facilitated by expression \eqref{eq:ansatz}, which yields the following insights:
+In this section, we focus on computing the classical NP constants, which are determined by the initial data expressed through the constant parameters discussed in Lemma \ref{Lemma:Sol_Jacobi_and_Logs}. To aid our comprehension, we begin by calculating a few initial NP constants before proceeding to the general case. Specifically, we will focus into computing the classical NP constants at $\mathscr{I}^{+}$ for $\ell=0$ and $\ell=1$. This analysis is facilitated by expression \eqref{eq:ansatz}, which yields the following insights:
 \begin{align}\label{eq:exp_phi_lm}
   \phi_{\ell m}= \sum_{p=\ell}^{\infty}\frac{1}{p!}a_{p;\ell,m}(\tau)\rho^{p}.
 \end{align}
@@ -899,7 +899,7 @@ To compute the $\ell=0$ NP constant at $\mathscr{I}^{+}$, it is necessary to eva
 \begin{align}
   \mathcal{N}^{+}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}}  \boldsymbol{e}^{+}(\phi_{00}) = \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}Q^{0}_{p,0,0}|_{\mathscr{I}^{+}}.
 \end{align}
-here, $\rho_{\star}$ represents a constant that parametrizes the cut ${C}^{+}$, and $Q^{0}_{p,\ell,m}|_{\mathscr{I}^{+}}$ denotes the value of $Q^{0}_{p,\ell,m}$ at $\mathscr{I}^{+}$, specifically at $\tau=1$. Notably, when $\rho_{\star}=0$, it corresponds to selecting ${C}^{+}$ as $\mathcal{I}^{+}$.
+here, $\rho_{\star}$ represents a constant that parametrizes the cut ${C}^{+}$, and $Q^{0}_{p,\ell,m}|_{\mathscr{I}^{+}}$ denotes the value of $Q^{0}_{p,\ell,m}$ at $\mathscr{I}^{+}$, specifically at $\tau=1$. Notably, when $\rho_{\star}=0$, it corresponds to selecting ${C}^{+}$ as ${I}^{+}$.
 A direct calculation using Lemma \ref{Lemma:Sol_Jacobi_and_Logs} shows the following:
 \begin{align}\label{eq:Q0lm}
   & Q_{p;\ell,m}^{0}(\tau)=(1+\tau) \dot{a}_{p ; \ell, m}(\tau)-pa_{p ; \ell, m}(\tau) \Rightarrow Q_{0;0,0}^{0}(\tau)=2 \dot{a}_{0;0,0}(\tau)-0 \cdot a_{0;0,0} =2 \dot{a}_{0;0,0}(\tau)=\frac{D_{000}}{1-\tau}, \\
@@ -921,7 +921,7 @@ gives
 Thus, based on the insights provided by Remark \ref{rem:l0} and assuming the regularity condition is fulfilled, we can conclude that:
 \begin{align}
   &\mathcal{N}^{+}_{0,0}= \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}Q^{0}_{p;0,0}|_{\mathscr{I}^{+}} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \sum_{p=0}^{\infty} \frac{1}{p !}(1+\tau)^{-2} \rho_{\star}^{p-1} Q_{p; 0,0}^{0}(\tau) = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}}\sum_{p=0}^{\infty} \frac{1}{p !} 2^{-2} \rho_{\star}^{p-1} Q_{p; 0,0}^{0}(\tau) = \nonumber \\
-  & = \lim_{\substack{\rho \to 0 \\ \tau \to 1}}\left[\frac{2^{-2}}{0 !} \rho^{-1} A_{0;0,0} +\frac{2^{-2}}{\rho !} \rho^{0} A_{1;0,0} +\sum_{p=2}^{\infty} \frac{2^{-2}}{p !} \rho^{p-1} A_{p;0,0}(1-\tau)^{p-1}\right] = -A_{100}.
+  & = \lim_{\substack{\rho \to 0 \\ \tau \to 1}}\left[\frac{2^{-2}}{0 !} \rho^{-1} D_{0;0,0} +\frac{2^{-2}}{\rho !} \rho^{0} A_{1;0,0} +\sum_{p=2}^{\infty} \frac{2^{-2}}{p !} \rho^{p-1} A_{p;0,0}(1-\tau)^{p-1}\right] = -A_{100}.
 \end{align}
 
 It is expected that the regularity condition must be imposed to ensure well-defined classical NP constants, as a similar observation holds for the spin-1 and spin-2 cases in \cite{GasVal20} (see also \cite{Val98, Val99a}). Additionally, Remark \ref{rem:l0} demonstrates that only the term with $p=1$ contributes to the calculation. This aligns with the "constancy" of the NP constants, indicating that their value does not depend on the chosen cut \cite{NewPen68}. In other words, if we assume that the NP constants are well-defined, the specific form of the expressions in Remark \ref{rem:l0} is not necessary to determine the contribution of the initial data parameters from Lemma \ref{Lemma:Sol_Jacobi_and_Logs} to $\mathcal{N}^{+}_{0,0}$. As long as only the parameter $A_{p;\ell,m}$ (and not $B_{p;\ell,m}$) appears in Equation \ref{rem:l0:eq2}, the value of $\mathcal{N}^{+}_{0,0}$ can be determined.\\
@@ -947,9 +947,9 @@ Where $Q^{1}_{p,\ell,m}(\tau):= \big((1+\tau)\dot{Q}^{0}_{p,\ell,m}(\tau)-(p+1){
 \end{align}
 Therefore, one can compute $\mathcal{N}^{+}_{1,m}$ as
 \begin{align}\label{NP1_precomputation}
-  & \mathcal{N}^{+}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} (\boldsymbol{e}^{+})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}Q^{1}_{p,1,m}|_{\mathscr{I}^{+}} =  (1+\tau)^{-4} \sum_{p=0}^{\infty} \frac{1}{p !} Q_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
-  & = (1+\tau)^{-4}\left(\sum_{p=0}^{1} \frac{1}{p !} \rho^{p-2} Q_{p; 1, m}^{1}(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} Q_{p, 1, m}^{1}(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} A_{p, 1, m}^{1}\cdot{(\tau)}\right) = \nonumber \\
-  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4}\big\{\rho^{-2} Q_{0,1, m}^{1}(\tau)+\rho^{-1} Q_{1,1, m}^{1}(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}(\tau). 
+  & \mathcal{N}^{+}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} (\boldsymbol{e}^{+})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}Q^{1}_{p,1,m}|_{\mathscr{I}^{+}} =  (1+\tau)^{-4} \sum_{p=1}^{\infty} \frac{1}{p !} Q_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
+  & = (1+\tau)^{-4}\left(\sum_{p=1}^{1} \frac{1}{p !} \rho^{p-2} Q_{p; 1, m}^{1}(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} Q_{p, 1, m}^{1}(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} A_{p, 1, m}^{1}\cdot{(\tau)}\right) = \nonumber \\
+  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4}\big\{0+\rho^{-1} Q_{1,1, m}^{1}(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow 1}} 2^{-4} \frac{1}{2 !} Q^{1}_{2, 1, m}(\tau). 
 \end{align}
 Similar to the previous case, we have the following:
 \begin{remark}\label{rem:l1}
@@ -984,13 +984,13 @@ With
 \end{align}
 With this definition in place, we can express $\underline{\boldsymbol{e}^{-}}(\phi_{\ell m})$ as follows:
 \begin{align}\label{eq:bumeplus1philm}
-  \underline{\boldsymbol{e}^{-}}(\phi_{\ell m}) = 4 (\Lambda_{-})^{2}\sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p}\underline{Q}^{0}_{p,\ell,m}(\tau).
+  \underline{\boldsymbol{e}^{-}}(\phi_{\ell m}) = 4 (\Lambda_{-})^{2}\sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p}\underline{Q}^{0}_{p,\ell,m}(\tau).
 \end{align}
 To compute the $\ell=0$ NP constant at $\mathscr{I}^{-}$, it is necessary to evaluate $\underline{\boldsymbol{e}^{-}}(\phi_{00})$ at a specific cut ${C}^{-}$ of $\mathscr{I}^{-}$. By utilizing equation \eqref{eq:bmeplus1philm} and referring to Lemma \ref{Lemma:Sol_Jacobi_and_Logs}, we obtain the following expression:
 \begin{align}
-  \mathcal{N}^{-}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}  \underline{\boldsymbol{e}^{-}}(\phi_{00}) = \sum_{p=0}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p,0,0}(\tau)|_{\mathscr{I}^{-}}.
+  \mathcal{N}^{-}_{0,0}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}}  \underline{\boldsymbol{e}^{-}}(\phi_{00}) = \sum_{p=\ell}^{\infty} \frac{1}{p!}\rho^{p-1}_{\star}\underline{Q}^{0}_{p,0,0}(\tau)|_{\mathscr{I}^{-}}.
 \end{align}
-here, $\rho_{\star}$ represents a constant that parametrizes the cut ${C}^{-}$, and $\underline{Q}^{0}_{p,\ell,m}|_{\mathscr{I}^{-}}$ denotes the value of $\underline{Q}^{0}_{p,\ell,m}$ at $\mathscr{I}^{-}$, specifically at $\tau=-1$. Notably, when $\rho_{\star}=0$, it corresponds to selecting ${C}^{-}$ as $\mathcal{I}^{-}$.
+here, $\rho_{\star}$ represents a constant that parametrizes the cut ${C}^{-}$, and $\underline{Q}^{0}_{p,\ell,m}|_{\mathscr{I}^{-}}$ denotes the value of $\underline{Q}^{0}_{p,\ell,m}$ at $\mathscr{I}^{-}$, specifically at $\tau=-1$. Notably, when $\rho_{\star}=0$, it corresponds to selecting ${C}^{-}$ as ${I}^{-}$.
 A direct calculation using Lemma \ref{Lemma:Sol_Jacobi_and_Logs} shows the following:
 \begin{align}\label{eq:Qu0lm}
   & \underline{Q}_{p;\ell,m}^{0}(\tau)=(1-\tau) \dot{a}_{p ; \ell, m}(\tau)+pa_{p ; \ell, m}(\tau) \Rightarrow \underline{Q}_{0;0,0}^{0}(\tau)=2 \dot{a}_{0;0,0}(\tau)+0 \cdot a_{0;0,0} =2 \dot{a}_{0;0,0}(\tau)=-\frac{D_{000}}{1-\tau}, \\
@@ -1039,9 +1039,9 @@ Where $\underline{Q}^{1}_{p,\ell,m}(\tau):= \big((1-\tau)\dot{\underline{Q}}^{0}
 \end{align}
 Therefore, one can compute $\mathcal{N}^{-}_{1,m}$ as
 \begin{align}\label{NP1-_precomputation}
-  & \mathcal{N}^{-}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} (\underline{\boldsymbol{e}^{-}})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}\underline{Q}^{1}_{p,1,m}(\tau)|_{\mathscr{I}^{-}} =  \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4} \sum_{p=0}^{\infty} \frac{1}{p !} \underline{Q}_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
-  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4}\left(\sum_{p=0}^{1} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p; 1, m}^{1}(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} \underline{Q}_{p, 1, m}^{1}(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p, 1, m}^{1}{(\tau)}\right) = \nonumber \\
-  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4}\big\{\rho^{-2} \underline{Q}_{0,1, m}^{1}(\tau)+\rho^{-1} \underline{Q}_{1,1, m}^{1}(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4} \frac{1}{2 !} \underline{Q}^{1}_{2, 1, m}(\tau). 
+  & \mathcal{N}^{-}_{1,m}= \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to -1}} (\underline{\boldsymbol{e}^{-}})^2(\phi_{1m}) = \sum_{p=1}^{\infty}\frac{1}{p!}\rho_{\star}^{p-2}\underline{Q}^{1}_{p,1,m}(\tau)|_{\mathscr{I}^{-}} =  \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4} \sum_{p=1}^{\infty} \frac{1}{p !} \underline{Q}_{p \ell, m}^{1}(\tau) \rho^{p} = \nonumber \\
+  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}}(1-\tau)^{-4}\left(\sum_{p=1}^{1} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p; 1, m}^{1}(\tau)+\sum_{p=2}^{2} \frac{1}{p !} \rho^{0} \underline{Q}_{p, 1, m}^{1}(\tau)+\sum_{p=3}^{\infty} \frac{1}{p !} \rho^{p-2} \underline{Q}_{p, 1, m}^{1}{(\tau)}\right) = \nonumber \\
+  & = \lim _{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4}\big\{0+\rho^{-1} \underline{Q}_{1,1, m}^{1}(\tau)\big\}+\lim_{\substack{\rho \rightarrow 0 \\ \tau \rightarrow -1}} 2^{-4} \frac{1}{2 !} \underline{Q}^{1}_{2, 1, m}(\tau). 
 \end{align}
 Similar to the previous case, we have the following:
 \begin{remark}\label{rem:lu1}
@@ -1089,9 +1089,9 @@ in the last equality, we have used equations \eqref{eq:defQ1} and \eqref{eq:DefQ
 Using Remark \ref{rem:l1} and evaluating at the critical set $I^{+}$, we obtain:
 \begin{align}
   & \mathcal{}^{\tilde{\rho}}\mathcal{N}^{+}_{1,m} = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \; \varkappa^{-1}\boldsymbol{e} (\boldsymbol{e}^{+}) \phi_{1m} = \nonumber \\
-  & = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \varkappa^{-1}\biggl\{\ddot{a}_{1;1,m}(\tau)+\frac{1}{2}\rho \ddot{a}_{2;1,m}(\tau) - (1+\tau)^{-1}\dot{a}_{1;1,m}(\tau)+(1+\tau)^{-1}\rho \dot{a}_{2;1,m}(\tau)- \nonumber \\
+  & = \lim_{\substack{\rho \to 0 \\ \tau \to 1}} \varkappa^{-1}\biggl\{\ddot{a}_{1;1,m}(\tau)+\frac{1}{2}\rho \ddot{a}_{2;1,m}(\tau) - (1+\tau)^{-1}\dot{a}_{1;1,m}(\tau)+(1+\tau)^{-1}\rho \dot{a}_{2;1,m}(\tau)- \nonumber \\
   & - \frac{1}{2}\rho(1+\tau)^{-1}\dot{a}_{2;1,m}(\tau)-(1+\tau)^{-2}\rho a_{2;1,m}(\tau)\biggr\} + O(\rho^{3}) = \nonumber \\
-  & = \lim_{\substack{\rho \to \rho_{\star} \\ \tau \to 1}} \frac{(1-\tau)}{(1+\tau)} \biggl\{\frac{1}{16}(\tau-1)^{-1}(1+\tau)^{-2}\bigl[16D_{11m}+7A_{21m}\rho - B_{21m}\rho + 16D_{11m}\tau - 16A_{21m}\rho\tau - 8B_{21m}\rho\tau - \nonumber \\
+  & = \lim_{\substack{\rho \to 0 \\ \tau \to 1}} \frac{(1-\tau)}{(1+\tau)} \biggl\{\frac{1}{16}(\tau-1)^{-1}(1+\tau)^{-2}\bigl[16D_{11m}+7A_{21m}\rho - B_{21m}\rho + 16D_{11m}\tau - 16A_{21m}\rho\tau - 8B_{21m}\rho\tau - \nonumber \\
   & - 6A_{21m}\rho\tau^{2} - 6B_{21m}\rho\tau^{2} + 8A_{21m}\rho\tau^{3} + 8B_{21m}\rho\tau^{3} + 7A_{21m}\rho\tau^{4} + 7B_{21m}\rho\tau^{4} - 32C_{11m}(\tau^{2}-1) - \nonumber \\
   & - 8D_{11m}(\tau^{2}-1)\ln\Biggl(\frac{1+\tau}{1-\tau}\Biggr)\bigr]\biggr\} + O(\rho^{3}) = - \frac{1}{4}D_{11m}.
 \end{align}
